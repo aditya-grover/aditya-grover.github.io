@@ -14,7 +14,7 @@ In the ML4Climate initiative led by Prof. Aditya Grover, we are pioneering the n
 
 * **Research:** We regularly publish papers at the frontiers of artificial intelligence and climate change. Our current focus areas are in climate science and sustainable energy. 
 
-* **Software:** We believe in open and reproducible science. Not just doing it, but enabling it. We develop and maintain datasets and software [benchmarks](https://climatelearn.readthedocs.io/en/latest/) for pushing data-driven climate science.
+* **Software:** We believe in open and reproducible science. Not just doing it, but enabling it. We develop and maintain dataset benchmarks and [software](https://climatelearn.readthedocs.io/en/latest/) for pushing data-driven climate science.
 
 * **Education:** We develop accessible courses and [tutorials](https://www.climatechange.ai/papers/neurips2022/114) to on board students, researchers, and practitioners with different backgrounds.
 
@@ -24,6 +24,8 @@ In the ML4Climate initiative led by Prof. Aditya Grover, we are pioneering the n
 
 
 # news
+
+* We launched our PyTorch library [ClimateLearn](/blog/2023/climate-learn/) and humbled by the [public response](https://twitter.com/adityagrover_/status/1613975759206625281?s=20) so far.
 
 * Aditya is chairing the [AI4ClimateScience Bridge Program](https://ai4climatescience.github.io/) at AAAI on Feb 8, 2022. 
 
