@@ -18,7 +18,7 @@ In the ML4Climate initiative led by Prof. Aditya Grover, we are pioneering the n
 
 * **Education:** We develop accessible courses and [tutorials](https://www.climatechange.ai/papers/neurips2022/114) to on board students, researchers, and practitioners with different backgrounds.
 
-* **Community:** Our efforts are aimed at an interdisciplinary audience of researchers, policy makers, and concerned citizens. We write [perspectives](https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/aaaifss2022/17/paper.pdf) and blog articles for broader audiences, and organize [events](https://ai4climatescience.github.io/) that engage diverse stakeholders.
+* **Community:** Our efforts are aimed at an interdisciplinary audience of researchers, practitioners, policy makers, and concerned citizens. We write [perspectives](https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/aaaifss2022/17/paper.pdf) and blog articles for broader audiences, and organize [events](https://ai4climatescience.github.io/) that engage diverse stakeholders.
 
 
 
