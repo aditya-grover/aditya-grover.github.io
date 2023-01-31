@@ -12,18 +12,20 @@ Climate change is the defining challenge for the future of human civilization. F
 
 In the ML4Climate initiative led by Prof. Aditya Grover, we are pioneering the next generation of machine learning algorithms and frameworks that will inform the science, technology, and policy in mitigating and adapting to the changing climate. Our work broadly centers on 4 pillars at the intersection of artificial intelligence and climate change.
 
-* **Research:** We regularly publish papers at the frontiers of artificial intelligence and climate change. Our current focus areas are in climate science and sustainable energy. 
+* **Research:** We regularly publish papers at the frontiers of artificial intelligence and climate change. Our current focus areas are in climate science and sustainable energy. See representative works papers [here](https://arxiv.org/abs/2301.10343) and [here](https://www.nature.com/articles/s41586-020-1994-5).
 
-* **Software:** We believe in open and reproducible science. Not just doing it, but enabling it. We develop and maintain dataset benchmarks and [software](https://climatelearn.readthedocs.io/en/latest/) for pushing data-driven climate science.
+* **Software:** We believe in open and reproducible science. Not just doing it, but enabling it. We develop and maintain [dataset benchmarks and software](https://climatelearn.readthedocs.io/en/latest/) for pushing data-driven climate science.
 
 * **Education:** We develop accessible courses and [tutorials](https://www.climatechange.ai/papers/neurips2022/114) to on board students, researchers, and practitioners with different backgrounds.
 
-* **Community:** Our efforts are aimed at an interdisciplinary audience of researchers, practitioners, policy makers, and concerned citizens. We write [perspectives](https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/aaaifss2022/17/paper.pdf) and blog articles for broader audiences, and organize [events](https://ai4climatescience.github.io/) that engage diverse stakeholders.
+* **Community:** Our efforts are aimed at an interdisciplinary audience of researchers, practitioners, policy makers, and concerned citizens. We write [perspectives](https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/aaaifss2022/17/paper.pdf) and [blog articles](/blog/) for broader audiences, and organize [events](https://ai4climatescience.github.io/) that engage diverse stakeholders.
 
 
 
 
 # news
+
+* Tung and Aditya, along with collaborators from Microsoft, recently released [ClimaX](https://arxiv.org/abs/2301.10343), the first foundation model for weather and climate. We are excited by the [public response](https://twitter.com/tungnd_13/status/1618642574427959296) so far, and have many interesting followups in store.
 
 * We launched our PyTorch library [ClimateLearn](/blog/2023/climate-learn/) and humbled by the [public response](https://twitter.com/adityagrover_/status/1613975759206625281?s=20) so far.
 
