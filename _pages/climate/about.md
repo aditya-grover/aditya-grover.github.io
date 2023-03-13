@@ -10,7 +10,7 @@ nav_order: 5
 
 Climate change is the defining challenge for the future of human civilization. For many decades, data-driven solutions have been a key component for understanding climate science, and efforts in mitigating and adapting to climate change. However, data science is undergoing a paradigm shift, driven in large by the development of modern machine learning systems that can play complex games, write stories, generate art, and much more.  What's in store for climate change research?
 
-In the ML4Climate initiative led by Prof. Aditya Grover, we are pioneering the next generation of machine learning algorithms and frameworks that will inform the science, technology, and policy in mitigating and adapting to the changing climate. Our work broadly centers on 4 pillars at the intersection of artificial intelligence and climate change.
+In the ML4Climate initiative led by Prof. Aditya Grover, the members of [MINT group](https://aditya-grover.github.io/group/) work with a range of external collaborators to pioneer the next generation of machine learning algorithms and frameworks that will inform the science, technology, and policy in mitigating and adapting to the changing climate. Our work broadly centers on 4 pillars at the intersection of artificial intelligence and climate change.
 
 * **Research:** We regularly publish papers at the frontiers of artificial intelligence and climate change. Our current focus areas are in climate science and sustainable energy. See representative works papers [here](https://arxiv.org/abs/2301.10343) and [here](https://www.nature.com/articles/s41586-020-1994-5).
 

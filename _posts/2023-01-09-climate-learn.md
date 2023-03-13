@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: Introducing ClimateLearn
+title: Launching ClimateLearn
 description: ClimateLearn is a Python library for accessing state-of-the-art climate data and machine learning models in a standardized, straightforward way.
 giscus_comments: true
 date: 2023-01-09
