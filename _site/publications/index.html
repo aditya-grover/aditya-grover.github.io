@@ -132,15 +132,272 @@
 
           <article>
             <!-- _pages/publications.md -->
-<p>see <a href="https://scholar.google.com/citations?user=oOhnPUgAAAAJ&amp;hl=en&amp;authuser=1" rel="external nofollow noopener" target="_blank">Google Scholar</a> for the most updated information.</p>
+<p>see <a href="https://scholar.google.com/citations?user=oOhnPUgAAAAJ&amp;hl=en&amp;authuser=1" rel="external nofollow noopener" target="_blank">Google Scholar</a> for the most up-to-date information.</p>
 
 <div class="publications">
+
+<h2 class="preprints">recent preprints</h2>
+  <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="nguyen2023climax" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">ClimaX: A foundation model for weather and climate</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Tung Nguyen, Johannes Brandstetter, Ashish Kapoor, Jayesh K Gupta, and Aditya Grover</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv preprint arXiv:2301.10343</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2301.10343" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <br>
+            <b><font style="color:DarkRed"> Spotlight Oral Presentation at the ICLR Workshop on Tackling Climate Change with Machine Learning </font></b>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Most state-of-the-art approaches for weather and climate modeling are based on physics-informed numerical models of the atmosphere. These approaches aim to model the non-linear dynamics and complex interactions between multiple variables, which are challenging to approximate. Additionally, many such numerical models are computationally intensive, especially when modeling the atmospheric phenomenon at a fine-grained spatial and temporal resolution. Recent data-driven approaches based on machine learning instead aim to directly solve a downstream forecasting or projection task by learning a data-driven functional mapping using deep neural networks. However, these networks are trained using curated and homogeneous climate datasets for specific spatiotemporal tasks, and thus lack the generality of numerical models. We develop and demonstrate ClimaX, a flexible and generalizable deep learning model for weather and climate science that can be trained using heterogeneous datasets spanning different variables, spatio-temporal coverage, and physical groundings. ClimaX extends the Transformer architecture with novel encoding and aggregation blocks that allow effective use of available compute while maintaining general utility. ClimaX is pre-trained with a self-supervised learning objective on climate datasets derived from CMIP6. The pre-trained ClimaX can then be fine-tuned to address a breadth of climate and weather tasks, including those that involve atmospheric variables and spatio-temporal scales unseen during pretraining. Compared to existing data-driven baselines, we show that this generality in ClimaX results in superior performance on benchmarks for weather forecasting and climate projections, even when pretrained at lower resolutions and compute budgets.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="bansal2023leaving" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Leaving Reality to Imagination: Robust Classification via Generated Datasets</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Hritik Bansal, and Aditya Grover</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="/assets/pdf/Recent%20research%20on%20robustness%20has%20revealed%20significant%20performance%20gaps%20between%20neural%20image%20classifiers%20trained%20on%20datasets%20that%20are%20similar%20to%20the%20test%20set,%20and%20those%20that%20are%20from%20a%20naturally%20shifted%20distribution,%20such%20as%20sketches,%20paintings,%20and%20animations%20of%20the%20object%20categories%20observed%20during%20training.%20Prior%20work%20focuses%20on%20reducing%20this%20gap%20by%20designing%20engineered%20augmentations%20of%20training%20data%20or%20through%20unsupervised%20pretraining%20of%20a%20single%20large%20model%20on%20massive%20in-the-wild%20training%20datasets%20scraped%20from%20the%20Internet.%20However,%20the%20notion%20of%20a%20dataset%20is%20also%20undergoing%20a%20paradigm%20shift%20in%20recent%20years.%20With%20drastic%20improvements%20in%20the%20quality,%20ease-of-use,%20and%20access%20to%20modern%20generative%20models,%20generated%20data%20is%20pervading%20the%20web.%20In%20this%20light,%20we%20study%20the%20question:%20How%20do%20these%20generated%20datasets%20influence%20the%20natural%20robustness%20of%20image%20classifiers?%20We%20find%20that%20Imagenet%20classifiers%20trained%20on%20real%20data%20augmented%20with%20generated%20data%20achieve%20higher%20accuracy%20and%20effective%20robustness%20than%20standard%20training%20and%20popular%20augmentation%20strategies%20in%20the%20presence%20of%20natural%20distribution%20shifts.%20We%20analyze%20various%20factors%20influencing%20these%20results,%20including%20the%20choice%20of%20conditioning%20strategies%20and%20the%20amount%20of%20generated%20data.%20Lastly,%20we%20introduce%20and%20analyze%20an%20evolving%20generated%20dataset,%20ImageNet-G-v1,%20to%20better%20benchmark%20the%20design,%20utility,%20and%20critique%20of%20standalone%20generated%20datasets%20for%20robust%20and%20trustworthy%20machine%20learning." class="btn btn-sm z-depth-0" role="button">PDF</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>https://arxiv.org/abs/2302.02503</p>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
+
+  <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="krishnamoorthy2022generative" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Generative pretraining for black-box optimization</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Siddarth Krishnamoorthy, Satvik Mehul Mashkaria, and Aditya Grover</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv preprint arXiv:2206.10786</em>, 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2206.10786" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <br>
+            <b><font style="color:DarkRed"> Oral Presentation at the NeurIPS Workshop on Foundation Models for Decision Making </font></b>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Many problems in science and engineering involve optimizing an expensive black-box function over a high-dimensional space. For such black-box optimization (BBO) problems, we typically assume a small budget for online function evaluations, but also often have access to a fixed, offline dataset for pretraining. Prior approaches seek to utilize the offline data to approximate the function or its inverse but are not sufficiently accurate far from the data distribution. We propose BONET, a generative framework for pretraining a novel black-box optimizer using offline datasets. In BONET, we train an autoregressive model on fixed-length trajectories derived from an offline dataset. We design a sampling strategy to synthesize trajectories from offline data using a simple heuristic of rolling out monotonic transitions from low-fidelity to high-fidelity samples. Empirically, we instantiate BONET using a causally masked Transformer and evaluate it on Design-Bench, where we rank the best on average, outperforming state-of-the-art baselines.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="nguyen2022reliable" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Reliable Conditioning of Behavioral Cloning for Offline Reinforcement Learning</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Tung Nguyen, Qinqing Zheng, and Aditya Grover</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv preprint arXiv:2210.05158</em>, 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2210.05158" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Behavioral cloning (BC) provides a straightforward solution to offline RL by mimicking offline trajectories via supervised learning. Recent advances (Chen et al., 2021; Janner et al., 2021; Emmons et al., 2021) have shown that by conditioning on desired future returns, BC can perform competitively to their value-based counterparts, while enjoying much more simplicity and training stability. While promising, we show that these methods can be unreliable, as their performance may degrade significantly when conditioned on high, out-of-distribution (ood) returns. This is crucial in practice, as we often expect the policy to perform better than the offline dataset by conditioning on an ood value. We show that this unreliability arises from both the suboptimality of training data and model architectures. We propose ConserWeightive Behavioral Cloning (CWBC), a simple and effective method for improving the reliability of conditional BC with two key components: trajectory weighting and conservative regularization. Trajectory weighting upweights the high-return trajectories to reduce the train-test gap for BC methods, while conservative regularizer encourages the policy to stay close to the data distribution for ood conditioning. We study CWBC in the context of RvS (Emmons et al., 2021) and Decision Transformers (Chen et al., 2021), and show that CWBC significantly boosts their performance on various benchmarks.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="zheng2022semi" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Semi-Supervised Offline Reinforcement Learning with Action-Free Trajectories</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Qinqing Zheng, Mikael Henaff, Brandon Amos, and Aditya Grover</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv preprint arXiv:2210.06518</em>, 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2210.06518" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Natural agents can effectively learn from multiple data sources that differ in size, quality, and types of measurements. We study this heterogeneity in the context of offline reinforcement learning (RL) by introducing a new, practically motivated semi-supervised setting. Here, an agent has access to two sets of trajectories: labelled trajectories containing state, action, reward triplets at every timestep, along with unlabelled trajectories that contain only state and reward information. For this setting, we develop and study a simple meta-algorithmic pipeline that learns an inverse dynamics model on the labelled data to obtain proxy-labels for the unlabelled data, followed by the use of any offline RL algorithm on the true and proxy-labelled trajectories. Empirically, we find this simple pipeline to be highly successful - on several D4RL benchmarks, certain offline RL algorithms can match the performance of variants trained on a fully labelled dataset even when we label only 10% trajectories from the low return regime. To strengthen our understanding, we perform a large-scale controlled empirical study investigating the interplay of data-centric properties of the labelled and unlabelled datasets, with algorithmic design choices (e.g., choice of inverse dynamics, offline RL algorithm) to identify general trends and best practices for training RL agents on semi-supervised offline datasets.</p>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
+
+  <ol class="bibliography"></ol>
+
+  <ol class="bibliography"></ol>
+
+  <ol class="bibliography"></ol>
+
+  <ol class="bibliography"></ol>
+
+  <ol class="bibliography"></ol>
+
+  <ol class="bibliography"></ol>
+
+
+
+<h2 class="articles">journal and conference articles</h2>
+  <h2 class="year">2023</h2>
+  <ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ICLR</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="zhuscaling" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Scaling Pareto-Efficient Decision Making via Offline Multi-Objective RL</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Baiting Zhu, Meihua Dang, and Aditya Grover</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In International Conference on Learning Representations (ICLR)</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://openreview.net/forum?id=Ki4ocDm364" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The goal of multi-objective reinforcement learning (MORL) is to learn policies that simultaneously optimize multiple competing objectives. In practice, an agent’s preferences over the objectives may not be known apriori, and hence, we require policies that can generalize to arbitrary preferences at test time. In this work, we propose a new data-driven setup for offline MORL, where we wish to learn a preference-agnostic policy agent using only a finite dataset of offline demonstrations of other agents and their preferences. The key contributions of this work are two-fold. First, we introduce D4MORL, (D)atasets for MORL that are specifically designed for offline settings. It contains 1.8 million annotated demonstrations obtained by rolling out reference policies that optimize for randomly sampled preferences on 6 MuJoCo environments with 2-3 objectives each. Second, we propose Pareto-Efficient Decision Agents (PEDA), a family of offline MORL algorithms that builds and extends Decision Transformers via a novel preference-and-return-conditioned policy. Empirically, we show that PEDA closely approximates the behavioral policy on the D4MORL benchmark and provides an excellent approximation of the Pareto-front with appropriate conditioning, as measured by the hypervolume and sparsity metrics. </p>
+          </div>
+        </div>
+      </div>
+</li></ol>
+
   <h2 class="year">2022</h2>
   <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">TMLR</abbr></div>
 
         <!-- Entry bib key -->
         <div id="bose2022controllable" class="col-sm-8">
@@ -164,17 +421,21 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a href="https://openreview.net/forum?id=Z44YAcLaGw" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Deep latent variable generative models excel at generating complex, high-dimensional data, often exhibiting impressive generalization beyond the training distribution. However, many such models in use today are black-boxes trained on large unlabelled datasets with statistical objectives and lack an interpretable understanding of the latent space required for controlling the generative process. We propose CAGE, a framework for controllable generation in latent variable models based on causal reasoning. Given a pair of attributes, CAGE infers the implicit cause-effect relationships between these attributes as induced by a deep generative model. This is achieved by defining and estimating a novel notion of unit-level causal effects in the latent space of the generative model. Thereafter, we use the inferred cause-effect relationships to design a novel strategy for controllable generation based on counterfactual sampling. Through a series of large-scale synthetic and human evaluations, we demonstrate that generating counterfactual samples which respect the underlying causal relationships inferred via CAGE leads to subjectively more realistic images.</p>
+          </div>
         </div>
       </div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="liu2022masked" class="col-sm-8">
@@ -198,17 +459,22 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a href="https://arxiv.org/abs/2211.12740" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://github.com/FangchenLiu/MaskDP_public" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>We are interested in learning scalable agents for reinforcement learning that can learn from large-scale, diverse sequential data similar to current large vision and language models. To this end, this paper presents masked decision prediction (MaskDP), a simple and scalable self-supervised pretraining method for reinforcement learning (RL) and behavioral cloning (BC). In our MaskDP approach, we employ a masked autoencoder (MAE) to state-action trajectories, wherein we randomly mask state and action tokens and reconstruct the missing data. By doing so, the model is required to infer masked out states and actions and extract information about dynamics. We find that masking different proportions of the input sequence significantly helps with learning a better model that generalizes well to multiple downstream tasks. In our empirical study we ﬁnd that a MaskDP model gains the capability of zero-shot transfer to new BC tasks, such as single and multiple goal reaching, and it can zero-shot infer skills from a few example transitions. In addition, MaskDP transfers well to offline RL and shows promising scaling behavior w.r.t. to model size. It is amenable to data efficient finetuning, achieving competitive results with prior methods based on autoregressive pretraining.</p>
+          </div>
         </div>
       </div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="goel2022cyclip" class="col-sm-8">
@@ -232,17 +498,24 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a href="https://arxiv.org/abs/2205.14459" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://github.com/goel-shashank/CyCLIP" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <br>
+            <b><font style="color:DarkRed"> Oral Presentation [top 2%] </font></b>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Recent advances in contrastive representation learning over paired image-text data have led to models such as CLIP that achieve state-of-the-art performance for zero-shot classification and distributional robustness. Such models typically require joint reasoning in the image and text representation spaces for downstream inference tasks. Contrary to prior beliefs, we demonstrate that the image and text representations learned via a standard contrastive objective are not interchangeable and can lead to inconsistent downstream predictions. To mitigate this issue, we formalize consistency and propose CyCLIP, a framework for contrastive representation learning that explicitly optimizes for the learned representations to be geometrically consistent in the image and text space. In particular, we show that consistent representations can be learned by explicitly symmetrizing (a) the similarity between the two mismatched image-text pairs (cross-modal consistency); and (b) the similarity between the image-image pair and the text-text pair (in-modal consistency). Empirically, we show that the improved consistency in CyCLIP translates to significant gains over CLIP, with gains ranging from 10%-24% for zero-shot classification accuracy on standard benchmarks (CIFAR-10, CIFAR-100, ImageNet1K) and 10%-27% for robustness to various natural distribution shifts.</p>
+          </div>
         </div>
       </div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
 
         <!-- Entry bib key -->
         <div id="nguyen2022transformer" class="col-sm-8">
@@ -266,17 +539,62 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a href="https://arxiv.org/abs/2207.04179" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://github.com/tung-nd/TNP-pytorch" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Neural Processes (NPs) are a popular class of approaches for meta-learning. Similar to Gaussian Processes (GPs), NPs define distributions over functions and can estimate uncertainty in their predictions. However, unlike GPs, NPs and their variants suffer from underfitting and often have intractable likelihoods, which limit their applications in sequential decision making. We propose Transformer Neural Processes (TNPs), a new member of the NP family that casts uncertainty-aware meta learning as a sequence modeling problem. We learn TNPs via an autoregressive likelihood-based objective and instantiate it with a novel transformer-based architecture. The model architecture respects the inductive biases inherent to the problem structure, such as invariance to the observed data points and equivariance to the unobserved points. We further investigate knobs within the TNP framework that tradeoff expressivity of the decoding distribution with extra computation. Empirically, we show that TNPs achieve state-of-the-art performance on various benchmark problems, outperforming all previous NP variants on meta regression, image completion, contextual multi-armed bandits, and Bayesian optimization.</p>
+          </div>
         </div>
       </div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="zheng2022online" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Online decision transformer</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Qinqing Zheng, Amy Zhang, and Aditya Grover</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In International Conference on Machine Learning (ICML)</em>, 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2202.05607" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <br>
+            <b><font style="color:DarkRed"> Long Oral Presentation </font></b>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Recent work has shown that offline reinforcement learning (RL) can be formulated as a sequence modeling problem (Chen et al., 2021; Janner et al., 2021) and solved via approaches similar to large-scale language modeling. However, any practical instantiation of RL also involves an online component, where policies pretrained on passive offline datasets are finetuned via task-specific interactions with the environment. We propose Online Decision Transformers (ODT), an RL algorithm based on sequence modeling that blends offline pretraining with online finetuning in a unified framework. Our framework uses sequence-level entropy regularizers in conjunction with autoregressive modeling objectives for sample-efficient exploration and finetuning. Empirically, we show that ODT is competitive with the state-of-the-art in abstractolute performance on the D4RL benchmark but shows much more significant gains during the finetuning procedure.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
 
         <!-- Entry bib key -->
         <div id="ben2022matching" class="col-sm-8">
@@ -300,51 +618,21 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a href="https://arxiv.org/abs/2207.04179" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
 
-          
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="lu2022pretrained" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Pretrained transformers as universal computation engines</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Kevin Lu, Aditya Grover, Pieter Abbeel, and Igor Mordatch</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In AAAI Conference on Artificial Intelligence</em>, 2022
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a href="https://arxiv.org/abs/2103.05247" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Continuous Normalizing Flows (CNFs) are a class of generative models that transform a prior distribution to a model distribution by solving an ordinary differential equation (ODE). We propose to train CNFs on manifolds by minimizing probability path divergence (PPD), a novel family of divergences between the probability density path generated by the CNF and a target probability density path. PPD is formulated using a logarithmic mass conservation formula which is a linear first order partial differential equation relating the log target probabilities and the CNF’s defining vector field. PPD has several key benefits over existing methods: it sidesteps the need to solve an ODE per iteration, readily applies to manifold data, scales to high dimensions, and is compatible with a large family of target paths interpolating pure noise and data in finite time. Theoretically, PPD is shown to bound classical probability divergences. Empirically, we show that CNFs learned by minimizing PPD achieve state-of-the-art results in likelihoods and sample quality on existing low-dimensional manifold benchmarks, and is the first example of a generative model to scale to moderately high dimensional manifolds.</p>
           </div>
-
-          
         </div>
       </div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ICLR</abbr></div>
 
         <!-- Entry bib key -->
         <div id="du2022takes" class="col-sm-8">
@@ -368,17 +656,22 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a href="https://arxiv.org/abs/2202.10608" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://github.com/yuqingd/cusp" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>We are interested in training general-purpose reinforcement learning agents that can solve a wide variety of goals. Training such agents efficiently requires automatic generation of a goal curriculum. This is challenging as it requires (a) exploring goals of increasing difficulty, while ensuring that the agent (b) is exposed to a diverse set of goals in a sample efficient manner and (c) does not catastrophically forget previously solved goals. We propose Curriculum Self Play (CuSP), an automated goal generation framework that seeks to satisfy these desiderata by virtue of a multi-player game with four agents. We extend the asymmetric curricula learning in PAIRED (Dennis et al., 2020) to a symmetrized game that carefully balances cooperation and competition between two off-policy student learners and two regret-maximizing teachers. CuSP additionally introduces entropic goal coverage and accounts for the non-stationary nature of the students, allowing us to automatically induce a curriculum that balances progressive exploration with anti-catastrophic exploitation. We demonstrate that our method succeeds at generating an effective curricula of goals for a range of control tasks, outperforming other methods at zero-shot test-time generalization to novel out-of-distribution goals.</p>
+          </div>
         </div>
       </div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ICLR</abbr></div>
 
         <!-- Entry bib key -->
         <div id="puny2022frame" class="col-sm-8">
@@ -402,10 +695,53 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a href="https://arxiv.org/abs/2110.03336" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://github.com/omri1348/Frame-Averaging" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           </div>
 
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Many machine learning tasks involve learning functions that are known to be invariant or equivariant to certain symmetries of the input data. However, it is often challenging to design neural network architectures that respect these symmetries while being expressive and computationally efficient. For example, Euclidean motion invariant/equivariant graph or point cloud neural networks. We introduce Frame Averaging (FA), a general purpose and systematic framework for adapting known (backbone) architectures to become invariant or equivariant to new symmetry types. Our framework builds on the well known group averaging operator that guarantees invariance or equivariance but is intractable. In contrast, we observe that for many important classes of symmetries, this operator can be replaced with an averaging operator over a small subset of the group elements, called a frame. We show that averaging over a frame guarantees exact invariance or equivariance while often being much simpler to compute than averaging over the entire group. Furthermore, we prove that FA-based models have maximal expressive power in a broad setting and in general preserve the expressive power of their backbone architectures. Using frame averaging, we propose a new class of universal Graph Neural Networks (GNNs), universal Euclidean motion invariant point cloud networks, and Euclidean motion invariant Message Passing (MP) GNNs. We demonstrate the practical effectiveness of FA on several applications including point cloud normal estimation, beyond 2-WL graph separation, and n-body dynamics prediction, achieving state-of-the-art results in all of these benchmarks.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">AAAI</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="lu2022pretrained" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Pretrained transformers as universal computation engines</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Kevin Lu, Aditya Grover, Pieter Abbeel, and Igor Mordatch</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In AAAI Conference on Artificial Intelligence</em>, 2022
+        </div>
+        <div class="periodical">
           
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2103.05247" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>We investigate the capability of a transformer pretrained on natural language to generalize to other modalities with minimal finetuning – in particular, without finetuning of the self-attention and feedforward layers of the residual blocks. We consider such a model, which we call a Frozen Pretrained Transformer (FPT), and study finetuning it on a variety of sequence classification tasks spanning numerical computation, vision, and protein fold prediction. In contrast to prior works which investigate finetuning on the same modality as the pretraining dataset, we show that pretraining on natural language can improve performance and compute efficiency on non-language downstream tasks. Additionally, we perform an analysis of the architecture, comparing the performance of a random initialized transformer to a random LSTM. Combining the two insights, we find language-pretrained transformers can obtain strong performance on a variety of non-language tasks.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -416,23 +752,23 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="puny2021frame" class="col-sm-8">
+        <div id="rozen2021moser" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Frame averaging for invariant and equivariant network design</div>
+        <div class="title">Moser flow: Divergence-based generative modeling on manifolds</div>
         <!-- Author -->
         <div class="author">
         
 
-        Omri Puny, Matan Atzmon, Heli Ben-Hamu, Edward J Smith, Ishan Misra, Aditya Grover, and Yaron Lipman</div>
+        Noam Rozen, Aditya Grover, Maximilian Nickel, and Yaron Lipman</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In International Conference on Learning Representations (ICLR)</em>, 2021
+          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2021
         </div>
         <div class="periodical">
           
@@ -440,7 +776,9 @@
 
           <!-- Links/Buttons -->
           <div class="links">
-            <a href="https://arxiv.org/abs/2110.03336" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://arxiv.org/abs/2108.08052" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <br>
+            <b><font style="color:DarkRed"> Outstanding Paper Award </font></b>
           </div>
 
           
@@ -450,41 +788,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="jiang2021bayesian" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Bayesian learning for rapid prediction of lithium-ion battery-cycling protocols</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Benben Jiang, William E Gent, Fabian Mohr, Supratim Das, Marc D Berliner, Michael Forsuelo, Hongbo Zhao, Peter M Attia, Aditya Grover, Patrick K Herring, and  others</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Joule</em>, 2021
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a href="https://www.cell.com/joule/pdf/S2542-4351(21)00454-2.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-          </div>
-
-          
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="cundy2021bcd" class="col-sm-8">
@@ -518,7 +822,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="swezey2021pirank" class="col-sm-8">
@@ -552,7 +856,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="chen2021decision" class="col-sm-8">
@@ -586,23 +890,23 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">Joule</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="rozen2021moser" class="col-sm-8">
+        <div id="jiang2021bayesian" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Moser flow: Divergence-based generative modeling on manifolds</div>
+        <div class="title">Bayesian learning for rapid prediction of lithium-ion battery-cycling protocols</div>
         <!-- Author -->
         <div class="author">
         
 
-        Noam Rozen, Aditya Grover, Maximilian Nickel, and Yaron Lipman</div>
+        Benben Jiang, William E Gent, Fabian Mohr, Supratim Das, Marc D Berliner, Michael Forsuelo, Hongbo Zhao, Peter M Attia, Aditya Grover, Patrick K Herring, and  others</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2021
+          <em>Joule</em>, 2021
         </div>
         <div class="periodical">
           
@@ -610,7 +914,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
-            <a href="https://arxiv.org/abs/2108.08052" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://www.cell.com/joule/pdf/S2542-4351(21)00454-2.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
 
           
@@ -620,41 +924,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="guo2021learning" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Learning from an Exploring Demonstrator: Optimal Reward Estimation for Bandits</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Wenshuo Guo, Kumar Krishna Agrawal, Aditya Grover, Vidya Muthukumar, and Ashwin Pananjady</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2021
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a href="https://arxiv.org/abs/2106.14866" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-          </div>
-
-          
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ICLR</abbr></div>
 
         <!-- Entry bib key -->
         <div id="xu2021anytime" class="col-sm-8">
@@ -688,7 +958,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ICLR</abbr></div>
 
         <!-- Entry bib key -->
         <div id="lu2021reset" class="col-sm-8">
@@ -719,30 +989,26 @@
         </div>
       </div>
 </li>
-</ol>
-
-  <h2 class="year">2020</h2>
-  <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">AISTATS</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="grover2020fair" class="col-sm-8">
+        <div id="guo2021learning" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Fair Generative Modeling via Weak Supervision</div>
+        <div class="title">Learning from an Exploring Demonstrator: Optimal Reward Estimation for Bandits</div>
         <!-- Author -->
         <div class="author">
         
 
-        Kristy Choi, Aditya Grover, Trisha Singh, Rui Shu, and Stefano Ermon</div>
+        Wenshuo Guo, Kumar Krishna Agrawal, Aditya Grover, Vidya Muthukumar, and Ashwin Pananjady</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In International Conference on Machine Learning (ICML)</em>, 2020
+          <em>In International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2021
         </div>
         <div class="periodical">
           
@@ -750,17 +1016,21 @@
 
           <!-- Links/Buttons -->
           <div class="links">
-            <a href="https://arxiv.org/abs/1910.12008" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://arxiv.org/abs/2106.14866" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
 
           
         </div>
       </div>
 </li>
+</ol>
+
+  <h2 class="year">2020</h2>
+  <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">Nature</abbr></div>
 
         <!-- Entry bib key -->
         <div id="attia2019closed" class="col-sm-8">
@@ -794,23 +1064,23 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="aaai20" class="col-sm-8">
+        <div id="grover2020fair" class="col-sm-8">
         <!-- Title -->
-        <div class="title">AlignFlow: Cycle Consistent Learning from Multiple Domains via Normalizing Flows</div>
+        <div class="title">Fair Generative Modeling via Weak Supervision</div>
         <!-- Author -->
         <div class="author">
         
 
-        Aditya Grover, Christopher Chute, Rui Shu, Zhangjie Cao, and Stefano Ermon</div>
+        Kristy Choi, Aditya Grover, Trisha Singh, Rui Shu, and Stefano Ermon</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In AAAI Conference on Artificial Intelligence</em>, 2020
+          <em>In International Conference on Machine Learning (ICML)</em>, 2020
         </div>
         <div class="periodical">
           
@@ -818,7 +1088,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
-            <a href="https://arxiv.org/abs/1905.12892" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://arxiv.org/abs/1910.12008" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
 
           
@@ -828,7 +1098,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">AISTATS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="niu2019permutation" class="col-sm-8">
@@ -859,6 +1129,40 @@
         </div>
       </div>
 </li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">AAAI</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="aaai20" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">AlignFlow: Cycle Consistent Learning from Multiple Domains via Normalizing Flows</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Aditya Grover, Christopher Chute, Rui Shu, Zhangjie Cao, and Stefano Ermon</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In AAAI Conference on Artificial Intelligence</em>, 2020
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a href="https://arxiv.org/abs/1905.12892" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
 </ol>
 
   <h2 class="year">2019</h2>
@@ -866,7 +1170,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="neurips19" class="col-sm-8">
@@ -899,7 +1203,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
 
         <!-- Entry bib key -->
         <div id="icml19a" class="col-sm-8">
@@ -932,7 +1236,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
 
         <!-- Entry bib key -->
         <div id="icml19b" class="col-sm-8">
@@ -965,7 +1269,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ICLR</abbr></div>
 
         <!-- Entry bib key -->
         <div id="iclr19" class="col-sm-8">
@@ -998,7 +1302,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">AISTATS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="aistats19a" class="col-sm-8">
@@ -1031,7 +1335,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">AISTATS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="aistats19b" class="col-sm-8">
@@ -1068,7 +1372,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="neurips18" class="col-sm-8">
@@ -1101,7 +1405,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
 
         <!-- Entry bib key -->
         <div id="icml18a" class="col-sm-8">
@@ -1134,7 +1438,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
 
         <!-- Entry bib key -->
         <div id="icml18b" class="col-sm-8">
@@ -1167,40 +1471,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="aistats18a" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Variational Rejection Sampling</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Aditya Grover, Ramki Gummadi, Miguel Lazaro-Gredilla, Dale Schuurmans, and Stefano Ermon</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2018
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-          </div>
-
-          
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">AISTATS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="aistats18b" class="col-sm-8">
@@ -1233,7 +1504,73 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">AISTATS</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="aistats18a" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Variational Rejection Sampling</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Aditya Grover, Ramki Gummadi, Miguel Lazaro-Gredilla, Dale Schuurmans, and Stefano Ermon</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2018
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">AAMAS</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="aamas18" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Evaluating Generalization in Multiagent Systems using Agent-Interaction Graphs</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Aditya Grover, Maruan Al-Shedivat, Jayesh K Gupta, Yuri Burda, and Harrison Edwards</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</em>, 2018
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">AAAI</abbr></div>
 
         <!-- Entry bib key -->
         <div id="aaai18b" class="col-sm-8">
@@ -1266,7 +1603,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">AAAI</abbr></div>
 
         <!-- Entry bib key -->
         <div id="aaai18a" class="col-sm-8">
@@ -1296,39 +1633,6 @@
         </div>
       </div>
 </li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="aamas18" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Evaluating Generalization in Multiagent Systems using Agent-Interaction Graphs</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Aditya Grover, Maruan Al-Shedivat, Jayesh K Gupta, Yuri Burda, and Harrison Edwards</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</em>, 2018
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-          </div>
-
-          
-        </div>
-      </div>
-</li>
 </ol>
 
   <h2 class="year">2016</h2>
@@ -1336,7 +1640,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="nips16" class="col-sm-8">
@@ -1369,7 +1673,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">KDD</abbr></div>
 
         <!-- Entry bib key -->
         <div id="kdd16" class="col-sm-8">
@@ -1402,7 +1706,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">IJCAI</abbr></div>
 
         <!-- Entry bib key -->
         <div id="ijcai16" class="col-sm-8">
@@ -1439,7 +1743,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">KDD</abbr></div>
 
         <!-- Entry bib key -->
         <div id="kdd15" class="col-sm-8">
@@ -1472,12 +1776,12 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">IJCAI</abbr></div>
 
         <!-- Entry bib key -->
         <div id="ijcai15" class="col-sm-8">
         <!-- Title -->
-        <div class="title">ASAP-UCT: abstraction of state-action pairs in UCT</div>
+        <div class="title">ASAP-UCT: abstracttraction of state-action pairs in UCT</div>
         <!-- Author -->
         <div class="author">
         
@@ -1505,12 +1809,12 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">AAMAS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="aamas15" class="col-sm-8">
         <!-- Title -->
-        <div class="title">A Novel Abstraction Framework for Online Planning</div>
+        <div class="title">A Novel abstracttraction Framework for Online Planning</div>
         <!-- Author -->
         <div class="author">
         
@@ -1536,6 +1840,7 @@
       </div>
 </li>
 </ol>
+
 
 
 </div>

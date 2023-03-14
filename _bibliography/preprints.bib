@@ -1,0 +1,54 @@
+---
+---
+
+@article{nguyen2023climax,
+  title={ClimaX: A foundation model for weather and climate},
+  author={Nguyen, Tung and Brandstetter, Johannes and Kapoor, Ashish and Gupta, Jayesh K and Grover, Aditya},
+  journal={arXiv preprint arXiv:2301.10343},
+  pdf={https://arxiv.org/abs/2301.10343},
+  abstract={Most state-of-the-art approaches for weather and climate modeling are based on physics-informed numerical models of the atmosphere. These approaches aim to model the non-linear dynamics and complex interactions between multiple variables, which are challenging to approximate. Additionally, many such numerical models are computationally intensive, especially when modeling the atmospheric phenomenon at a fine-grained spatial and temporal resolution. Recent data-driven approaches based on machine learning instead aim to directly solve a downstream forecasting or projection task by learning a data-driven functional mapping using deep neural networks. However, these networks are trained using curated and homogeneous climate datasets for specific spatiotemporal tasks, and thus lack the generality of numerical models. We develop and demonstrate ClimaX, a flexible and generalizable deep learning model for weather and climate science that can be trained using heterogeneous datasets spanning different variables, spatio-temporal coverage, and physical groundings. ClimaX extends the Transformer architecture with novel encoding and aggregation blocks that allow effective use of available compute while maintaining general utility. ClimaX is pre-trained with a self-supervised learning objective on climate datasets derived from CMIP6. The pre-trained ClimaX can then be fine-tuned to address a breadth of climate and weather tasks, including those that involve atmospheric variables and spatio-temporal scales unseen during pretraining. Compared to existing data-driven baselines, we show that this generality in ClimaX results in superior performance on benchmarks for weather forecasting and climate projections, even when pretrained at lower resolutions and compute budgets.},
+  award={Spotlight Oral Presentation at the ICLR Workshop on Tackling Climate Change with Machine Learning},
+  year={2023},
+  abbr={arXiv}
+}
+
+@preprint{bansal2023leaving,
+  title={Leaving Reality to Imagination: Robust Classification via Generated Datasets},
+  author={Bansal, Hritik and Grover, Aditya},
+  journal={arXiv preprint arXiv:2302.02503},
+  pdf={Recent research on robustness has revealed significant performance gaps between neural image classifiers trained on datasets that are similar to the test set, and those that are from a naturally shifted distribution, such as sketches, paintings, and animations of the object categories observed during training. Prior work focuses on reducing this gap by designing engineered augmentations of training data or through unsupervised pretraining of a single large model on massive in-the-wild training datasets scraped from the Internet. However, the notion of a dataset is also undergoing a paradigm shift in recent years. With drastic improvements in the quality, ease-of-use, and access to modern generative models, generated data is pervading the web. In this light, we study the question: How do these generated datasets influence the natural robustness of image classifiers? We find that Imagenet classifiers trained on real data augmented with generated data achieve higher accuracy and effective robustness than standard training and popular augmentation strategies in the presence of natural distribution shifts. We analyze various factors influencing these results, including the choice of conditioning strategies and the amount of generated data. Lastly, we introduce and analyze an evolving generated dataset, ImageNet-G-v1, to better benchmark the design, utility, and critique of standalone generated datasets for robust and trustworthy machine learning.},
+  abstract={https://arxiv.org/abs/2302.02503},
+  year={2023},
+  abbr={arXiv}
+}
+
+@article{krishnamoorthy2022generative,
+  title={Generative pretraining for black-box optimization},
+  author={Krishnamoorthy, Siddarth and Mashkaria, Satvik Mehul and Grover, Aditya},
+  journal={arXiv preprint arXiv:2206.10786},
+  pdf={https://arxiv.org/abs/2206.10786},
+  abstract={Many problems in science and engineering involve optimizing an expensive black-box function over a high-dimensional space. For such black-box optimization (BBO) problems, we typically assume a small budget for online function evaluations, but also often have access to a fixed, offline dataset for pretraining. Prior approaches seek to utilize the offline data to approximate the function or its inverse but are not sufficiently accurate far from the data distribution. We propose BONET, a generative framework for pretraining a novel black-box optimizer using offline datasets. In BONET, we train an autoregressive model on fixed-length trajectories derived from an offline dataset. We design a sampling strategy to synthesize trajectories from offline data using a simple heuristic of rolling out monotonic transitions from low-fidelity to high-fidelity samples. Empirically, we instantiate BONET using a causally masked Transformer and evaluate it on Design-Bench, where we rank the best on average, outperforming state-of-the-art baselines.},
+  year={2022},
+  award={Oral Presentation at the NeurIPS Workshop on Foundation Models for Decision Making},
+  abbr={arXiv}
+}
+
+@article{nguyen2022reliable,
+  title={Reliable Conditioning of Behavioral Cloning for Offline Reinforcement Learning},
+  author={Nguyen, Tung and Zheng, Qinqing and Grover, Aditya},
+  journal={arXiv preprint arXiv:2210.05158},
+  pdf={https://arxiv.org/abs/2210.05158},
+  abstract={Behavioral cloning (BC) provides a straightforward solution to offline RL by mimicking offline trajectories via supervised learning. Recent advances (Chen et al., 2021; Janner et al., 2021; Emmons et al., 2021) have shown that by conditioning on desired future returns, BC can perform competitively to their value-based counterparts, while enjoying much more simplicity and training stability. While promising, we show that these methods can be unreliable, as their performance may degrade significantly when conditioned on high, out-of-distribution (ood) returns. This is crucial in practice, as we often expect the policy to perform better than the offline dataset by conditioning on an ood value. We show that this unreliability arises from both the suboptimality of training data and model architectures. We propose ConserWeightive Behavioral Cloning (CWBC), a simple and effective method for improving the reliability of conditional BC with two key components: trajectory weighting and conservative regularization. Trajectory weighting upweights the high-return trajectories to reduce the train-test gap for BC methods, while conservative regularizer encourages the policy to stay close to the data distribution for ood conditioning. We study CWBC in the context of RvS (Emmons et al., 2021) and Decision Transformers (Chen et al., 2021), and show that CWBC significantly boosts their performance on various benchmarks.},
+  year={2022},
+  abbr={arXiv}
+}
+
+@article{zheng2022semi,
+  title={Semi-Supervised Offline Reinforcement Learning with Action-Free Trajectories},
+  author={Zheng, Qinqing and Henaff, Mikael and Amos, Brandon and Grover, Aditya},
+  journal={arXiv preprint arXiv:2210.06518},
+  pdf={https://arxiv.org/abs/2210.06518},
+  abstract={Natural agents can effectively learn from multiple data sources that differ in size, quality, and types of measurements. We study this heterogeneity in the context of offline reinforcement learning (RL) by introducing a new, practically motivated semi-supervised setting. Here, an agent has access to two sets of trajectories: labelled trajectories containing state, action, reward triplets at every timestep, along with unlabelled trajectories that contain only state and reward information. For this setting, we develop and study a simple meta-algorithmic pipeline that learns an inverse dynamics model on the labelled data to obtain proxy-labels for the unlabelled data, followed by the use of any offline RL algorithm on the true and proxy-labelled trajectories. Empirically, we find this simple pipeline to be highly successful - on several D4RL benchmarks, certain offline RL algorithms can match the performance of variants trained on a fully labelled dataset even when we label only 10% trajectories from the low return regime. To strengthen our understanding, we perform a large-scale controlled empirical study investigating the interplay of data-centric properties of the labelled and unlabelled datasets, with algorithmic design choices (e.g., choice of inverse dynamics, offline RL algorithm) to identify general trends and best practices for training RL agents on semi-supervised offline datasets.},
+  year={2022},
+  abbr={arXiv}
+}

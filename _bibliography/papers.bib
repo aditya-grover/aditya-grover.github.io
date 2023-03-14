@@ -1,12 +1,24 @@
 ---
 ---
 
+@inproceedings{zhuscaling,
+  title={Scaling Pareto-Efficient Decision Making via Offline Multi-Objective RL},
+  author={Zhu, Baiting and Dang, Meihua and Grover, Aditya},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2023},
+  abstract={The goal of multi-objective reinforcement learning (MORL) is to learn policies that simultaneously optimize multiple competing objectives. In practice, an agent's preferences over the objectives may not be known apriori, and hence, we require policies that can generalize to arbitrary preferences at test time. In this work, we propose a new data-driven setup for offline MORL, where we wish to learn a preference-agnostic policy agent using only a finite dataset of offline demonstrations of other agents and their preferences. The key contributions of this work are two-fold. First, we introduce D4MORL, (D)atasets for MORL that are specifically designed for offline settings. It contains 1.8 million annotated demonstrations obtained by rolling out reference policies that optimize for randomly sampled preferences on 6 MuJoCo environments with 2-3 objectives each. Second, we propose Pareto-Efficient Decision Agents (PEDA), a family of offline MORL algorithms that builds and extends Decision Transformers via a novel preference-and-return-conditioned policy. Empirically, we show that PEDA closely approximates the behavioral policy on the D4MORL benchmark and provides an excellent approximation of the Pareto-front with appropriate conditioning, as measured by the hypervolume and sparsity metrics. },
+  pdf={https://openreview.net/forum?id=Ki4ocDm364},
+  abbr={ICLR}
+}
+
 @article{bose2022controllable,
   title={Controllable Generative Modeling via Causal Reasoning},
   author={Bose, Joey and Monti, Ricardo Pio and Grover, Aditya},
   journal={Transactions of Machine Learning Research},
   pdf={https://openreview.net/forum?id=Z44YAcLaGw},
-  year={2022}
+  year={2022},
+  abstract={Deep latent variable generative models excel at generating complex, high-dimensional data, often exhibiting impressive generalization beyond the training distribution. However, many such models in use today are black-boxes trained on large unlabelled datasets with statistical objectives and lack an interpretable understanding of the latent space required for controlling the generative process. We propose CAGE, a framework for controllable generation in latent variable models based on causal reasoning. Given a pair of attributes, CAGE infers the implicit cause-effect relationships between these attributes as induced by a deep generative model. This is achieved by defining and estimating a novel notion of unit-level causal effects in the latent space of the generative model. Thereafter, we use the inferred cause-effect relationships to design a novel strategy for controllable generation based on counterfactual sampling. Through a series of large-scale synthetic and human evaluations, we demonstrate that generating counterfactual samples which respect the underlying causal relationships inferred via CAGE leads to subjectively more realistic images.},
+  abbr={TMLR}
 }
 
 @inproceedings{liu2022masked,
@@ -14,7 +26,10 @@
   author={Liu, Fangchen and Liu, Hao and Grover, Aditya and Abbeel, Pieter},
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
   pdf={https://arxiv.org/abs/2211.12740},
-  year={2022}
+  year={2022},
+  abstract={We are interested in learning scalable agents for reinforcement learning that can learn from large-scale, diverse sequential data similar to current large vision and language models. To this end, this paper presents masked decision prediction (MaskDP), a simple and scalable self-supervised pretraining method for reinforcement learning (RL) and behavioral cloning (BC). In our MaskDP approach, we employ a masked autoencoder (MAE) to state-action trajectories, wherein we randomly mask state and action tokens and reconstruct the missing data. By doing so, the model is required to infer masked out states and actions and extract information about dynamics. We find that masking different proportions of the input sequence significantly helps with learning a better model that generalizes well to multiple downstream tasks. In our empirical study we ﬁnd that a MaskDP model gains the capability of zero-shot transfer to new BC tasks, such as single and multiple goal reaching, and it can zero-shot infer skills from a few example transitions. In addition, MaskDP transfers well to offline RL and shows promising scaling behavior w.r.t. to model size. It is amenable to data efficient finetuning, achieving competitive results with prior methods based on autoregressive pretraining.},
+  code={https://github.com/FangchenLiu/MaskDP_public},
+  abbr={NeurIPS}
 }
 
 @inproceedings{goel2022cyclip,
@@ -22,23 +37,35 @@
   author={Goel, Shashank and Bansal, Hritik and Bhatia, Sumit and Rossi, Ryan A and Vinay, Vishwa and Grover, Aditya},
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
   pdf={https://arxiv.org/abs/2205.14459},
-  year={2022}
+  year={2022},
+  abbr={NeurIPS},
+  abstract={Recent advances in contrastive representation learning over paired image-text data have led to models such as CLIP that achieve state-of-the-art performance for zero-shot classification and distributional robustness. Such models typically require joint reasoning in the image and text representation spaces for downstream inference tasks. Contrary to prior beliefs, we demonstrate that the image and text representations learned via a standard contrastive objective are not interchangeable and can lead to inconsistent downstream predictions. To mitigate this issue, we formalize consistency and propose CyCLIP, a framework for contrastive representation learning that explicitly optimizes for the learned representations to be geometrically consistent in the image and text space. In particular, we show that consistent representations can be learned by explicitly symmetrizing (a) the similarity between the two mismatched image-text pairs (cross-modal consistency); and (b) the similarity between the image-image pair and the text-text pair (in-modal consistency). Empirically, we show that the improved consistency in CyCLIP translates to significant gains over CLIP, with gains ranging from 10%-24% for zero-shot classification accuracy on standard benchmarks (CIFAR-10, CIFAR-100, ImageNet1K) and 10%-27% for robustness to various natural distribution shifts.},
+  code={https://github.com/goel-shashank/CyCLIP},
+  award={Oral Presentation [top 2%]}
 }
 
-@inproceedings{puny2021frame,
-  title={Frame averaging for invariant and equivariant network design},
-  author={Puny, Omri and Atzmon, Matan and Ben-Hamu, Heli and Smith, Edward J and Misra, Ishan and Grover, Aditya and Lipman, Yaron},
-  booktitle={International Conference on Learning Representations (ICLR)},
-  pdf={https://arxiv.org/abs/2110.03336},
-  year={2021}
-}
+
+@inproceedings{zheng2022online, 
+  title={Online decision transformer}, 
+  author={Zheng, Qinqing and Zhang, Amy and Grover, Aditya}, 
+  booktitle={International Conference on Machine Learning (ICML)}, 
+  pages={27042--27059}, 
+  year={2022}, 
+  abbr={ICML},
+  pdf={https://arxiv.org/abs/2202.05607},
+  abstract={Recent work has shown that offline reinforcement learning (RL) can be formulated as a sequence modeling problem (Chen et al., 2021; Janner et al., 2021) and solved via approaches similar to large-scale language modeling. However, any practical instantiation of RL also involves an online component, where policies pretrained on passive offline datasets are finetuned via task-specific interactions with the environment. We propose Online Decision Transformers (ODT), an RL algorithm based on sequence modeling that blends offline pretraining with online finetuning in a unified framework. Our framework uses sequence-level entropy regularizers in conjunction with autoregressive modeling objectives for sample-efficient exploration and finetuning. Empirically, we show that ODT is competitive with the state-of-the-art in abstractolute performance on the D4RL benchmark but shows much more significant gains during the finetuning procedure.},
+  award={Long Oral Presentation}
+  }
 
 @inproceedings{nguyen2022transformer,
   title={Transformer neural processes: Uncertainty-aware meta learning via sequence modeling},
   author={Nguyen, Tung and Grover, Aditya},
   booktitle={International Conference on Machine Learning (ICML)},
   pdf={https://arxiv.org/abs/2207.04179},
-  year={2022}
+  year={2022},
+  abstract={Neural Processes (NPs) are a popular class of approaches for meta-learning. Similar to Gaussian Processes (GPs), NPs define distributions over functions and can estimate uncertainty in their predictions. However, unlike GPs, NPs and their variants suffer from underfitting and often have intractable likelihoods, which limit their applications in sequential decision making. We propose Transformer Neural Processes (TNPs), a new member of the NP family that casts uncertainty-aware meta learning as a sequence modeling problem. We learn TNPs via an autoregressive likelihood-based objective and instantiate it with a novel transformer-based architecture. The model architecture respects the inductive biases inherent to the problem structure, such as invariance to the observed data points and equivariance to the unobserved points. We further investigate knobs within the TNP framework that tradeoff expressivity of the decoding distribution with extra computation. Empirically, we show that TNPs achieve state-of-the-art performance on various benchmark problems, outperforming all previous NP variants on meta regression, image completion, contextual multi-armed bandits, and Bayesian optimization.},
+  code={https://github.com/tung-nd/TNP-pytorch},
+  abbr={ICML}
 }
 
 @inproceedings{ben2022matching,
@@ -46,7 +73,43 @@
   author={Ben-Hamu, Heli and Cohen, Samuel and Bose, Joey and Amos, Brandon and Grover, Aditya and Nickel, Maximilian and Chen, Ricky and Lipman, Yaron},
   booktitle={International Conference on Machine Learning (ICML)},
   pdf={https://arxiv.org/abs/2207.04179},
-  year={2022}
+  abstract={Continuous Normalizing Flows (CNFs) are a class of generative models that transform a prior distribution to a model distribution by solving an ordinary differential equation (ODE). We propose to train CNFs on manifolds by minimizing probability path divergence (PPD), a novel family of divergences between the probability density path generated by the CNF and a target probability density path. PPD is formulated using a logarithmic mass conservation formula which is a linear first order partial differential equation relating the log target probabilities and the CNF's defining vector field. PPD has several key benefits over existing methods: it sidesteps the need to solve an ODE per iteration, readily applies to manifold data, scales to high dimensions, and is compatible with a large family of target paths interpolating pure noise and data in finite time. Theoretically, PPD is shown to bound classical probability divergences. Empirically, we show that CNFs learned by minimizing PPD achieve state-of-the-art results in likelihoods and sample quality on existing low-dimensional manifold benchmarks, and is the first example of a generative model to scale to moderately high dimensional manifolds.},
+  year={2022},
+  abbr={ICML}
+}
+
+
+
+@inproceedings{lu2022pretrained,
+  title={Pretrained transformers as universal computation engines},
+  author={Lu, Kevin and Grover, Aditya and Abbeel, Pieter and Mordatch, Igor},
+  booktitle={AAAI Conference on Artificial Intelligence},
+  pdf={https://arxiv.org/abs/2103.05247},
+  year={2022},
+  abstract={We investigate the capability of a transformer pretrained on natural language to generalize to other modalities with minimal finetuning -- in particular, without finetuning of the self-attention and feedforward layers of the residual blocks. We consider such a model, which we call a Frozen Pretrained Transformer (FPT), and study finetuning it on a variety of sequence classification tasks spanning numerical computation, vision, and protein fold prediction. In contrast to prior works which investigate finetuning on the same modality as the pretraining dataset, we show that pretraining on natural language can improve performance and compute efficiency on non-language downstream tasks. Additionally, we perform an analysis of the architecture, comparing the performance of a random initialized transformer to a random LSTM. Combining the two insights, we find language-pretrained transformers can obtain strong performance on a variety of non-language tasks.},
+  abbr={AAAI}
+}
+
+@inproceedings{du2022takes,
+  title={It Takes Four to Tango: Multiagent Selfplay for Automatic Curriculum Generation},
+  author={Du, Yuqing and Abbeel, Pieter and Grover, Aditya},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  pdf={https://arxiv.org/abs/2202.10608},
+  year={2022},
+  abstract={We are interested in training general-purpose reinforcement learning agents that can solve a wide variety of goals. Training such agents efficiently requires automatic generation of a goal curriculum. This is challenging as it requires (a) exploring goals of increasing difficulty, while ensuring that the agent (b) is exposed to a diverse set of goals in a sample efficient manner and (c) does not catastrophically forget previously solved goals. We propose Curriculum Self Play (CuSP), an automated goal generation framework that seeks to satisfy these desiderata by virtue of a multi-player game with four agents. We extend the asymmetric curricula learning in PAIRED (Dennis et al., 2020) to a symmetrized game that carefully balances cooperation and competition between two off-policy student learners and two regret-maximizing teachers. CuSP additionally introduces entropic goal coverage and accounts for the non-stationary nature of the students, allowing us to automatically induce a curriculum that balances progressive exploration with anti-catastrophic exploitation. We demonstrate that our method succeeds at generating an effective curricula of goals for a range of control tasks, outperforming other methods at zero-shot test-time generalization to novel out-of-distribution goals.},
+  code={https://github.com/yuqingd/cusp},
+  abbr={ICLR}
+}
+
+@inproceedings{puny2022frame,
+  title={Frame averaging for invariant and equivariant network design},
+  author={Puny, Omri and Atzmon, Matan and Ben-Hamu, Heli and Smith, Edward J and Misra, Ishan and Grover, Aditya and Lipman, Yaron},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  pdf={https://arxiv.org/abs/2110.03336},
+  year={2022},
+  code={https://github.com/omri1348/Frame-Averaging},
+  abstract={Many machine learning tasks involve learning functions that are known to be invariant or equivariant to certain symmetries of the input data. However, it is often challenging to design neural network architectures that respect these symmetries while being expressive and computationally efficient. For example, Euclidean motion invariant/equivariant graph or point cloud neural networks. We introduce Frame Averaging (FA), a general purpose and systematic framework for adapting known (backbone) architectures to become invariant or equivariant to new symmetry types. Our framework builds on the well known group averaging operator that guarantees invariance or equivariance but is intractable. In contrast, we observe that for many important classes of symmetries, this operator can be replaced with an averaging operator over a small subset of the group elements, called a frame. We show that averaging over a frame guarantees exact invariance or equivariance while often being much simpler to compute than averaging over the entire group. Furthermore, we prove that FA-based models have maximal expressive power in a broad setting and in general preserve the expressive power of their backbone architectures. Using frame averaging, we propose a new class of universal Graph Neural Networks (GNNs), universal Euclidean motion invariant point cloud networks, and Euclidean motion invariant Message Passing (MP) GNNs. We demonstrate the practical effectiveness of FA on several applications including point cloud normal estimation, beyond 2-WL graph separation, and n-body dynamics prediction, achieving state-of-the-art results in all of these benchmarks.},
+  abbr={ICLR}
 }
 
 
@@ -59,33 +122,9 @@
   pages={3187--3203},
   year={2021},
   publisher={Elsevier},
-  pdf={https://www.cell.com/joule/pdf/S2542-4351(21)00454-2.pdf}
+  pdf={https://www.cell.com/joule/pdf/S2542-4351(21)00454-2.pdf},
+  abbr={Joule}
 }
-
-@inproceedings{lu2022pretrained,
-  title={Pretrained transformers as universal computation engines},
-  author={Lu, Kevin and Grover, Aditya and Abbeel, Pieter and Mordatch, Igor},
-  booktitle={AAAI Conference on Artificial Intelligence},
-  pdf={https://arxiv.org/abs/2103.05247},
-  year={2022}
-}
-
-@inproceedings{du2022takes,
-  title={It Takes Four to Tango: Multiagent Selfplay for Automatic Curriculum Generation},
-  author={Du, Yuqing and Abbeel, Pieter and Grover, Aditya},
-  booktitle={International Conference on Learning Representations (ICLR)},
-  pdf={https://arxiv.org/abs/2202.10608},
-  year={2022}
-}
-
-@inproceedings{puny2022frame,
-  title={Frame averaging for invariant and equivariant network design},
-  author={Puny, Omri and Atzmon, Matan and Ben-Hamu, Heli and Smith, Edward J and Misra, Ishan and Grover, Aditya and Lipman, Yaron},
-  booktitle={International Conference on Learning Representations (ICLR)},
-  pdf={https://arxiv.org/abs/2110.03336},
-  year={2022}
-}
-
 @article{cundy2021bcd,
   title={BCD nets: Scalable variational approaches for bayesian causal discovery},
   author={Cundy, Chris and Grover, Aditya and Ermon, Stefano},
@@ -93,7 +132,8 @@
   volume={34},
   pages={7095--7110},
   pdf={https://arxiv.org/abs/2112.02761},
-  year={2021}
+  year={2021},
+  abbr={NeurIPS}
 }
 
 @article{swezey2021pirank,
@@ -103,7 +143,8 @@
   volume={34},
   pages={21644--21654},
   pdf={https://arxiv.org/abs/2012.06731},
-  year={2021}
+  year={2021},
+  abbr={NeurIPS}
 }
 
 @article{chen2021decision,
@@ -113,7 +154,8 @@
   volume={34},
   pages={15084--15097},
   pdf={https://arxiv.org/abs/2106.01345},
-  year={2021}
+  year={2021},
+  abbr={NeurIPS}
 }
 
 @article{rozen2021moser,
@@ -123,7 +165,9 @@
   volume={34},
   pages={17669--17680},
   pdf={https://arxiv.org/abs/2108.08052},
-  year={2021}
+  year={2021},
+  abbr={NeurIPS},
+  award={Outstanding Paper Award}
 }
 
 @inproceedings{guo2021learning,
@@ -131,7 +175,8 @@
   author={Guo, Wenshuo and Agrawal, Kumar Krishna and Grover, Aditya and Muthukumar, Vidya and Pananjady, Ashwin},
   booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
   pdf={https://arxiv.org/abs/2106.14866},
-  year={2021}
+  year={2021},
+  abbr={AISTATS}
 }
 
 
@@ -142,7 +187,8 @@
   author={Xu, Yilun and Song, Yang and Garg, Sahaj and Gong, Linyuan and Shu, Rui and Grover, Aditya and Ermon, Stefano},
   booktitle={International Conference on Learning Representations (ICLR)},
   pdf={https://arxiv.org/abs/2102.11495},
-  year={2021}
+  year={2021},
+  abbr={ICLR}
 }
 
 @article{lu2021reset,
@@ -150,7 +196,8 @@
   author={Lu, Kevin and Grover, Aditya and Abbeel, Pieter and Mordatch, Igor},
   booktitle={International Conference on Learning Representations (ICLR)},
   pdf={https://arxiv.org/abs/2012.03548},
-  year={2021}
+  year={2021},
+  abbr={ICLR}
 }
 
 
@@ -159,7 +206,8 @@
   author={Choi, Kristy and Grover, Aditya and Singh, Trisha and Shu, Rui and Ermon, Stefano},
   booktitle={International Conference on Machine Learning (ICML)},
   pdf={https://arxiv.org/abs/1910.12008},
-  year={2020}
+  year={2020},
+  abbr={ICML}
 }
 
 @article{attia2019closed,
@@ -168,7 +216,8 @@
 Ermon,Stefano and Chueh, William},
 journal={Nature},
 pdf={https://www.nature.com/articles/s41586-020-1994-5},
-  year={2020}
+  year={2020},
+  abbr={Nature}
 }
 
 @inproceedings{aaai20,
@@ -176,7 +225,8 @@ pdf={https://www.nature.com/articles/s41586-020-1994-5},
   author={Grover, Aditya and Chute, Christopher and Shu, Rui and Cao, Zhangjie and Ermon, Stefano},
   booktitle={AAAI Conference on Artificial Intelligence},
   pdf={https://arxiv.org/abs/1905.12892},
-  year={2020}
+  year={2020},
+  abbr={AAAI}
 }
 
 
@@ -185,7 +235,8 @@ title={Permutation Invariant Graph Generation via Score-Based Generative Modelin
 author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Grover, Aditya and  and Ermon, Stefano},
   booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
   pdf={https://arxiv.org/abs/2003.00638},
-  year={2020}
+  year={2020},
+  abbr={AISTATS}
 }
 
 
@@ -193,14 +244,16 @@ author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Gro
   title={Bias Correction of Learned Generative Models using Likelihood-Free Importance Weighting},
   author={Grover, Aditya and Song, Jiaming and Agarwal, Alekh and Tran, Kenneth and Kapoor, Ashish and Horvitz, Eric and Ermon, Stefano},
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-  year={2019}
+  year={2019},
+  abbr={NeurIPS}
 }
 
 @inproceedings{icml19a,
   title={Graphite: Iterative generative modeling of graphs},
   author={Grover, Aditya and Zweig, Aaron and Ermon, Stefano},
   booktitle={International Conference on Machine Learning (ICML)},
-  year={2019}
+  year={2019},
+  abbr={ICML}
 }
 
 
@@ -208,7 +261,8 @@ author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Gro
   title={Neural Joint Source-Channel Coding},
   author={Choi, Kristy and Tatwawadi, Kedar and Grover, Aditya and Weissman, Tsachy and Ermon, Stefano},
   booktitle={International Conference on Machine Learning (ICML)},
-  year={2019}
+  year={2019},
+  abbr={ICML}
 }
 
 
@@ -217,7 +271,8 @@ author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Gro
   title={Stochastic Optimization of Sorting Networks via Continuous Relaxations},
   author={Grover, Aditya and Wang, Eric and Zweig, Aaron and Ermon, Stefano},
   booktitle={International Conference on Learning Representations (ICLR)},
-  year={2019}
+  year={2019},
+  abbr={ICLR}
 }
 
 
@@ -226,7 +281,8 @@ author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Gro
   title={Uncertainty Autoencoders: Learning Compressed Representations via Variational Information Maximization},
   author={Grover, Aditya and Ermon, Stefano},
   booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
-  year={2019}
+  year={2019},
+  abbr={AISTATS}
 }
 
 
@@ -234,7 +290,8 @@ author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Gro
   title={Learning Controllable Fair Representations},
   author={Song, Jiaming and Kalluri, Pratyusha and Grover, Aditya and Zhao, Shengjia and Ermon, Stefano},
   booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
-  year={2019}
+  year={2019},
+  abbr={AISTATS}
 }
 
 
@@ -242,7 +299,8 @@ author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Gro
   title={Streamlining variational inference for constraint satisfaction problems},
   author={Grover, Aditya and Achim, Tudor and Ermon, Stefano},
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-  year={2018}
+  year={2018},
+  abbr={NeurIPS}
 }
 
 
@@ -250,7 +308,8 @@ author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Gro
   title={Learning Policy Representations in Multiagent Systems},
   author={Grover, Aditya and Al-Shedivat, Maruan and Gupta, Jayesh K and Burda, Yura and Edwards, Harrison},
   booktitle={International Conference on Machine Learning (ICML)},
-  year={2018}
+  year={2018},
+  abbr={ICML}
 }
 
 
@@ -259,7 +318,8 @@ author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Gro
   title={Modeling sparse deviations for compressed sensing using generative models},
   author={Dhar, Manik and Grover, Aditya and Ermon, Stefano},
   booktitle={International Conference on Machine Learning (ICML)},
-  year={2018}
+  year={2018},
+  abbr={ICML}
 }
 
 
@@ -267,7 +327,8 @@ author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Gro
   title={Variational Rejection Sampling},
   author={Grover, Aditya and Gummadi, Ramki and Lazaro-Gredilla, Miguel and Schuurmans, Dale and Ermon, Stefano},
   booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
-  year={2018}
+  year={2018},
+  abbr={AISTATS}
 }
 
 
@@ -275,21 +336,24 @@ author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Gro
   title={Best arm identification in multi-armed bandits with delayed feedback},
   author={Grover, Aditya and Markov, Todor and Attia, Peter and Jin, Norman and Perkins, Nicholas and Cheong, Bryan and Chen, Michael and Yang, Zi and Harris, Stephen and Chueh, William and Ermon, Stefano},
   booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
-  year={2018}
+  year={2018},
+  abbr={AISTATS}
 }
 
 @inproceedings{aaai18b,
   title={Boosted generative models},
   author={Grover, Aditya and Ermon, Stefano},
   booktitle={AAAI Conference on Artificial Intelligence},
-  year={2018}
+  year={2018},
+  abbr={AAAI}
 }
 
 @inproceedings{aaai18a,
   title={Flow-GAN: Combining maximum likelihood and adversarial learning in generative models},
   author={Grover, Aditya and Dhar, Manik and Ermon, Stefano},
   booktitle={AAAI Conference on Artificial Intelligence},
-  year={2018}
+  year={2018},
+  abbr={AAAI}
 }
 
 
@@ -298,7 +362,8 @@ author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Gro
   title={Evaluating Generalization in Multiagent Systems using Agent-Interaction Graphs},
   author={Grover, Aditya and Al-Shedivat, Maruan and Gupta, Jayesh K and Burda, Yuri and Edwards, Harrison},
   booktitle={International Conference on Autonomous Agents and Multiagent Systems (AAMAS)},
-  year={2018}
+  year={2018},
+  abbr={AAMAS}
 }
 
 
@@ -306,7 +371,8 @@ author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Gro
   title={Variational {B}ayes on {M}onte {C}arlo Steroids},
   author={Grover, Aditya and Ermon, Stefano},
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-  year={2016}
+  year={2016},
+  abbr={NeurIPS}
 }
 
 
@@ -314,7 +380,8 @@ author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Gro
   title={node2vec: Scalable Feature Learning for Networks},
   author={Grover, Aditya and Leskovec, Jure},
   booktitle={International Conference on Knowledge Discovery and Data Mining (KDD)},
-  year={2016}
+  year={2016},
+  abbr={KDD}
 }
 
 
@@ -322,26 +389,30 @@ author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Gro
   title={Contextual Symmetries in Probabilistic Graphical Models},
   author={Anand, Ankit and Grover, Aditya and Mausam and Singla, Parag},
   booktitle={International Joint Conference on Artificial Intelligence (IJCAI)},
-  year={2016}
+  year={2016},
+  abbr={IJCAI}
 }
 
 @inproceedings{kdd15,
   title={A deep hybrid model for weather forecasting},
   author={Grover, Aditya and Kapoor, Ashish and Horvitz, Eric},
   booktitle={International Conference on Knowledge Discovery and Data Mining (KDD)},
-  year={2015}
+  year={2015},
+  abbr={KDD}
 }
 
 @inproceedings{ijcai15,
-  title={ASAP-UCT: abstraction of state-action pairs in UCT},
+  title={ASAP-UCT: abstracttraction of state-action pairs in UCT},
   author={Anand, Ankit and Grover, Aditya and Mausam and Singla, Parag},
   booktitle={International Joint Conference on Artificial Intelligence (IJCAI)},
-  year={2015}
+  year={2015},
+  abbr={IJCAI}
 }
 
 @inproceedings{aamas15,
-  title={A Novel Abstraction Framework for Online Planning},
+  title={A Novel abstracttraction Framework for Online Planning},
   author={Anand, Ankit and Grover, Aditya and Mausam and Singla, Parag},
   booktitle={International Conference on Autonomous Agents and Multiagent Systems (AAMAS)},
-  year={2015}
+  year={2015},
+  abbr={AAMAS}
 }

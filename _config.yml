@@ -270,6 +270,14 @@ scholar:
   details_layout: bibtex.html
   details_link: Details
 
+  # group_by: type, year
+  sort_by: year, abbr
+  order: descending
+  type_order: [preprint, article, inproceedings]
+  type_aliases: {inproceedings: article}
+  type_names: {preprint: preprints, thesis: Ph.D. Thesis, 
+        article: journal & conference articles}
+
   query: "@*"
 
 # Filter out certain bibtex entry keywords used internally from the bib output
