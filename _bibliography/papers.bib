@@ -19,7 +19,7 @@
   booktitle={International Conference on Machine Learning (ICML)}, 
   pdf={https://arxiv.org/abs/2206.10786},
   abstract={Many problems in science and engineering involve optimizing an expensive black-box function over a high-dimensional space. For such black-box optimization (BBO) problems, we typically assume a small budget for online function evaluations, but also often have access to a fixed, offline dataset for pretraining. Prior approaches seek to utilize the offline data to approximate the function or its inverse but are not sufficiently accurate far from the data distribution. We propose BONET, a generative framework for pretraining a novel black-box optimizer using offline datasets. In BONET, we train an autoregressive model on fixed-length trajectories derived from an offline dataset. We design a sampling strategy to synthesize trajectories from offline data using a simple heuristic of rolling out monotonic transitions from low-fidelity to high-fidelity samples. Empirically, we instantiate BONET using a causally masked Transformer and evaluate it on Design-Bench, where we rank the best on average, outperforming state-of-the-art baselines.},
-  year={2022},
+  year={2023},
   award={Oral Presentation at the NeurIPS Workshop on Foundation Models for Decision Making},
   abbr={ICML}
 }
@@ -30,17 +30,16 @@
   booktitle={International Conference on Machine Learning (ICML)}, 
   pdf={https://arxiv.org/abs/2210.06518},
   abstract={Natural agents can effectively learn from multiple data sources that differ in size, quality, and types of measurements. We study this heterogeneity in the context of offline reinforcement learning (RL) by introducing a new, practically motivated semi-supervised setting. Here, an agent has access to two sets of trajectories: labelled trajectories containing state, action, reward triplets at every timestep, along with unlabelled trajectories that contain only state and reward information. For this setting, we develop and study a simple meta-algorithmic pipeline that learns an inverse dynamics model on the labelled data to obtain proxy-labels for the unlabelled data, followed by the use of any offline RL algorithm on the true and proxy-labelled trajectories. Empirically, we find this simple pipeline to be highly successful - on several D4RL benchmarks, certain offline RL algorithms can match the performance of variants trained on a fully labelled dataset even when we label only 10% trajectories from the low return regime. To strengthen our understanding, we perform a large-scale controlled empirical study investigating the interplay of data-centric properties of the labelled and unlabelled datasets, with algorithmic design choices (e.g., choice of inverse dynamics, offline RL algorithm) to identify general trends and best practices for training RL agents on semi-supervised offline datasets.},
-  year={2022},
+  year={2023},
   abbr={ICML}
 }
 
-@inproceedings{krishnamoorthy2022generative,
+@inproceedings{krishnamoorthy2022diffusion,
   title={Diffusion Models for Offline Black-Box Optimization},
   author={Krishnamoorthy, Siddarth and Mashkaria, Satvik Mehul and Grover, Aditya},
-  booktitle={International Conference on Machine Learning (ICML)}, ,
-  pdf={https://arxiv.org/abs/2206.10786},
+  booktitle={International Conference on Machine Learning (ICML)},
   abstract={The goal of offline black-box optimization (BBO) is to optimize an expensive black-box function using a fixed dataset of function evaluations. Prior works consider forward approaches that learn surrogates to the black-box function and inverse approaches that directly map function values to corresponding points in the input domain of the black-box function. These approaches are limited by the quality of the offline dataset and the difficulty in learning one-to-many mappings in high dimensions, respectively. We propose Denoising Diffusion Optimization Models (DDOM), a new inverse approach for offline black-box optimization based on diffusion models. Given an offline dataset, DDOM learns a conditional generative model over the domain of the black-box function conditioned on the function values. We investigate several design choices in DDOM, such as reweighting the dataset to focus on high function values and the use of classifier-free guidance at test-time to enable generalization to function values that can even exceed the dataset maxima. Empirically, we conduct experiments on the Design-Bench benchmark (Trabucco et al., 2022) and show that DDOM achieves results competitive with state-of-the-art baselines.},
-  year={2022},
+  year={2023},
   abbr={ICML}
 }
 
