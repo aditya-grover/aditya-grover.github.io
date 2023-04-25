@@ -1,6 +1,50 @@
 ---
 ---
 
+
+@inproceedings{nguyen2023climax,
+  title={ClimaX: A foundation model for weather and climate},
+  author={Nguyen, Tung and Brandstetter, Johannes and Kapoor, Ashish and Gupta, Jayesh K and Grover, Aditya},
+  booktitle={International Conference on Machine Learning (ICML)}, 
+  pdf={https://arxiv.org/abs/2301.10343},
+  abstract={Most state-of-the-art approaches for weather and climate modeling are based on physics-informed numerical models of the atmosphere. These approaches aim to model the non-linear dynamics and complex interactions between multiple variables, which are challenging to approximate. Additionally, many such numerical models are computationally intensive, especially when modeling the atmospheric phenomenon at a fine-grained spatial and temporal resolution. Recent data-driven approaches based on machine learning instead aim to directly solve a downstream forecasting or projection task by learning a data-driven functional mapping using deep neural networks. However, these networks are trained using curated and homogeneous climate datasets for specific spatiotemporal tasks, and thus lack the generality of numerical models. We develop and demonstrate ClimaX, a flexible and generalizable deep learning model for weather and climate science that can be trained using heterogeneous datasets spanning different variables, spatio-temporal coverage, and physical groundings. ClimaX extends the Transformer architecture with novel encoding and aggregation blocks that allow effective use of available compute while maintaining general utility. ClimaX is pre-trained with a self-supervised learning objective on climate datasets derived from CMIP6. The pre-trained ClimaX can then be fine-tuned to address a breadth of climate and weather tasks, including those that involve atmospheric variables and spatio-temporal scales unseen during pretraining. Compared to existing data-driven baselines, we show that this generality in ClimaX results in superior performance on benchmarks for weather forecasting and climate projections, even when pretrained at lower resolutions and compute budgets.},
+  award={Spotlight Oral Presentation at the ICLR Workshop on Tackling Climate Change with Machine Learning},
+  year={2023},
+  abbr={ICML}
+}
+
+@inproceedings{krishnamoorthy2022generative,
+  title={Generative pretraining for black-box optimization},
+  author={Mashkaria, Satvik Mehul and Krishnamoorthy, Siddarth and  Grover, Aditya},
+  booktitle={International Conference on Machine Learning (ICML)}, 
+  pdf={https://arxiv.org/abs/2206.10786},
+  abstract={Many problems in science and engineering involve optimizing an expensive black-box function over a high-dimensional space. For such black-box optimization (BBO) problems, we typically assume a small budget for online function evaluations, but also often have access to a fixed, offline dataset for pretraining. Prior approaches seek to utilize the offline data to approximate the function or its inverse but are not sufficiently accurate far from the data distribution. We propose BONET, a generative framework for pretraining a novel black-box optimizer using offline datasets. In BONET, we train an autoregressive model on fixed-length trajectories derived from an offline dataset. We design a sampling strategy to synthesize trajectories from offline data using a simple heuristic of rolling out monotonic transitions from low-fidelity to high-fidelity samples. Empirically, we instantiate BONET using a causally masked Transformer and evaluate it on Design-Bench, where we rank the best on average, outperforming state-of-the-art baselines.},
+  year={2022},
+  award={Oral Presentation at the NeurIPS Workshop on Foundation Models for Decision Making},
+  abbr={ICML}
+}
+
+@inproceedings{zheng2022semi,
+  title={Semi-Supervised Offline Reinforcement Learning with Action-Free Trajectories},
+  author={Zheng, Qinqing and Henaff, Mikael and Amos, Brandon and Grover, Aditya},
+  booktitle={International Conference on Machine Learning (ICML)}, 
+  pdf={https://arxiv.org/abs/2210.06518},
+  abstract={Natural agents can effectively learn from multiple data sources that differ in size, quality, and types of measurements. We study this heterogeneity in the context of offline reinforcement learning (RL) by introducing a new, practically motivated semi-supervised setting. Here, an agent has access to two sets of trajectories: labelled trajectories containing state, action, reward triplets at every timestep, along with unlabelled trajectories that contain only state and reward information. For this setting, we develop and study a simple meta-algorithmic pipeline that learns an inverse dynamics model on the labelled data to obtain proxy-labels for the unlabelled data, followed by the use of any offline RL algorithm on the true and proxy-labelled trajectories. Empirically, we find this simple pipeline to be highly successful - on several D4RL benchmarks, certain offline RL algorithms can match the performance of variants trained on a fully labelled dataset even when we label only 10% trajectories from the low return regime. To strengthen our understanding, we perform a large-scale controlled empirical study investigating the interplay of data-centric properties of the labelled and unlabelled datasets, with algorithmic design choices (e.g., choice of inverse dynamics, offline RL algorithm) to identify general trends and best practices for training RL agents on semi-supervised offline datasets.},
+  year={2022},
+  abbr={ICML}
+}
+
+@inproceedings{krishnamoorthy2022generative,
+  title={Diffusion Models for Offline Black-Box Optimization},
+  author={Krishnamoorthy, Siddarth and Mashkaria, Satvik Mehul and Grover, Aditya},
+  booktitle={International Conference on Machine Learning (ICML)}, ,
+  pdf={https://arxiv.org/abs/2206.10786},
+  abstract={The goal of offline black-box optimization (BBO) is to optimize an expensive black-box function using a fixed dataset of function evaluations. Prior works consider forward approaches that learn surrogates to the black-box function and inverse approaches that directly map function values to corresponding points in the input domain of the black-box function. These approaches are limited by the quality of the offline dataset and the difficulty in learning one-to-many mappings in high dimensions, respectively. We propose Denoising Diffusion Optimization Models (DDOM), a new inverse approach for offline black-box optimization based on diffusion models. Given an offline dataset, DDOM learns a conditional generative model over the domain of the black-box function conditioned on the function values. We investigate several design choices in DDOM, such as reweighting the dataset to focus on high function values and the use of classifier-free guidance at test-time to enable generalization to function values that can even exceed the dataset maxima. Empirically, we conduct experiments on the Design-Bench benchmark (Trabucco et al., 2022) and show that DDOM achieves results competitive with state-of-the-art baselines.},
+  year={2022},
+  abbr={ICML}
+}
+
+
 @inproceedings{zhuscaling,
   title={Scaling Pareto-Efficient Decision Making via Offline Multi-Objective RL},
   author={Zhu, Baiting and Dang, Meihua and Grover, Aditya},
@@ -14,7 +58,7 @@
 @article{bose2022controllable,
   title={Controllable Generative Modeling via Causal Reasoning},
   author={Bose, Joey and Monti, Ricardo Pio and Grover, Aditya},
-  journal={Transactions of Machine Learning Research},
+  journal={Transactions of Machine Learning Research (TMLR)},
   pdf={https://openreview.net/forum?id=Z44YAcLaGw},
   year={2022},
   abstract={Deep latent variable generative models excel at generating complex, high-dimensional data, often exhibiting impressive generalization beyond the training distribution. However, many such models in use today are black-boxes trained on large unlabelled datasets with statistical objectives and lack an interpretable understanding of the latent space required for controlling the generative process. We propose CAGE, a framework for controllable generation in latent variable models based on causal reasoning. Given a pair of attributes, CAGE infers the implicit cause-effect relationships between these attributes as induced by a deep generative model. This is achieved by defining and estimating a novel notion of unit-level causal effects in the latent space of the generative model. Thereafter, we use the inferred cause-effect relationships to design a novel strategy for controllable generation based on counterfactual sampling. Through a series of large-scale synthetic and human evaluations, we demonstrate that generating counterfactual samples which respect the underlying causal relationships inferred via CAGE leads to subjectively more realistic images.},
@@ -463,7 +507,7 @@ multiagent systems.},
 }
 
 @inproceedings{ijcai15,
-  title={ASAP-UCT: abstracttraction of state-action pairs in UCT},
+  title={ASAP-UCT: abstraction of state-action pairs in UCT},
   author={Anand, Ankit and Grover, Aditya and Mausam and Singla, Parag},
   booktitle={International Joint Conference on Artificial Intelligence (IJCAI)},
   year={2015},
@@ -487,4 +531,6 @@ over existing algorithms.},
   pdf={https://www.ijcai.org/Proceedings/15/Papers/216.pdf},
   abbr={IJCAI}
 }
+
+
 
