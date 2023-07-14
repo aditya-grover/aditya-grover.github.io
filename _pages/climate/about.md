@@ -14,7 +14,7 @@ In the ML4Climate initiative led by Prof. Aditya Grover, the members of [MINT gr
 
 * **Research:** We regularly publish papers at the frontiers of artificial intelligence and climate change. Our current focus areas are in climate science and sustainable energy. See representative works papers [here](https://arxiv.org/abs/2301.10343) and [here](https://www.nature.com/articles/s41586-020-1994-5).
 
-* **Software:** We believe in open and reproducible science. Not just doing it, but enabling it. We develop and maintain [dataset benchmarks and software](https://climatelearn.readthedocs.io/en/latest/) for pushing data-driven climate science.
+* **Software:** We believe in open and reproducible science. Not just doing it, but enabling it. We develop and maintain [dataset benchmarks and software](https://github.com/aditya-grover/climate-learn) for pushing data-driven climate science.
 
 * **Education:** We develop accessible courses and [tutorials](https://www.climatechange.ai/papers/neurips2022/114) to on board students, researchers, and practitioners with different backgrounds.
 
@@ -25,7 +25,15 @@ In the ML4Climate initiative led by Prof. Aditya Grover, the members of [MINT gr
 
 # news
 
-* Tung and Aditya, along with collaborators from Microsoft, recently released [ClimaX](https://arxiv.org/abs/2301.10343), the first foundation model for weather and climate. We are excited by the [public response](https://twitter.com/tungnd_13/status/1618642574427959296) so far, and have many interesting followups in store.
+* ClimateLearn [v1](https://github.com/aditya-grover/climate-learn) and [benchmark preprint](https://arxiv.org/abs/2307.01909) released!
+
+* Aditya gave a keynote talk on ClimaX at Hydro ML Conference and UCSD Scientific ML Symposium, seminar talks at Argonne National Lab and Sony.
+
+* ClimaX accepted for publication at ICML main conference. See you in Hawaii!
+
+* ClimaX wins best paper award at ICML Workshop on Synergy of Scientific and Machine Learning Modeling. Congrats Tung!
+
+* Tung and Aditya, along with collaborators from Microsoft, recently released [ClimaX](https://arxiv.org/abs/2301.10343), the first foundation model for weather and climate. We are excited by the [public](https://twitter.com/tungnd_13/status/1618642574427959296) and [press](https://www.marktechpost.com/2023/01/29/microsoft-research-introduces-climax-a-flexible-and-generalizable-deep-learning-model-for-weather-and-climate-science/) so far, and have many interesting followups in store.
 
 * We launched our PyTorch library [ClimateLearn](/blog/2023/climate-learn/) and humbled by the [public response](https://twitter.com/adityagrover_/status/1613975759206625281?s=20) so far.
 

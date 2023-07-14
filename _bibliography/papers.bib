@@ -2,13 +2,25 @@
 ---
 
 
+
+@inproceedings{bansal2023cleanclip,
+  title={CleanCLIP: Mitigating Data Poisoning Attacks in Multimodal Contrastive Learning},
+  author={Bansal, Hritik and Singhi, Nishad and Yang, Yu and Yin, Fan and Grover*, Aditya and Chang*, Kai-Wei},
+  booktitle={International Conference on Computer Vision (ICCV)}, 
+  pdf={https://arxiv.org/abs/2303.03323},
+  abstract={Multimodal contrastive pretraining has been used to train multimodal representation models, such as CLIP, on large amounts of paired image-text data. However, previous studies have revealed that such models are vulnerable to backdoor attacks. Specifically, when trained on backdoored examples, CLIP learns spurious correlations between the embedded backdoor trigger and the target label, aligning their representations in the joint embedding space. Injecting even a small number of poisoned examples, such as 75 examples in 3 million pretraining data, can significantly manipulate the model's behavior, making it difficult to detect or unlearn such correlations. To address this issue, we propose CleanCLIP, a finetuning framework that weakens the learned spurious associations introduced by backdoor attacks by independently re-aligning the representations for individual modalities. We demonstrate that unsupervised finetuning using a combination of multimodal contrastive and unimodal self-supervised objectives for individual modalities can significantly reduce the impact of the backdoor attack. Additionally, we show that supervised finetuning on task-specific labeled image data removes the backdoor trigger from the CLIP vision encoder. We show empirically that CleanCLIP maintains model performance on benign examples while erasing a range of backdoor attacks on multimodal contrastive learning.},
+  award={Best Paper Award at the ICLR Workshop on Reliable and Trustworthy Large Scale Machine Learning Models},
+  year={2023},
+  abbr={ICCV}},
+
+
 @inproceedings{nguyen2023climax,
   title={ClimaX: A foundation model for weather and climate},
   author={Nguyen, Tung and Brandstetter, Johannes and Kapoor, Ashish and Gupta, Jayesh K and Grover, Aditya},
   booktitle={International Conference on Machine Learning (ICML)}, 
   pdf={https://arxiv.org/abs/2301.10343},
   abstract={Most state-of-the-art approaches for weather and climate modeling are based on physics-informed numerical models of the atmosphere. These approaches aim to model the non-linear dynamics and complex interactions between multiple variables, which are challenging to approximate. Additionally, many such numerical models are computationally intensive, especially when modeling the atmospheric phenomenon at a fine-grained spatial and temporal resolution. Recent data-driven approaches based on machine learning instead aim to directly solve a downstream forecasting or projection task by learning a data-driven functional mapping using deep neural networks. However, these networks are trained using curated and homogeneous climate datasets for specific spatiotemporal tasks, and thus lack the generality of numerical models. We develop and demonstrate ClimaX, a flexible and generalizable deep learning model for weather and climate science that can be trained using heterogeneous datasets spanning different variables, spatio-temporal coverage, and physical groundings. ClimaX extends the Transformer architecture with novel encoding and aggregation blocks that allow effective use of available compute while maintaining general utility. ClimaX is pre-trained with a self-supervised learning objective on climate datasets derived from CMIP6. The pre-trained ClimaX can then be fine-tuned to address a breadth of climate and weather tasks, including those that involve atmospheric variables and spatio-temporal scales unseen during pretraining. Compared to existing data-driven baselines, we show that this generality in ClimaX results in superior performance on benchmarks for weather forecasting and climate projections, even when pretrained at lower resolutions and compute budgets.},
-  award={Spotlight Oral Presentation at the ICLR Workshop on Tackling Climate Change with Machine Learning},
+  award={Best Paper Award at the ICML Workshop on Synergy of Scientific and Machine Learning Modeling, Spotlight Oral at ICLR Workshop on AI and Climate Change},
   year={2023},
   abbr={ICML}
 }
@@ -20,7 +32,6 @@
   pdf={https://arxiv.org/abs/2206.10786},
   abstract={Many problems in science and engineering involve optimizing an expensive black-box function over a high-dimensional space. For such black-box optimization (BBO) problems, we typically assume a small budget for online function evaluations, but also often have access to a fixed, offline dataset for pretraining. Prior approaches seek to utilize the offline data to approximate the function or its inverse but are not sufficiently accurate far from the data distribution. We propose BONET, a generative framework for pretraining a novel black-box optimizer using offline datasets. In BONET, we train an autoregressive model on fixed-length trajectories derived from an offline dataset. We design a sampling strategy to synthesize trajectories from offline data using a simple heuristic of rolling out monotonic transitions from low-fidelity to high-fidelity samples. Empirically, we instantiate BONET using a causally masked Transformer and evaluate it on Design-Bench, where we rank the best on average, outperforming state-of-the-art baselines.},
   year={2023},
-  award={Oral Presentation at the NeurIPS Workshop on Foundation Models for Decision Making},
   abbr={ICML}
 }
 
