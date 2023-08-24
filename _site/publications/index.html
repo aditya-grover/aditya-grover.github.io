@@ -69,9 +69,6 @@
               
 
               <!-- Other pages -->
-              <li class="nav-item ">
-                <a class="nav-link" href="/awards/">awards</a>
-              </li>
               <li class="nav-item active">
                 <a class="nav-link" href="/publications/">publications<span class="sr-only">(current)</span></a>
               </li>
@@ -79,14 +76,14 @@
                 <a class="nav-link" href="/teaching/">teaching</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/group/">MINT</a>
+                <a class="nav-link" href="/awards/">awards</a>
               </li>
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ML4Climate</a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">group</a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/ml4climate/about">about</a>
+                  <a class="dropdown-item" href="/group/members">members</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="https://climatelearn.readthedocs.io/" rel="external nofollow noopener" target="_blank">ClimateLearn</a>
+                  <a class="dropdown-item" href="/group/ml4climate">ML4Climate</a>
                 </div>
               </li>
               <!-- Blog -->
@@ -131,46 +128,6 @@
         <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="nguyen2023climax" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">ClimaX: A foundation model for weather and climate</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Tung Nguyen, Johannes Brandstetter, Ashish Kapoor, Jayesh K Gupta, and Aditya Grover</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>arXiv preprint arXiv:2301.10343</em>, 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="https://arxiv.org/abs/2301.10343" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-            <br>
-            <b><font style="color:DarkRed"> Spotlight Oral Presentation at the ICLR Workshop on Tackling Climate Change with Machine Learning </font></b>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Most state-of-the-art approaches for weather and climate modeling are based on physics-informed numerical models of the atmosphere. These approaches aim to model the non-linear dynamics and complex interactions between multiple variables, which are challenging to approximate. Additionally, many such numerical models are computationally intensive, especially when modeling the atmospheric phenomenon at a fine-grained spatial and temporal resolution. Recent data-driven approaches based on machine learning instead aim to directly solve a downstream forecasting or projection task by learning a data-driven functional mapping using deep neural networks. However, these networks are trained using curated and homogeneous climate datasets for specific spatiotemporal tasks, and thus lack the generality of numerical models. We develop and demonstrate ClimaX, a flexible and generalizable deep learning model for weather and climate science that can be trained using heterogeneous datasets spanning different variables, spatio-temporal coverage, and physical groundings. ClimaX extends the Transformer architecture with novel encoding and aggregation blocks that allow effective use of available compute while maintaining general utility. ClimaX is pre-trained with a self-supervised learning objective on climate datasets derived from CMIP6. The pre-trained ClimaX can then be fine-tuned to address a breadth of climate and weather tasks, including those that involve atmospheric variables and spatio-temporal scales unseen during pretraining. Compared to existing data-driven baselines, we show that this generality in ClimaX results in superior performance on benchmarks for weather forecasting and climate projections, even when pretrained at lower resolutions and compute budgets.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
-
-        <!-- Entry bib key -->
         <div id="bansal2023leaving" class="col-sm-8">
         <!-- Title -->
         <div class="title">Leaving Reality to Imagination: Robust Classification via Generated Datasets</div>
@@ -193,39 +150,36 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="/assets/pdf/Recent%20research%20on%20robustness%20has%20revealed%20significant%20performance%20gaps%20between%20neural%20image%20classifiers%20trained%20on%20datasets%20that%20are%20similar%20to%20the%20test%20set,%20and%20those%20that%20are%20from%20a%20naturally%20shifted%20distribution,%20such%20as%20sketches,%20paintings,%20and%20animations%20of%20the%20object%20categories%20observed%20during%20training.%20Prior%20work%20focuses%20on%20reducing%20this%20gap%20by%20designing%20engineered%20augmentations%20of%20training%20data%20or%20through%20unsupervised%20pretraining%20of%20a%20single%20large%20model%20on%20massive%20in-the-wild%20training%20datasets%20scraped%20from%20the%20Internet.%20However,%20the%20notion%20of%20a%20dataset%20is%20also%20undergoing%20a%20paradigm%20shift%20in%20recent%20years.%20With%20drastic%20improvements%20in%20the%20quality,%20ease-of-use,%20and%20access%20to%20modern%20generative%20models,%20generated%20data%20is%20pervading%20the%20web.%20In%20this%20light,%20we%20study%20the%20question:%20How%20do%20these%20generated%20datasets%20influence%20the%20natural%20robustness%20of%20image%20classifiers?%20We%20find%20that%20Imagenet%20classifiers%20trained%20on%20real%20data%20augmented%20with%20generated%20data%20achieve%20higher%20accuracy%20and%20effective%20robustness%20than%20standard%20training%20and%20popular%20augmentation%20strategies%20in%20the%20presence%20of%20natural%20distribution%20shifts.%20We%20analyze%20various%20factors%20influencing%20these%20results,%20including%20the%20choice%20of%20conditioning%20strategies%20and%20the%20amount%20of%20generated%20data.%20Lastly,%20we%20introduce%20and%20analyze%20an%20evolving%20generated%20dataset,%20ImageNet-G-v1,%20to%20better%20benchmark%20the%20design,%20utility,%20and%20critique%20of%20standalone%20generated%20datasets%20for%20robust%20and%20trustworthy%20machine%20learning." class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="https://arxiv.org/abs/2302.02503" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>https://arxiv.org/abs/2302.02503</p>
+            <p>Recent research on robustness has revealed significant performance gaps between neural image classifiers trained on datasets that are similar to the test set, and those that are from a naturally shifted distribution, such as sketches, paintings, and animations of the object categories observed during training. Prior work focuses on reducing this gap by designing engineered augmentations of training data or through unsupervised pretraining of a single large model on massive in-the-wild training datasets scraped from the Internet. However, the notion of a dataset is also undergoing a paradigm shift in recent years. With drastic improvements in the quality, ease-of-use, and access to modern generative models, generated data is pervading the web. In this light, we study the question: How do these generated datasets influence the natural robustness of image classifiers? We find that Imagenet classifiers trained on real data augmented with generated data achieve higher accuracy and effective robustness than standard training and popular augmentation strategies in the presence of natural distribution shifts. We analyze various factors influencing these results, including the choice of conditioning strategies and the amount of generated data. Lastly, we introduce and analyze an evolving generated dataset, ImageNet-G-v1, to better benchmark the design, utility, and critique of standalone generated datasets for robust and trustworthy machine learning.</p>
           </div>
         </div>
       </div>
 </li>
-</ol>
-
-  <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="krishnamoorthy2022generative" class="col-sm-8">
+        <div id="nguyen2023climatelearn" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Generative pretraining for black-box optimization</div>
+        <div class="title">ClimateLearn: Benchmarking Machine Learning for Weather and Climate Modeling</div>
         <!-- Author -->
         <div class="author">
         
 
-        Siddarth Krishnamoorthy, Satvik Mehul Mashkaria, and Aditya Grover</div>
+        Tung Nguyen, Jason Jewik, Hritik Bansal, Prakhar Sharma, and Aditya Grover</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>arXiv preprint arXiv:2206.10786</em>, 2022
+          <em>arXiv preprint arXiv:2307.01909</em>, 2023
         </div>
         <div class="periodical">
           
@@ -234,19 +188,57 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="https://arxiv.org/abs/2206.10786" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-            <br>
-            <b><font style="color:DarkRed"> Oral Presentation at the NeurIPS Workshop on Foundation Models for Decision Making </font></b>
+            <a href="https://arxiv.org/abs/2307.01909" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Many problems in science and engineering involve optimizing an expensive black-box function over a high-dimensional space. For such black-box optimization (BBO) problems, we typically assume a small budget for online function evaluations, but also often have access to a fixed, offline dataset for pretraining. Prior approaches seek to utilize the offline data to approximate the function or its inverse but are not sufficiently accurate far from the data distribution. We propose BONET, a generative framework for pretraining a novel black-box optimizer using offline datasets. In BONET, we train an autoregressive model on fixed-length trajectories derived from an offline dataset. We design a sampling strategy to synthesize trajectories from offline data using a simple heuristic of rolling out monotonic transitions from low-fidelity to high-fidelity samples. Empirically, we instantiate BONET using a causally masked Transformer and evaluate it on Design-Bench, where we rank the best on average, outperforming state-of-the-art baselines.</p>
+            <p>Modeling weather and climate is an essential endeavor to understand the near- and long-term impacts of climate change, as well as inform technology and policymaking for adaptation and mitigation efforts. In recent years, there has been a surging interest in applying data-driven methods based on machine learning for solving core problems such as weather forecasting and climate downscaling. Despite promising results, much of this progress has been impaired due to the lack of large-scale, open-source efforts for reproducibility, resulting in the use of inconsistent or underspecified datasets, training setups, and evaluations by both domain scientists and artificial intelligence researchers. We introduce ClimateLearn, an open-source PyTorch library that vastly simplifies the training and evaluation of machine learning models for data-driven climate science. ClimateLearn consists of holistic pipelines for dataset processing (e.g., ERA5, CMIP6, PRISM), implementation of state-of-the-art deep learning models (e.g., Transformers, ResNets), and quantitative and qualitative evaluation for standard weather and climate modeling tasks. We supplement these functionalities with extensive documentation, contribution guides, and quickstart tutorials to expand access and promote community growth. We have also performed comprehensive forecasting and downscaling experiments to showcase the capabilities and key features of our library. To our knowledge, ClimateLearn is the first large-scale, open-source effort for bridging research in weather and climate modeling with modern machine learning systems. Our library is available publicly at https://github.com/aditya-grover/climate-learn</p>
           </div>
         </div>
       </div>
 </li>
 <li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="zhao2023decision" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Decision Stacks: Flexible Reinforcment Learning Via Modular Generative Models</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Siyan Zhao, and Aditya Grover</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv preprint arXiv:2306.06253</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2306.06253" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Reinforcement learning provides a compelling approach for tackling various aspects of sequential decision making, such as defining complex goals, planning future actions and observations, and evaluating their utilities. However, effectively integrating these capabilities while maintaining both expressive power and flexibility in modeling choices poses significant algorithmic challenges for efficient learning and inference. In this work, we introduce Decision Stacks, a generative framework that decomposes goal-conditioned policy agents into three distinct generative modules. These modules utilize independent generative models to simulate the temporal evolution of observations, rewards, and actions, enabling parallel learning through teacher forcing. Our framework ensures both expressivity and flexibility by allowing designers to tailor individual modules to incorporate architectural bias, optimization objectives, dynamics, domain transferability, and inference speed. Through extensive empirical evaluations, we demonstrate the effectiveness of Decision Stacks in offline policy optimization across various Markov Decision Processes (MDPs) and Partially Observable Markov Decision Processes (POMDPs), outperforming existing methods and facilitating flexible generative decision making.</p>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
+
+  <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
@@ -283,46 +275,7 @@
           </div>
         </div>
       </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="zheng2022semi" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Semi-Supervised Offline Reinforcement Learning with Action-Free Trajectories</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Qinqing Zheng, Mikael Henaff, Brandon Amos, and Aditya Grover</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>arXiv preprint arXiv:2210.06518</em>, 2022
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="https://arxiv.org/abs/2210.06518" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Natural agents can effectively learn from multiple data sources that differ in size, quality, and types of measurements. We study this heterogeneity in the context of offline reinforcement learning (RL) by introducing a new, practically motivated semi-supervised setting. Here, an agent has access to two sets of trajectories: labelled trajectories containing state, action, reward triplets at every timestep, along with unlabelled trajectories that contain only state and reward information. For this setting, we develop and study a simple meta-algorithmic pipeline that learns an inverse dynamics model on the labelled data to obtain proxy-labels for the unlabelled data, followed by the use of any offline RL algorithm on the true and proxy-labelled trajectories. Empirically, we find this simple pipeline to be highly successful - on several D4RL benchmarks, certain offline RL algorithms can match the performance of variants trained on a fully labelled dataset even when we label only 10% trajectories from the low return regime. To strengthen our understanding, we perform a large-scale controlled empirical study investigating the interplay of data-centric properties of the labelled and unlabelled datasets, with algorithmic design choices (e.g., choice of inverse dynamics, offline RL algorithm) to identify general trends and best practices for training RL agents on semi-supervised offline datasets.</p>
-          </div>
-        </div>
-      </div>
-</li>
-</ol>
+</li></ol>
 
   <ol class="bibliography"></ol>
 
@@ -341,7 +294,161 @@
 
 <h2 class="articles">journal and conference articles</h2>
   <h2 class="year">2023</h2>
-  <ol class="bibliography"><li>
+  <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="nguyen2023climax" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">ClimaX: A foundation model for weather and climate</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Tung Nguyen, Johannes Brandstetter, Ashish Kapoor, Jayesh K Gupta, and Aditya Grover</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In International Conference on Machine Learning (ICML)</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2301.10343" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <br>
+            <b><font style="color:DarkRed"> Best Paper Award at the ICML Workshop on Synergy of Scientific and Machine Learning Modeling, Spotlight Oral at ICLR Workshop on Tackling Climate Change with AI </font></b>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Most state-of-the-art approaches for weather and climate modeling are based on physics-informed numerical models of the atmosphere. These approaches aim to model the non-linear dynamics and complex interactions between multiple variables, which are challenging to approximate. Additionally, many such numerical models are computationally intensive, especially when modeling the atmospheric phenomenon at a fine-grained spatial and temporal resolution. Recent data-driven approaches based on machine learning instead aim to directly solve a downstream forecasting or projection task by learning a data-driven functional mapping using deep neural networks. However, these networks are trained using curated and homogeneous climate datasets for specific spatiotemporal tasks, and thus lack the generality of numerical models. We develop and demonstrate ClimaX, a flexible and generalizable deep learning model for weather and climate science that can be trained using heterogeneous datasets spanning different variables, spatio-temporal coverage, and physical groundings. ClimaX extends the Transformer architecture with novel encoding and aggregation blocks that allow effective use of available compute while maintaining general utility. ClimaX is pre-trained with a self-supervised learning objective on climate datasets derived from CMIP6. The pre-trained ClimaX can then be fine-tuned to address a breadth of climate and weather tasks, including those that involve atmospheric variables and spatio-temporal scales unseen during pretraining. Compared to existing data-driven baselines, we show that this generality in ClimaX results in superior performance on benchmarks for weather forecasting and climate projections, even when pretrained at lower resolutions and compute budgets.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="krishnamoorthy2022generative" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Generative pretraining for black-box optimization</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Satvik Mehul Mashkaria, Siddarth Krishnamoorthy, and Aditya Grover</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In International Conference on Machine Learning (ICML)</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2206.10786" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Many problems in science and engineering involve optimizing an expensive black-box function over a high-dimensional space. For such black-box optimization (BBO) problems, we typically assume a small budget for online function evaluations, but also often have access to a fixed, offline dataset for pretraining. Prior approaches seek to utilize the offline data to approximate the function or its inverse but are not sufficiently accurate far from the data distribution. We propose BONET, a generative framework for pretraining a novel black-box optimizer using offline datasets. In BONET, we train an autoregressive model on fixed-length trajectories derived from an offline dataset. We design a sampling strategy to synthesize trajectories from offline data using a simple heuristic of rolling out monotonic transitions from low-fidelity to high-fidelity samples. Empirically, we instantiate BONET using a causally masked Transformer and evaluate it on Design-Bench, where we rank the best on average, outperforming state-of-the-art baselines.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="zheng2022semi" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Semi-Supervised Offline Reinforcement Learning with Action-Free Trajectories</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Qinqing Zheng, Mikael Henaff, Brandon Amos, and Aditya Grover</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In International Conference on Machine Learning (ICML)</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2210.06518" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Natural agents can effectively learn from multiple data sources that differ in size, quality, and types of measurements. We study this heterogeneity in the context of offline reinforcement learning (RL) by introducing a new, practically motivated semi-supervised setting. Here, an agent has access to two sets of trajectories: labelled trajectories containing state, action, reward triplets at every timestep, along with unlabelled trajectories that contain only state and reward information. For this setting, we develop and study a simple meta-algorithmic pipeline that learns an inverse dynamics model on the labelled data to obtain proxy-labels for the unlabelled data, followed by the use of any offline RL algorithm on the true and proxy-labelled trajectories. Empirically, we find this simple pipeline to be highly successful - on several D4RL benchmarks, certain offline RL algorithms can match the performance of variants trained on a fully labelled dataset even when we label only 10% trajectories from the low return regime. To strengthen our understanding, we perform a large-scale controlled empirical study investigating the interplay of data-centric properties of the labelled and unlabelled datasets, with algorithmic design choices (e.g., choice of inverse dynamics, offline RL algorithm) to identify general trends and best practices for training RL agents on semi-supervised offline datasets.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="krishnamoorthy2022diffusion" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Diffusion Models for Offline Black-Box Optimization</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Siddarth Krishnamoorthy, Satvik Mehul Mashkaria, and Aditya Grover</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In International Conference on Machine Learning (ICML)</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The goal of offline black-box optimization (BBO) is to optimize an expensive black-box function using a fixed dataset of function evaluations. Prior works consider forward approaches that learn surrogates to the black-box function and inverse approaches that directly map function values to corresponding points in the input domain of the black-box function. These approaches are limited by the quality of the offline dataset and the difficulty in learning one-to-many mappings in high dimensions, respectively. We propose Denoising Diffusion Optimization Models (DDOM), a new inverse approach for offline black-box optimization based on diffusion models. Given an offline dataset, DDOM learns a conditional generative model over the domain of the black-box function conditioned on the function values. We investigate several design choices in DDOM, such as reweighting the dataset to focus on high function values and the use of classifier-free guidance at test-time to enable generalization to function values that can even exceed the dataset maxima. Empirically, we conduct experiments on the Design-Bench benchmark (Trabucco et al., 2022) and show that DDOM achieves results competitive with state-of-the-art baselines.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 abbr"><abbr class="badge">ICLR</abbr></div>
@@ -378,7 +485,48 @@
           </div>
         </div>
       </div>
-</li></ol>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ICCV</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="bansal2023cleanclip" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">CleanCLIP: Mitigating Data Poisoning Attacks in Multimodal Contrastive Learning</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Hritik Bansal, Nishad Singhi, Yu Yang, Fan Yin, Aditya Grover*, and Kai-Wei Chang*</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In International Conference on Computer Vision (ICCV)</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2303.03323" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <br>
+            <b><font style="color:DarkRed"> Best Paper Award at the ICLR Workshop on Reliable and Trustworthy Large Scale Machine Learning Models </font></b>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Multimodal contrastive pretraining has been used to train multimodal representation models, such as CLIP, on large amounts of paired image-text data. However, previous studies have revealed that such models are vulnerable to backdoor attacks. Specifically, when trained on backdoored examples, CLIP learns spurious correlations between the embedded backdoor trigger and the target label, aligning their representations in the joint embedding space. Injecting even a small number of poisoned examples, such as 75 examples in 3 million pretraining data, can significantly manipulate the model’s behavior, making it difficult to detect or unlearn such correlations. To address this issue, we propose CleanCLIP, a finetuning framework that weakens the learned spurious associations introduced by backdoor attacks by independently re-aligning the representations for individual modalities. We demonstrate that unsupervised finetuning using a combination of multimodal contrastive and unimodal self-supervised objectives for individual modalities can significantly reduce the impact of the backdoor attack. Additionally, we show that supervised finetuning on task-specific labeled image data removes the backdoor trigger from the CLIP vision encoder. We show empirically that CleanCLIP maintains model performance on benign examples while erasing a range of backdoor attacks on multimodal contrastive learning.</p>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
 
   <h2 class="year">2022</h2>
   <ol class="bibliography">
@@ -401,7 +549,7 @@
         
         
         <div class="periodical">
-          <em>Transactions of Machine Learning Research</em>, 2022
+          <em>Transactions of Machine Learning Research (TMLR)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -1927,7 +2075,7 @@ multiagent systems.</p>
         <!-- Entry bib key -->
         <div id="ijcai15" class="col-sm-8">
         <!-- Title -->
-        <div class="title">ASAP-UCT: abstracttraction of state-action pairs in UCT</div>
+        <div class="title">ASAP-UCT: abstraction of state-action pairs in UCT</div>
         <!-- Author -->
         <div class="author">
         

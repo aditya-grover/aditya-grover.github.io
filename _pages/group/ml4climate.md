@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /ml4climate/about
+permalink: /group/ml4climate
 title: 
 description: 
 nav: false
@@ -27,11 +27,13 @@ In the ML4Climate initiative led by Prof. Aditya Grover, the members of [MINT gr
 
 * ClimateLearn [v1](https://github.com/aditya-grover/climate-learn) and [benchmark preprint](https://arxiv.org/abs/2307.01909) released!
 
-* Aditya gave a keynote talk on ClimaX at Hydro ML Conference and UCSD Scientific ML Symposium, seminar talks at Argonne National Lab and Sony.
+* Aditya gave keynote talks on ClimaX and ClimateLearn at Hydro ML Conference, KDD Environment Day, and UCSD Scientific ML Symposium, seminar talks at Argonne National Lab, UT Austin,  and Sony.
 
-* ClimaX accepted for publication at ICML main conference. See you in Hawaii!
+* Tung presented a seminar talk on ClimaX at Leeds SciML Seminar.
 
-* ClimaX wins best paper award at ICML Workshop on Synergy of Scientific and Machine Learning Modeling. Congrats Tung!
+* ClimaX also wins **best paper award** at ICML Workshop on Synergy of Scientific and Machine Learning Modeling which will take place right after the main conference. Congrats Tung!
+
+* ClimaX accepted for publication at ICML main conference. See you in Hawaii! 
 
 * Tung and Aditya, along with collaborators from Microsoft, recently released [ClimaX](https://arxiv.org/abs/2301.10343), the first foundation model for weather and climate. We are excited by the [public](https://twitter.com/tungnd_13/status/1618642574427959296) and [press](https://www.marktechpost.com/2023/01/29/microsoft-research-introduces-climax-a-flexible-and-generalizable-deep-learning-model-for-weather-and-climate-science/) so far, and have many interesting followups in store.
 

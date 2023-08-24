@@ -4,9 +4,10 @@ permalink: /awards/
 title: awards
 description: 
 nav: true
-nav_order: 1
+nav_order: 4
 ---
 
+* Kavli Fellow by the US National Academy of Sciences (2023)
 * Best Paper Award at ICLR Workshop on Reliable and Trustworthy Large Scale Machine Learning Models (2023)
 * Best Paper Award at the ICML Workshop on Synergy of Scientific and Machine Learning Modeling (2023)
 * AAAI New Faculty Highlights Speaker (2023)

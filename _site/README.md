@@ -30,7 +30,11 @@ Regular commits to Github
 `./bin/deploy`
 `git push`
 
+Debugging:
+check you commit on master branch (and  not gh-pages) by doing    `git branch`. if you are not on master, switch to master using `git checkout master`
 
+Local checking of compiled site:
+`bundle exec jekyll serve`
 
 
 

@@ -1,15 +1,18 @@
 ---
 layout: page
-title: ML4Climate
+title: group
 nav: true
 nav_order: 5
 dropdown: true
 children: 
-    - title: about
-      permalink: /ml4climate/about
+    - title: members
+      permalink: /group/members
     - title: divider
-    - title: ClimateLearn
-      permalink: https://climatelearn.readthedocs.io/
+    - title: ML4Climate
+      permalink: /group/ml4climate
+    # - title: divider
+    # - title: ClimateLearn
+    #   permalink: https://climatelearn.readthedocs.io/
     # - title: divider
     # - title: Outreach
     #   permalink: /projects/
