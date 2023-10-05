@@ -8,13 +8,14 @@ nav_order: 4
 ---
 
 * Kavli Fellow by the US National Academy of Sciences (2023)
-* Best Paper Award at ICLR Workshop on Reliable and Trustworthy Large Scale Machine Learning Models (2023)
-* Best Paper Award at the ICML Workshop on Synergy of Scientific and Machine Learning Modeling (2023)
+* Best Paper Award at ICLR Workshop on Trustworthy and Reliable Large Scale Machine Learning Models (2023)
+* Best Paper Award at the ICML Workshop on Scientific and Machine Learning Modeling (2023)
+* Adobe Data Science Research Award (2023) [[press]](https://research.adobe.com/data-science-research-awards/)
 * AAAI New Faculty Highlights Speaker (2023)
-* Samsung AI Researcher of the Year Award (2022) 
+* AI Researcher of the Year Award by Samsung (2022) 
 	[[press]](https://www.sait.samsung.co.kr/saithome/event/saif2022.do)<br>
 *Awarded annually to 5 researchers worldwide under the age of 35.*
-* Google Award for Inclusion Resarch (2022) [[press]](https://research.google/outreach/air-program/recipients/)
+* Google Award for Inclusion Research (2022) [[press]](https://research.google/outreach/air-program/recipients/)
 * Meta Research Award (2022) [[press]](https://research.facebook.com/blog/2022/10/announcing-the-winners-of-the-2022-ai4ai-research-request-for-proposals/)
 * Sony Faculty Innovation Award (2022) [[press]](https://www.sony.com/en/SonyInfo/research-award-program/#Overview)
 * Outstanding Paper Award at NeurIPS (2021) [[press]](https://blog.neurips.cc/2021/11/30/announcing-the-neurips-2021-award-recipients/?s=09)

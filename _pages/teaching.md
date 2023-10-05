@@ -12,14 +12,14 @@ nav_order: 3
 
 ## UCLA
 
-* **Winter 2022:** CS 261: Deep Generative Models
-* **Fall 2022, Fall 2023:** CS 269: AI and Climate Change
 * **Spring 2022, Spring 2023, Fall 2023:** CS M146: Introduction to Machine Learning
+* **Winter 2022, Winter 2024:** CS 261: Deep Generative Models
+* **Fall 2022, Fall 2023:** CS 269: AI and Climate Change
 
 
 ## Stanford 
 
-* **Fall 2019, Fall 2018:** CS 236: Deep Generative Models 
+* **Fall 2018, Fall 2019:** CS 236: Deep Generative Models 
 
 
 ## Highlights
