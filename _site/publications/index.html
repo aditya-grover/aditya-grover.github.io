@@ -120,99 +120,6 @@
 
 <div class="publications">
 
-<h2 class="preprints">recent preprints</h2>
-  <ol class="bibliography"><li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="bansal2023leaving" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Leaving Reality to Imagination: Robust Classification via Generated Datasets</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Hritik Bansal, and Aditya Grover</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="https://arxiv.org/abs/2302.02503" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Recent research on robustness has revealed significant performance gaps between neural image classifiers trained on datasets that are similar to the test set, and those that are from a naturally shifted distribution, such as sketches, paintings, and animations of the object categories observed during training. Prior work focuses on reducing this gap by designing engineered augmentations of training data or through unsupervised pretraining of a single large model on massive in-the-wild training datasets scraped from the Internet. However, the notion of a dataset is also undergoing a paradigm shift in recent years. With drastic improvements in the quality, ease-of-use, and access to modern generative models, generated data is pervading the web. In this light, we study the question: How do these generated datasets influence the natural robustness of image classifiers? We find that Imagenet classifiers trained on real data augmented with generated data achieve higher accuracy and effective robustness than standard training and popular augmentation strategies in the presence of natural distribution shifts. We analyze various factors influencing these results, including the choice of conditioning strategies and the amount of generated data. Lastly, we introduce and analyze an evolving generated dataset, ImageNet-G-v1, to better benchmark the design, utility, and critique of standalone generated datasets for robust and trustworthy machine learning.</p>
-          </div>
-        </div>
-      </div>
-</li></ol>
-
-  <ol class="bibliography"><li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="nguyen2022reliable" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Reliable Conditioning of Behavioral Cloning for Offline Reinforcement Learning</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Tung Nguyen, Qinqing Zheng, and Aditya Grover</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>arXiv preprint arXiv:2210.05158</em>, 2022
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="https://arxiv.org/abs/2210.05158" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Behavioral cloning (BC) provides a straightforward solution to offline RL by mimicking offline trajectories via supervised learning. Recent advances (Chen et al., 2021; Janner et al., 2021; Emmons et al., 2021) have shown that by conditioning on desired future returns, BC can perform competitively to their value-based counterparts, while enjoying much more simplicity and training stability. While promising, we show that these methods can be unreliable, as their performance may degrade significantly when conditioned on high, out-of-distribution (ood) returns. This is crucial in practice, as we often expect the policy to perform better than the offline dataset by conditioning on an ood value. We show that this unreliability arises from both the suboptimality of training data and model architectures. We propose ConserWeightive Behavioral Cloning (CWBC), a simple and effective method for improving the reliability of conditional BC with two key components: trajectory weighting and conservative regularization. Trajectory weighting upweights the high-return trajectories to reduce the train-test gap for BC methods, while conservative regularizer encourages the policy to stay close to the data distribution for ood conditioning. We study CWBC in the context of RvS (Emmons et al., 2021) and Decision Transformers (Chen et al., 2021), and show that CWBC significantly boosts their performance on various benchmarks.</p>
-          </div>
-        </div>
-      </div>
-</li></ol>
-
-  <ol class="bibliography"></ol>
-
-  <ol class="bibliography"></ol>
-
-  <ol class="bibliography"></ol>
-
-  <ol class="bibliography"></ol>
-
-  <ol class="bibliography"></ol>
-
-  <ol class="bibliography"></ol>
-
-
-
 
 <h2 class="articles">journal and conference articles</h2>
   <h2 class="year">2023</h2>
@@ -220,7 +127,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="zhao2023decision" class="col-sm-8">
@@ -236,7 +143,7 @@
         
         
         <div class="periodical">
-          <em></em> 2023
+          <em>In Advances in Neural Information Processing Systems (NeurIPS)</em>, 2023
         </div>
         <div class="periodical">
           
@@ -258,7 +165,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS</abbr></div>
 
         <!-- Entry bib key -->
         <div id="nguyen2023expt" class="col-sm-8">
@@ -274,7 +181,7 @@
         
         
         <div class="periodical">
-          <em></em> 2023
+          <em>In Advances in Neural Information Processing Systems (NeurIPS)</em>, 2023
         </div>
         <div class="periodical">
           
@@ -282,9 +189,14 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2306.06253" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Experimental design is a fundamental problem in many science and engineering fields. In this problem, sample efficiency is crucial due to the time, money, and safety costs of real-world design evaluations. Existing approaches either rely on active data collection or access to large, labeled datasets of past experiments, making them impractical in many real-world scenarios. In this work, we address the more challenging yet realistic setting of few-shot experimental design, where only a few labeled data points of input designs and their corresponding values are available. We approach this problem as a conditional generation task, where a model conditions on a few labeled examples and the desired output to generate an optimal input design. To this end, we introduce Experiment Pretrained Transformers (ExPT), a foundation model for few-shot experimental design that employs a novel combination of synthetic pretraining with in-context learning. In ExPT, we only assume knowledge of a finite collection of unlabelled data points from the input domain and pretrain a transformer neural network to optimize diverse synthetic functions defined over this domain. Unsupervised pretraining allows ExPT to adapt to any design task at test time in an in-context fashion by conditioning on a few labeled data points from the target task and generating the candidate optima. We evaluate ExPT on few-shot experimental design in challenging domains and demonstrate its superior generality and performance compared to existing methods.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -307,7 +219,7 @@
         
         
         <div class="periodical">
-          <em>arXiv preprint arXiv:2307.01909</em>, 2023
+          <em>In Advances in Neural Information Processing Systems (NeurIPS)</em>, 2023
         </div>
         <div class="periodical">
           
@@ -547,7 +459,7 @@
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a href="https://arxiv.org/abs/2303.03323" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
             <br>
-            <b><font style="color:DarkRed"> Best Paper Award at the ICLR Workshop on Reliable and Trustworthy Large Scale Machine Learning Models </font></b>
+            <b><font style="color:DarkRed"> Oral Presentation (acceptance rate: 1.8%), Best Paper Award at the ICLR Workshop on Reliable and Trustworthy Large Scale Machine Learning Models </font></b>
           </div>
 
           <!-- Hidden abstract block -->

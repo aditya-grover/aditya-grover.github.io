@@ -21,11 +21,14 @@ In the ML4Climate initiative, the members of [MINT group](https://aditya-grover.
 
 # news
 
+* Thank you [Washington Post](https://www.washingtonpost.com/weather/2023/09/21/hurricane-lee-artificial-intelligence-forecasting/), [MIT Tech Review](https://www.technologyreview.com/2023/11/14/1083366/google-deepminds-weather-ai-can-forecast-extreme-weather-quicker-and-more-accurately/) for covering our research on ClimaX. Aditya's comments on the field more broadly appeared in [Nature](https://www.nature.com/articles/d41586-023-03552-y) and [Science](https://www.science.org/content/article/ai-churns-out-lightning-fast-forecasts-good-weather-agencies).
+
+
 * ClimateLearn [v1](https://github.com/aditya-grover/climate-learn) and [benchmark preprint](https://arxiv.org/abs/2307.01909) released!
 
-* Aditya gave keynote talks on ClimaX and ClimateLearn at Hydro ML Conference, KDD Environment Day, and UCSD Scientific ML Symposium, seminar talks at Argonne National Lab, UT Austin,  and Sony.
+* Aditya gave keynote talks on ClimaX and ClimateLearn at Hydro ML Conference, KDD Environment Day, and UCSD Scientific ML Symposium, seminar talks at Columbia, Argonne National Lab, UT Austin,  and Sony.
 
-* Tung presented a seminar talk on ClimaX at Leeds SciML Seminar.
+* Tung invited to give a seminar talk on ClimaX at Leeds SciML Seminar.
 
 * ClimaX also wins **best paper award** at ICML Workshop on Synergy of Scientific and Machine Learning Modeling which will take place right after the main conference. Congrats Tung!
 

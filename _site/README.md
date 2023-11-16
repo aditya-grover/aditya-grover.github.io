@@ -37,6 +37,14 @@ Local checking of compiled site:
 `bundle exec jekyll serve`
 
 
+commented out from publications.md
+
+<!-- <h2 class="preprints">recent preprints</h2>
+{%- for y in page.years %}
+  {% bibliography -f preprints -q @*[year={{y}}]* %}
+{% endfor %}
+
+ -->
 
 ## Lighthouse PageSpeed Insights
 

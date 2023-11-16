@@ -12,12 +12,6 @@ see [Google Scholar](https://scholar.google.com/citations?user=oOhnPUgAAAAJ&hl=e
 
 <div class="publications">
 
-<h2 class="preprints">recent preprints</h2>
-{%- for y in page.years %}
-  {% bibliography -f preprints -q @*[year={{y}}]* %}
-{% endfor %}
-
-
 
 <h2 class="articles">journal and conference articles</h2>
 {%- for y in page.years %}
