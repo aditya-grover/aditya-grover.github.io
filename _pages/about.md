@@ -33,7 +33,7 @@ During my PhD, I spent wonderful summers interning at Google Brain, Microsoft Re
 
 * Honored to be selected as a Kavli Fellow by the US National Academy of Sciences.
 * Thank you [Washington Post](https://www.washingtonpost.com/weather/2023/09/21/hurricane-lee-artificial-intelligence-forecasting/), [MIT Tech Review](https://www.technologyreview.com/2023/11/14/1083366/google-deepminds-weather-ai-can-forecast-extreme-weather-quicker-and-more-accurately/) for covering our research on ClimaX. My comments on the field more broadly in [Nature](https://www.nature.com/articles/d41586-023-03552-y) and [Science](https://www.science.org/content/article/ai-churns-out-lightning-fast-forecasts-good-weather-agencies)
-* [Decision Stacks](https://arxiv.org/abs/2306.06253), [ExPT](https://arxiv.org/abs/2306.06253), [ClimateLearn](https://arxiv.org/abs/2307.01909) will appear at NeurIPS this year. Congrats to lead authors Siyan, Tung, and Jason!
+<!-- * [Decision Stacks](https://arxiv.org/abs/2306.06253), [ExPT](https://arxiv.org/abs/2306.06253), [ClimateLearn](https://arxiv.org/abs/2307.01909) will appear at NeurIPS this year. Congrats to lead authors Siyan, Tung, and Jason! -->
 * [ClimaX](https://arxiv.org/abs/2301.10343) wins the best paper award at ICML Workshop on ML and Scientific Modeling. Congrats Tung!
 * [CleanCLIP](https://arxiv.org/abs/2303.03323) wins the best paper award at ICLR Workshop on Trustworthy and Reliable Large-Scale ML. Also to be presented as oral presentation (acceptance rate: 1.8%) at ICCV. Congrats Hritik! 
 * Looking forward to be the General Co-Chair for the 3rd [Causal Learning and Reasoning Conference](https://www.cclear.cc/2024) (CLeaR) in 2024.
