@@ -19,7 +19,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 
-I am an assistant professor of computer science at UCLA. I lead the [Machine Intelligence (MINT) group](/group/members), where we develop AI systems that can interact and reason with limited supervision. My current research is at the intersection of generative models and sequential decision making, and their application for scientific reasoning. I ground this research via the [ML4Climate](/group/ml4climate) initiative, where we develop data-driven methods and software to accelerate scientific discovery for climate and sustainability domains.
+I am an assistant professor of computer science at UCLA. I lead the [Machine Intelligence (MINT) group](/group/members), where we develop AI systems that can interact and reason with limited supervision. My [current research](/publications) is at the intersection of generative models and sequential decision making. On the applied side, I actively ground this research for developing systems and software for data-driven scientific discovery, particularly in climate and sustainability domains via the [ML4Climate](/group/ml4climate) initiative.
 
 
 Before joining UCLA, I spent a gap year as a research scientist in the Core ML team at FAIR, Meta. I completed my postdoctoral training at UC Berkeley (advisor: Pieter Abbeel), PhD at Stanford University (advisor: Stefano Ermon) and bachelors at IIT Delhi (co-advisors: Mausam, Parag Singla), all in computer science. 
@@ -36,7 +36,7 @@ During my PhD, I spent wonderful summers interning at Google Brain, Microsoft Re
 <!-- * [Decision Stacks](https://arxiv.org/abs/2306.06253), [ExPT](https://arxiv.org/abs/2306.06253), [ClimateLearn](https://arxiv.org/abs/2307.01909) will appear at NeurIPS this year. Congrats to lead authors Siyan, Tung, and Jason! -->
 * [ClimaX](https://arxiv.org/abs/2301.10343) wins the best paper award at ICML Workshop on ML and Scientific Modeling. Congrats Tung!
 * [CleanCLIP](https://arxiv.org/abs/2303.03323) wins the best paper award at ICLR Workshop on Trustworthy and Reliable Large-Scale ML. Also to be presented as oral presentation (acceptance rate: 1.8%) at ICCV. Congrats Hritik! 
-* Looking forward to be the General Co-Chair for the 3rd [Causal Learning and Reasoning Conference](https://www.cclear.cc/2024) (CLeaR) in 2024.
+* Looking forward to serving as the General Co-Chair for the 3rd [Causal Learning and Reasoning Conference](https://www.cclear.cc/2024) (CLeaR) in 2024.
 * Honored to receive the [AI Researcher of the Year Award](https://www.sait.samsung.co.kr/saithome/event/saif2022.do) by Samsung. 
 * Upcoming invited talks: 
   - SoCalNLP Symposium (Nov 2023)
