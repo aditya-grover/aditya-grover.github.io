@@ -7,6 +7,7 @@ nav: true
 nav_order: 4
 ---
 
+* Forbes 30 Under 30 (2024) [[press]](https://www.forbes.com/30-under-30/2024/science)
 * Kavli Fellow by the US National Academy of Sciences (2023)
 * Best Paper Award at ICLR Workshop on Trustworthy and Reliable Large Scale Machine Learning Models (2023)
 * Best Paper Award at the ICML Workshop on Scientific and Machine Learning Modeling (2023)
