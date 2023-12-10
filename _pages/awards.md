@@ -9,7 +9,6 @@ nav_order: 4
 
 
 * Forbes 30 Under 30 (2024) [[press]](https://www.forbes.com/30-under-30/2024/science)
-* We released [[Stormer]](https://arxiv.org/abs/2312.03876), which beats Graphcast to set a new SOTA for ML-driven weather forecasting. Congrats Tung!
 * Schmidt AI 2050 Early Career Fellowship (2024) [[press release forthcoming]]
 * Kavli Fellow by the US National Academy of Sciences (2023) [[press]](https://www.nasonline.org/programs/kavli-frontiers-of-science/news/2023-kavli-fellows.html)
 * Best Paper Award at ICLR Workshop on Trustworthy and Reliable Large Scale Machine Learning Models (2023)
