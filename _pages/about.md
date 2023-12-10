@@ -30,9 +30,9 @@ During my PhD, I spent wonderful summers interning at Google Brain, Microsoft Re
 
 # recent news
 
-
-* Honored to be selected for the [Forbes Under 30](https://www.forbes.com/30-under-30/2024/science) List.
-* Honored to be selected as a Kavli Fellow by the US National Academy of Sciences.
+* Honored to be selected for the [Forbes 30 Under 30](https://www.forbes.com/30-under-30/2024/science) List.
+* Honored to be awarded the Schmidt AI 2050 Early Career Fellowship.
+* Honored to be selected as a [Kavli Fellow](https://www.nasonline.org/programs/kavli-frontiers-of-science/news/2023-kavli-fellows.html) by the US National Academy of Sciences.
 * Thank you [Washington Post](https://www.washingtonpost.com/weather/2023/09/21/hurricane-lee-artificial-intelligence-forecasting/), [MIT Tech Review](https://www.technologyreview.com/2023/11/14/1083366/google-deepminds-weather-ai-can-forecast-extreme-weather-quicker-and-more-accurately/) for covering our research on ClimaX. My comments on the field more broadly in [Nature](https://www.nature.com/articles/d41586-023-03552-y) and [Science](https://www.science.org/content/article/ai-churns-out-lightning-fast-forecasts-good-weather-agencies)
 <!-- * [Decision Stacks](https://arxiv.org/abs/2306.06253), [ExPT](https://arxiv.org/abs/2306.06253), [ClimateLearn](https://arxiv.org/abs/2307.01909) will appear at NeurIPS this year. Congrats to lead authors Siyan, Tung, and Jason! -->
 * [ClimaX](https://arxiv.org/abs/2301.10343) wins the best paper award at ICML Workshop on ML and Scientific Modeling. Congrats Tung!

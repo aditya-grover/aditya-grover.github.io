@@ -7,8 +7,11 @@ nav: true
 nav_order: 4
 ---
 
+
 * Forbes 30 Under 30 (2024) [[press]](https://www.forbes.com/30-under-30/2024/science)
-* Kavli Fellow by the US National Academy of Sciences (2023)
+* We just released [[Stormer]](https://arxiv.org/abs/2312.03876), the most accurate ML-based weather forecasting system in the world. Congrats Tung!
+* Schmidt AI 2050 Early Career Fellowship (2024) [[press release forthcoming]]
+* Kavli Fellow by the US National Academy of Sciences (2023) [[press]](https://www.nasonline.org/programs/kavli-frontiers-of-science/news/2023-kavli-fellows.html)
 * Best Paper Award at ICLR Workshop on Trustworthy and Reliable Large Scale Machine Learning Models (2023)
 * Best Paper Award at the ICML Workshop on Scientific and Machine Learning Modeling (2023)
 * Adobe Data Science Research Award (2023) [[press]](https://research.adobe.com/data-science-research-awards/)
