@@ -41,9 +41,6 @@ During my PhD, I spent wonderful summers interning at Google Brain, Microsoft Re
 * Looking forward to serving as the General Co-Chair for the 3rd [Causal Learning and Reasoning Conference](https://www.cclear.cc/2024) (CLeaR) in 2024.
 * Honored to receive the [AI Researcher of the Year Award](https://www.sait.samsung.co.kr/saithome/event/saif2022.do) by Samsung. 
 * Upcoming talks: 
-  - Amazon AI for Science Seminar (Feb 2024)
-  - SIAM Conference on Uncertainty Quantification (Feb 2024) 
-  - Bell Labs - Responsible AI Seminar (Feb 2024)
   - UC Berkeley - AI + Physical Sciences Symposium for Climate Innovation (March 2024)
   - Cornell AI for Science Seminar (April 2024)
 * Recent talks: NeurIPS Workshop on Robustness of Few-shot and Zero-shot Learning in Foundation Models (Keynote), SoCalNLP Symposium (Keynote), Columbia LEAP Institute, HydroML Symposium (Keynote), KDD Environment Day (Keynote), UCSD Scientific ML Symposium (Keynote)
