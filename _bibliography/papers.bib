@@ -1,115 +1,650 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{nathaniel2024chaosbench,
+  title={Chaosbench: A multi-channel, physics-based benchmark for subseasonal-to-seasonal climate prediction},
+  author={Nathaniel, Juan and Qu, Yongquan and Nguyen, Tung and Yu, Sungduk and Busecke, Julius and Grover, Aditya and Gentine, Pierre},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  award={Oral Presentation},
+  pdf={https://arxiv.org/abs/2402.00712},
+  abstract={Accurate prediction of climate in the subseasonal-to-seasonal scale is crucial for disaster preparedness and robust decision making amidst climate change. Yet, forecasting beyond the weather timescale is challenging because it deals with problems other than initial condition, including boundary interaction, butterfly effect, and our inherent lack of physical understanding. At present, existing benchmarks tend to have shorter forecasting range of up-to 15 days, do not include a wide range of operational baselines, and lack physics-based constraints for explainability. Thus, we propose ChaosBench, a challenging benchmark to extend the predictability range of data-driven weather emulators to S2S timescale. First, ChaosBench is comprised of variables beyond the typical surface-atmospheric ERA5 to also include ocean, ice, and land reanalysis products that span over 45 years to allow for full Earth system emulation that respects boundary conditions. We also propose physics-based, in addition to deterministic and probabilistic metrics, to ensure a physically-consistent ensemble that accounts for butterfly effect. Furthermore, we evaluate on a diverse set of physics-based forecasts from four national weather agencies as baselines to our data-driven counterpart such as ViT/ClimaX, PanguWeather, GraphCast, and FourCastNetV2. Overall, we find methods originally developed for weather-scale applications fail on S2S task: their performance simply collapse to an unskilled climatology. Nonetheless, we outline and demonstrate several strategies that can extend the predictability range of existing weather emulators, including the use of ensembles, robust control of error propagation, and the use of physics-informed models.},
+  year={2024},
+  abbr={NeurIPS}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{zhao2024probing,
+  title={Probing the Decision Boundaries of In-context Learning in Large Language Models},
+  author={Zhao, Siyan and Nguyen, Tung and Grover, Aditya},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  pdf={https://arxiv.org/abs/2406.11233},
+  abstract={In-context learning is a key paradigm in large language models (LLMs) that enables them to generalize to new tasks and domains by simply prompting these models with a few exemplars without explicit parameter updates. Many attempts have been made to understand in-context learning in LLMs as a function of model scale, pretraining data, and other factors. In this work, we propose a new mechanism to probe and understand in-context learning from the lens of decision boundaries for in-context binary classification. Decision boundaries are straightforward to visualize and provide important information about the qualitative behavior of the inductive biases of standard classifiers. To our surprise, we find that the decision boundaries learned by current LLMs in simple binary classification tasks are often irregular and non-smooth, regardless of linear separability in the underlying task. This paper investigates the factors influencing these decision boundaries and explores methods to enhance their generalizability. We assess various approaches, including training-free and fine-tuning methods for LLMs, the impact of model architecture, and the effectiveness of active prompting techniques for smoothing decision boundaries in a data-efficient manner. Our findings provide a deeper understanding of in-context learning dynamics and offer practical improvements for enhancing robustness and generalizability of in-context learning.},
+  year={2024},
+  abbr={NeurIPS}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{nguyen2024scaling,
+  title={Scaling transformer neural networks for skillful and reliable medium-range weather forecasting},
+  author={Nguyen, Tung and Shah, Rohan and Bansal, Hritik and Arcomano, Troy and Maulik, Romit and Kotamarthi, Veerabhadra and Foster, Ian and Madireddy, Sandeep and Grover, Aditya},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  abstract={Weather forecasting is a fundamental problem for anticipating and mitigating the impacts of climate change. Recently, data-driven approaches for weather forecasting based on deep learning have shown great promise, achieving accuracies that are competitive with operational systems. However, those methods often employ complex, customized architectures without sufficient ablation analysis, making it difficult to understand what truly contributes to their success. Here we introduce Stormer, a simple transformer model that achieves state-of-the-art performance on weather forecasting with minimal changes to the standard transformer backbone. We identify the key components of Stormer through careful empirical analyses, including weather-specific embedding, randomized dynamics forecast, and pressure-weighted loss. At the core of Stormer is a randomized forecasting objective that trains the model to forecast the weather dynamics over varying time intervals. During inference, this allows us to produce multiple forecasts for a target lead time and combine them to obtain better forecast accuracy. On WeatherBench 2, Stormer performs competitively at short to medium-range forecasts and outperforms current methods beyond 7 days, while requiring orders-of-magnitude less training data and compute. Additionally, we demonstrate Stormer's favorable scaling properties, showing consistent improvements in forecast accuracy with increases in model size and training tokens.},
+  pdf={https://arxiv.org/abs/2312.03876},
+  award={Best Paper Award at the ICLR Workshop on Tackling Climate Change with AI},
+  year={2024},
+  abbr={NeurIPS}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+@inproceedings{li2024mamba,
+  title={Mamba-nd: Selective state space modeling for multi-dimensional data},
+  author={Li, Shufan and Singh, Harkanwar and Grover, Aditya},
+  abstract={In recent years, Transformers have become the de-facto architecture for sequence modeling on text and a variety of multi-dimensional data, such as images and video. However, the use of self-attention layers in a Transformer incurs prohibitive compute and memory complexity that scales quadratically w.r.t. the sequence length. A recent architecture, Mamba, based on state space models has been shown to achieve comparable performance for modeling text sequences, while scaling linearly with the sequence length. In this work, we present Mamba-ND, a generalized design extending the Mamba architecture to arbitrary multi-dimensional data. Our design alternatively unravels the input data across different dimensions following row-major orderings. We provide a systematic comparison of Mamba-ND with several other alternatives, based on prior multi-dimensional extensions such as Bi-directional LSTMs and S4ND. Empirically, we show that Mamba-ND demonstrates performance competitive with the state-of-the-art on a variety of multi-dimensional benchmarks, including ImageNet-1K classification, HMDB-51 action recognition, and ERA5 weather forecasting.},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  pdf={https://arxiv.org/abs/2402.05892},
+  award={Oral Presentation},
+  year={2024},
+  abbr={ECCV}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{bansal2024peering,
+  title={Peering Through Preferences: Unraveling Feedback Acquisition for Aligning Large Language Models},
+  author={Bansal, Hritik and Dang, John and Grover, Aditya},
+  booktitle={International Conference on Learning Representations},
+  abstract={Aligning large language models (LLMs) with human values and intents critically involves the use of human or AI feedback. While dense feedback annotations are expensive to acquire and integrate, sparse feedback presents a structural design choice between ratings (e.g., score Response A on a scale of 1-7) and rankings (e.g., is Response A better than Response B?). In this work, we analyze the effect of this design choice for the alignment and evaluation of LLMs. We uncover an inconsistency problem wherein the preferences inferred from ratings and rankings significantly disagree 60% for both human and AI annotators. Our subsequent analysis identifies various facets of annotator biases that explain this phenomena, such as human annotators would rate denser responses higher while preferring accuracy during pairwise judgments. To our surprise, we also observe that the choice of feedback protocol also has a significant effect on the evaluation of aligned LLMs. In particular, we find that LLMs that leverage rankings data for alignment (say model X) are preferred over those that leverage ratings data (say model Y), with a rank-based evaluation protocol (is X/Y's response better than reference response?) but not with a rating-based evaluation protocol (score Rank X/Y's response on a scale of 1-7). Our findings thus shed light on critical gaps in methods for evaluating the real-world utility of language models and their strong dependence on the feedback protocol used for alignment.},
+  pdf={https://arxiv.org/abs/2308.15812},
+  year={2024},
+  abbr={ICLR}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@inproceedings{zhao2024group,
+  title={Group Preference Optimization: Few-Shot Alignment of Large Language Models},
+  author={Zhao, Siyan and Dang, John and Grover, Aditya},
+  booktitle={International Conference on Learning Representations},
+  abstract={Many applications of large language models (LLMs), ranging from chatbots to creative writing, require nuanced subjective judgments that can differ significantly across different groups. Existing alignment algorithms can be expensive to align for each group, requiring prohibitive amounts of group-specific preference data and computation for real-world use cases. We introduce Group Preference Optimization (GPO), an alignment framework that steers language models to preferences of individual groups in a few-shot manner. In GPO, we augment the base LLM with an independent transformer module trained to predict the preferences of a group for the LLM generations. For few-shot learning, we parameterize this module as an in-context autoregressive transformer and train it via meta-learning on several groups. We empirically validate the efficacy of GPO through rigorous evaluations using LLMs with varied sizes on three human opinion adaptation tasks. These tasks involve adapting to the preferences of US demographic groups, global countries, and individual users. Our results demonstrate that GPO not only aligns models more accurately but also requires fewer group-specific preferences, and less training and inference computing resources, outperforming existing strategies such as in-context steering and fine-tuning methods.},
+  pdf={https://arxiv.org/abs/2310.11523},
+  year={2024},
+  abbr={ICLR}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{bansal2024videocon,
+  title={VideoCon: Robust Video-Language Alignment via Contrast Captions},
+  author={Bansal, Hritik and Bitton, Yonatan and Szpektor, Idan and Chang, Kai-Wei and Grover, Aditya},
+  booktitle={IEEE / CVF Conference on Computer Vision and Pattern Recognition},
+  abstract={Despite being (pre)trained on a massive amount of data, state-of-the-art video-language alignment models are not robust to semantically-plausible contrastive changes in the video captions. Our work addresses this by identifying a broad spectrum of contrast misalignments, such as replacing entities, actions, and flipping event order, which alignment models should be robust against. To this end, we introduce the VideoCon, a video-language alignment dataset constructed by a large language model that generates plausible contrast video captions and explanations for differences between original and contrast video captions. Then, a generative video-language model is finetuned with VideoCon to assess video-language entailment and generate explanations. Our VideoCon-based alignment model significantly outperforms current models. It exhibits a 12-point increase in AUC for the video-language alignment task on human-generated contrast captions. Finally, our model sets new state of the art zero-shot performance in temporally-extensive video-language tasks such as text-to-video retrieval (SSv2-Temporal) and video question answering (ATP-Hard), and shows significantly superior performance on novel videos and human-crafted captions and explanations.},
+  pdf={https://arxiv.org/abs/2311.10111},
+  year={2024},
+  abbr={CVPR}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@inproceedings{zhao2023decision,
+  title={Decision Stacks: Flexible Reinforcment Learning Via Modular Generative Models},
+  author={Zhao, Siyan and Grover, Aditya},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)}, 
+  pdf={https://arxiv.org/abs/2306.06253},
+  abstract={Reinforcement learning provides a compelling approach for tackling various aspects of sequential decision making, such as defining complex goals, planning future actions and observations, and evaluating their utilities. However, effectively integrating these capabilities while maintaining both expressive power and flexibility in modeling choices poses significant algorithmic challenges for efficient learning and inference. In this work, we introduce Decision Stacks, a generative framework that decomposes goal-conditioned policy agents into three distinct generative modules. These modules utilize independent generative models to simulate the temporal evolution of observations, rewards, and actions, enabling parallel learning through teacher forcing. Our framework ensures both expressivity and flexibility by allowing designers to tailor individual modules to incorporate architectural bias, optimization objectives, dynamics, domain transferability, and inference speed. Through extensive empirical evaluations, we demonstrate the effectiveness of Decision Stacks in offline policy optimization across various Markov Decision Processes (MDPs) and Partially Observable Markov Decision Processes (POMDPs), outperforming existing methods and facilitating flexible generative decision making.},
+  year={2023},
+  abbr={NeurIPS}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{nguyen2023expt,
+  title={ExPT: Synthetic Pretraining for Few-Shot Experimental Design},
+  author={Nguyen, Tung and Agarwal, Sudhanshu and Grover, Aditya},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)}, 
+  pdf={https://arxiv.org/abs/2310.19961},
+  abstract={Experimental design is a fundamental problem in many science and engineering fields. In this problem, sample efficiency is crucial due to the time, money, and safety costs of real-world design evaluations. Existing approaches either rely on active data collection or access to large, labeled datasets of past experiments, making them impractical in many real-world scenarios. In this work, we address the more challenging yet realistic setting of few-shot experimental design, where only a few labeled data points of input designs and their corresponding values are available. We approach this problem as a conditional generation task, where a model conditions on a few labeled examples and the desired output to generate an optimal input design. To this end, we introduce Experiment Pretrained Transformers (ExPT), a foundation model for few-shot experimental design that employs a novel combination of synthetic pretraining with in-context learning. In ExPT, we only assume knowledge of a finite collection of unlabelled data points from the input domain and pretrain a transformer neural network to optimize diverse synthetic functions defined over this domain. Unsupervised pretraining allows ExPT to adapt to any design task at test time in an in-context fashion by conditioning on a few labeled data points from the target task and generating the candidate optima. We evaluate ExPT on few-shot experimental design in challenging domains and demonstrate its superior generality and performance compared to existing methods.},
+  year={2023},
+  abbr={NeurIPS}
 }
+
+
+@inproceedings{nguyen2023climatelearn,
+  title={ClimateLearn: Benchmarking Machine Learning for Weather and Climate Modeling},
+  author={Nguyen, Tung and Jewik, Jason and Bansal, Hritik and Sharma, Prakhar and Grover, Aditya},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)}, 
+  journal={arXiv preprint arXiv:2307.01909},
+  pdf={https://arxiv.org/abs/2307.01909},
+  abstract={Modeling weather and climate is an essential endeavor to understand the near- and long-term impacts of climate change, as well as inform technology and policymaking for adaptation and mitigation efforts. In recent years, there has been a surging interest in applying data-driven methods based on machine learning for solving core problems such as weather forecasting and climate downscaling. Despite promising results, much of this progress has been impaired due to the lack of large-scale, open-source efforts for reproducibility, resulting in the use of inconsistent or underspecified datasets, training setups, and evaluations by both domain scientists and artificial intelligence researchers. We introduce ClimateLearn, an open-source PyTorch library that vastly simplifies the training and evaluation of machine learning models for data-driven climate science. ClimateLearn consists of holistic pipelines for dataset processing (e.g., ERA5, CMIP6, PRISM), implementation of state-of-the-art deep learning models (e.g., Transformers, ResNets), and quantitative and qualitative evaluation for standard weather and climate modeling tasks. We supplement these functionalities with extensive documentation, contribution guides, and quickstart tutorials to expand access and promote community growth. We have also performed comprehensive forecasting and downscaling experiments to showcase the capabilities and key features of our library. To our knowledge, ClimateLearn is the first large-scale, open-source effort for bridging research in weather and climate modeling with modern machine learning systems. Our library is available publicly at https://github.com/aditya-grover/climate-learn},
+  year={2023},
+  abbr={NeurIPS}
+}
+
+
+@inproceedings{bansal2023cleanclip,
+  title={CleanCLIP: Mitigating Data Poisoning Attacks in Multimodal Contrastive Learning},
+  author={Bansal, Hritik and Singhi, Nishad and Yang, Yu and Yin, Fan and Grover*, Aditya and Chang*, Kai-Wei},
+  booktitle={International Conference on Computer Vision (ICCV)}, 
+  pdf={https://arxiv.org/abs/2303.03323},
+  abstract={Multimodal contrastive pretraining has been used to train multimodal representation models, such as CLIP, on large amounts of paired image-text data. However, previous studies have revealed that such models are vulnerable to backdoor attacks. Specifically, when trained on backdoored examples, CLIP learns spurious correlations between the embedded backdoor trigger and the target label, aligning their representations in the joint embedding space. Injecting even a small number of poisoned examples, such as 75 examples in 3 million pretraining data, can significantly manipulate the model's behavior, making it difficult to detect or unlearn such correlations. To address this issue, we propose CleanCLIP, a finetuning framework that weakens the learned spurious associations introduced by backdoor attacks by independently re-aligning the representations for individual modalities. We demonstrate that unsupervised finetuning using a combination of multimodal contrastive and unimodal self-supervised objectives for individual modalities can significantly reduce the impact of the backdoor attack. Additionally, we show that supervised finetuning on task-specific labeled image data removes the backdoor trigger from the CLIP vision encoder. We show empirically that CleanCLIP maintains model performance on benign examples while erasing a range of backdoor attacks on multimodal contrastive learning.},
+  award={Oral Presentation (acceptance rate: 1.8%), Best Paper Award at the ICLR Workshop on Reliable and Trustworthy Large Scale Machine Learning Models},
+  year={2023},
+  abbr={ICCV}},
+
+
+@inproceedings{nguyen2023climax,
+  title={ClimaX: A foundation model for weather and climate},
+  author={Nguyen, Tung and Brandstetter, Johannes and Kapoor, Ashish and Gupta, Jayesh K and Grover, Aditya},
+  booktitle={International Conference on Machine Learning (ICML)}, 
+  pdf={https://arxiv.org/abs/2301.10343},
+  abstract={Most state-of-the-art approaches for weather and climate modeling are based on physics-informed numerical models of the atmosphere. These approaches aim to model the non-linear dynamics and complex interactions between multiple variables, which are challenging to approximate. Additionally, many such numerical models are computationally intensive, especially when modeling the atmospheric phenomenon at a fine-grained spatial and temporal resolution. Recent data-driven approaches based on machine learning instead aim to directly solve a downstream forecasting or projection task by learning a data-driven functional mapping using deep neural networks. However, these networks are trained using curated and homogeneous climate datasets for specific spatiotemporal tasks, and thus lack the generality of numerical models. We develop and demonstrate ClimaX, a flexible and generalizable deep learning model for weather and climate science that can be trained using heterogeneous datasets spanning different variables, spatio-temporal coverage, and physical groundings. ClimaX extends the Transformer architecture with novel encoding and aggregation blocks that allow effective use of available compute while maintaining general utility. ClimaX is pre-trained with a self-supervised learning objective on climate datasets derived from CMIP6. The pre-trained ClimaX can then be fine-tuned to address a breadth of climate and weather tasks, including those that involve atmospheric variables and spatio-temporal scales unseen during pretraining. Compared to existing data-driven baselines, we show that this generality in ClimaX results in superior performance on benchmarks for weather forecasting and climate projections, even when pretrained at lower resolutions and compute budgets.},
+  award={Best Paper Award at the ICML Workshop on Synergy of Scientific and Machine Learning Modeling, Spotlight Oral at ICLR Workshop on Tackling Climate Change with AI},
+  year={2023},
+  abbr={ICML}
+}
+
+@inproceedings{krishnamoorthy2022generative,
+  title={Generative Pretraining for Black-box Optimization},
+  author={Mashkaria, Satvik Mehul and Krishnamoorthy, Siddarth and  Grover, Aditya},
+  booktitle={International Conference on Machine Learning (ICML)}, 
+  pdf={https://arxiv.org/abs/2206.10786},
+  abstract={Many problems in science and engineering involve optimizing an expensive black-box function over a high-dimensional space. For such black-box optimization (BBO) problems, we typically assume a small budget for online function evaluations, but also often have access to a fixed, offline dataset for pretraining. Prior approaches seek to utilize the offline data to approximate the function or its inverse but are not sufficiently accurate far from the data distribution. We propose BONET, a generative framework for pretraining a novel black-box optimizer using offline datasets. In BONET, we train an autoregressive model on fixed-length trajectories derived from an offline dataset. We design a sampling strategy to synthesize trajectories from offline data using a simple heuristic of rolling out monotonic transitions from low-fidelity to high-fidelity samples. Empirically, we instantiate BONET using a causally masked Transformer and evaluate it on Design-Bench, where we rank the best on average, outperforming state-of-the-art baselines.},
+  year={2023},
+  abbr={ICML}
+}
+
+@inproceedings{zheng2022semi,
+  title={Semi-Supervised Offline Reinforcement Learning with Action-Free Trajectories},
+  author={Zheng, Qinqing and Henaff, Mikael and Amos, Brandon and Grover, Aditya},
+  booktitle={International Conference on Machine Learning (ICML)}, 
+  pdf={https://arxiv.org/abs/2210.06518},
+  abstract={Natural agents can effectively learn from multiple data sources that differ in size, quality, and types of measurements. We study this heterogeneity in the context of offline reinforcement learning (RL) by introducing a new, practically motivated semi-supervised setting. Here, an agent has access to two sets of trajectories: labelled trajectories containing state, action, reward triplets at every timestep, along with unlabelled trajectories that contain only state and reward information. For this setting, we develop and study a simple meta-algorithmic pipeline that learns an inverse dynamics model on the labelled data to obtain proxy-labels for the unlabelled data, followed by the use of any offline RL algorithm on the true and proxy-labelled trajectories. Empirically, we find this simple pipeline to be highly successful - on several D4RL benchmarks, certain offline RL algorithms can match the performance of variants trained on a fully labelled dataset even when we label only 10% trajectories from the low return regime. To strengthen our understanding, we perform a large-scale controlled empirical study investigating the interplay of data-centric properties of the labelled and unlabelled datasets, with algorithmic design choices (e.g., choice of inverse dynamics, offline RL algorithm) to identify general trends and best practices for training RL agents on semi-supervised offline datasets.},
+  year={2023},
+  abbr={ICML}
+}
+
+@inproceedings{krishnamoorthy2022diffusion,
+  title={Diffusion Models for Offline Black-Box Optimization},
+  author={Krishnamoorthy, Siddarth and Mashkaria, Satvik Mehul and Grover, Aditya},
+  booktitle={International Conference on Machine Learning (ICML)},
+  abstract={The goal of offline black-box optimization (BBO) is to optimize an expensive black-box function using a fixed dataset of function evaluations. Prior works consider forward approaches that learn surrogates to the black-box function and inverse approaches that directly map function values to corresponding points in the input domain of the black-box function. These approaches are limited by the quality of the offline dataset and the difficulty in learning one-to-many mappings in high dimensions, respectively. We propose Denoising Diffusion Optimization Models (DDOM), a new inverse approach for offline black-box optimization based on diffusion models. Given an offline dataset, DDOM learns a conditional generative model over the domain of the black-box function conditioned on the function values. We investigate several design choices in DDOM, such as reweighting the dataset to focus on high function values and the use of classifier-free guidance at test-time to enable generalization to function values that can even exceed the dataset maxima. Empirically, we conduct experiments on the Design-Bench benchmark (Trabucco et al., 2022) and show that DDOM achieves results competitive with state-of-the-art baselines.},
+  year={2023},
+  abbr={ICML}
+}
+
+
+@inproceedings{zhuscaling,
+  title={Scaling Pareto-Efficient Decision Making via Offline Multi-Objective RL},
+  author={Zhu, Baiting and Dang, Meihua and Grover, Aditya},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2023},
+  abstract={The goal of multi-objective reinforcement learning (MORL) is to learn policies that simultaneously optimize multiple competing objectives. In practice, an agent's preferences over the objectives may not be known apriori, and hence, we require policies that can generalize to arbitrary preferences at test time. In this work, we propose a new data-driven setup for offline MORL, where we wish to learn a preference-agnostic policy agent using only a finite dataset of offline demonstrations of other agents and their preferences. The key contributions of this work are two-fold. First, we introduce D4MORL, (D)atasets for MORL that are specifically designed for offline settings. It contains 1.8 million annotated demonstrations obtained by rolling out reference policies that optimize for randomly sampled preferences on 6 MuJoCo environments with 2-3 objectives each. Second, we propose Pareto-Efficient Decision Agents (PEDA), a family of offline MORL algorithms that builds and extends Decision Transformers via a novel preference-and-return-conditioned policy. Empirically, we show that PEDA closely approximates the behavioral policy on the D4MORL benchmark and provides an excellent approximation of the Pareto-front with appropriate conditioning, as measured by the hypervolume and sparsity metrics. },
+  pdf={https://openreview.net/forum?id=Ki4ocDm364},
+  abbr={ICLR}
+}
+
+@article{bose2022controllable,
+  title={Controllable Generative Modeling via Causal Reasoning},
+  author={Bose, Joey and Monti, Ricardo Pio and Grover, Aditya},
+  journal={Transactions of Machine Learning Research (TMLR)},
+  pdf={https://openreview.net/forum?id=Z44YAcLaGw},
+  year={2022},
+  abstract={Deep latent variable generative models excel at generating complex, high-dimensional data, often exhibiting impressive generalization beyond the training distribution. However, many such models in use today are black-boxes trained on large unlabelled datasets with statistical objectives and lack an interpretable understanding of the latent space required for controlling the generative process. We propose CAGE, a framework for controllable generation in latent variable models based on causal reasoning. Given a pair of attributes, CAGE infers the implicit cause-effect relationships between these attributes as induced by a deep generative model. This is achieved by defining and estimating a novel notion of unit-level causal effects in the latent space of the generative model. Thereafter, we use the inferred cause-effect relationships to design a novel strategy for controllable generation based on counterfactual sampling. Through a series of large-scale synthetic and human evaluations, we demonstrate that generating counterfactual samples which respect the underlying causal relationships inferred via CAGE leads to subjectively more realistic images.},
+  abbr={TMLR}
+}
+
+@inproceedings{liu2022masked,
+  title={Masked Autoencoding for Scalable and Generalizable Decision Making},
+  author={Liu, Fangchen and Liu, Hao and Grover, Aditya and Abbeel, Pieter},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  pdf={https://arxiv.org/abs/2211.12740},
+  year={2022},
+  abstract={We are interested in learning scalable agents for reinforcement learning that can learn from large-scale, diverse sequential data similar to current large vision and language models. To this end, this paper presents masked decision prediction (MaskDP), a simple and scalable self-supervised pretraining method for reinforcement learning (RL) and behavioral cloning (BC). In our MaskDP approach, we employ a masked autoencoder (MAE) to state-action trajectories, wherein we randomly mask state and action tokens and reconstruct the missing data. By doing so, the model is required to infer masked out states and actions and extract information about dynamics. We find that masking different proportions of the input sequence significantly helps with learning a better model that generalizes well to multiple downstream tasks. In our empirical study we ﬁnd that a MaskDP model gains the capability of zero-shot transfer to new BC tasks, such as single and multiple goal reaching, and it can zero-shot infer skills from a few example transitions. In addition, MaskDP transfers well to offline RL and shows promising scaling behavior w.r.t. to model size. It is amenable to data efficient finetuning, achieving competitive results with prior methods based on autoregressive pretraining.},
+  code={https://github.com/FangchenLiu/MaskDP_public},
+  abbr={NeurIPS}
+}
+
+@inproceedings{goel2022cyclip,
+  title={CyCLIP: Cyclic Contrastive Language-Image Pretraining},
+  author={Goel, Shashank and Bansal, Hritik and Bhatia, Sumit and Rossi, Ryan A and Vinay, Vishwa and Grover, Aditya},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  pdf={https://arxiv.org/abs/2205.14459},
+  year={2022},
+  abbr={NeurIPS},
+  abstract={Recent advances in contrastive representation learning over paired image-text data have led to models such as CLIP that achieve state-of-the-art performance for zero-shot classification and distributional robustness. Such models typically require joint reasoning in the image and text representation spaces for downstream inference tasks. Contrary to prior beliefs, we demonstrate that the image and text representations learned via a standard contrastive objective are not interchangeable and can lead to inconsistent downstream predictions. To mitigate this issue, we formalize consistency and propose CyCLIP, a framework for contrastive representation learning that explicitly optimizes for the learned representations to be geometrically consistent in the image and text space. In particular, we show that consistent representations can be learned by explicitly symmetrizing (a) the similarity between the two mismatched image-text pairs (cross-modal consistency); and (b) the similarity between the image-image pair and the text-text pair (in-modal consistency). Empirically, we show that the improved consistency in CyCLIP translates to significant gains over CLIP, with gains ranging from 10%-24% for zero-shot classification accuracy on standard benchmarks (CIFAR-10, CIFAR-100, ImageNet1K) and 10%-27% for robustness to various natural distribution shifts.},
+  code={https://github.com/goel-shashank/CyCLIP},
+  award={Oral Presentation [top 2%]}
+}
+
+
+@inproceedings{zheng2022online, 
+  title={Online decision transformer}, 
+  author={Zheng, Qinqing and Zhang, Amy and Grover, Aditya}, 
+  booktitle={International Conference on Machine Learning (ICML)}, 
+  pages={27042--27059}, 
+  year={2022}, 
+  abbr={ICML},
+  pdf={https://arxiv.org/abs/2202.05607},
+  abstract={Recent work has shown that offline reinforcement learning (RL) can be formulated as a sequence modeling problem (Chen et al., 2021; Janner et al., 2021) and solved via approaches similar to large-scale language modeling. However, any practical instantiation of RL also involves an online component, where policies pretrained on passive offline datasets are finetuned via task-specific interactions with the environment. We propose Online Decision Transformers (ODT), an RL algorithm based on sequence modeling that blends offline pretraining with online finetuning in a unified framework. Our framework uses sequence-level entropy regularizers in conjunction with autoregressive modeling objectives for sample-efficient exploration and finetuning. Empirically, we show that ODT is competitive with the state-of-the-art in abstractolute performance on the D4RL benchmark but shows much more significant gains during the finetuning procedure.},
+  award={Long Oral Presentation}
+  }
+
+@inproceedings{nguyen2022transformer,
+  title={Transformer neural processes: Uncertainty-aware meta learning via sequence modeling},
+  author={Nguyen, Tung and Grover, Aditya},
+  booktitle={International Conference on Machine Learning (ICML)},
+  pdf={https://arxiv.org/abs/2207.04179},
+  year={2022},
+  abstract={Neural Processes (NPs) are a popular class of approaches for meta-learning. Similar to Gaussian Processes (GPs), NPs define distributions over functions and can estimate uncertainty in their predictions. However, unlike GPs, NPs and their variants suffer from underfitting and often have intractable likelihoods, which limit their applications in sequential decision making. We propose Transformer Neural Processes (TNPs), a new member of the NP family that casts uncertainty-aware meta learning as a sequence modeling problem. We learn TNPs via an autoregressive likelihood-based objective and instantiate it with a novel transformer-based architecture. The model architecture respects the inductive biases inherent to the problem structure, such as invariance to the observed data points and equivariance to the unobserved points. We further investigate knobs within the TNP framework that tradeoff expressivity of the decoding distribution with extra computation. Empirically, we show that TNPs achieve state-of-the-art performance on various benchmark problems, outperforming all previous NP variants on meta regression, image completion, contextual multi-armed bandits, and Bayesian optimization.},
+  code={https://github.com/tung-nd/TNP-pytorch},
+  abbr={ICML}
+}
+
+@inproceedings{ben2022matching,
+  title={Matching normalizing flows and probability paths on manifolds},
+  author={Ben-Hamu, Heli and Cohen, Samuel and Bose, Joey and Amos, Brandon and Grover, Aditya and Nickel, Maximilian and Chen, Ricky and Lipman, Yaron},
+  booktitle={International Conference on Machine Learning (ICML)},
+  pdf={https://arxiv.org/abs/2207.04179},
+  abstract={Continuous Normalizing Flows (CNFs) are a class of generative models that transform a prior distribution to a model distribution by solving an ordinary differential equation (ODE). We propose to train CNFs on manifolds by minimizing probability path divergence (PPD), a novel family of divergences between the probability density path generated by the CNF and a target probability density path. PPD is formulated using a logarithmic mass conservation formula which is a linear first order partial differential equation relating the log target probabilities and the CNF's defining vector field. PPD has several key benefits over existing methods: it sidesteps the need to solve an ODE per iteration, readily applies to manifold data, scales to high dimensions, and is compatible with a large family of target paths interpolating pure noise and data in finite time. Theoretically, PPD is shown to bound classical probability divergences. Empirically, we show that CNFs learned by minimizing PPD achieve state-of-the-art results in likelihoods and sample quality on existing low-dimensional manifold benchmarks, and is the first example of a generative model to scale to moderately high dimensional manifolds.},
+  year={2022},
+  abbr={ICML}
+}
+
+
+
+@inproceedings{lu2022pretrained,
+  title={Pretrained transformers as universal computation engines},
+  author={Lu, Kevin and Grover, Aditya and Abbeel, Pieter and Mordatch, Igor},
+  booktitle={AAAI Conference on Artificial Intelligence},
+  pdf={https://arxiv.org/abs/2103.05247},
+  year={2022},
+  abstract={We investigate the capability of a transformer pretrained on natural language to generalize to other modalities with minimal finetuning -- in particular, without finetuning of the self-attention and feedforward layers of the residual blocks. We consider such a model, which we call a Frozen Pretrained Transformer (FPT), and study finetuning it on a variety of sequence classification tasks spanning numerical computation, vision, and protein fold prediction. In contrast to prior works which investigate finetuning on the same modality as the pretraining dataset, we show that pretraining on natural language can improve performance and compute efficiency on non-language downstream tasks. Additionally, we perform an analysis of the architecture, comparing the performance of a random initialized transformer to a random LSTM. Combining the two insights, we find language-pretrained transformers can obtain strong performance on a variety of non-language tasks.},
+  abbr={AAAI}
+}
+
+@inproceedings{du2022takes,
+  title={It Takes Four to Tango: Multiagent Selfplay for Automatic Curriculum Generation},
+  author={Du, Yuqing and Abbeel, Pieter and Grover, Aditya},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  pdf={https://arxiv.org/abs/2202.10608},
+  year={2022},
+  abstract={We are interested in training general-purpose reinforcement learning agents that can solve a wide variety of goals. Training such agents efficiently requires automatic generation of a goal curriculum. This is challenging as it requires (a) exploring goals of increasing difficulty, while ensuring that the agent (b) is exposed to a diverse set of goals in a sample efficient manner and (c) does not catastrophically forget previously solved goals. We propose Curriculum Self Play (CuSP), an automated goal generation framework that seeks to satisfy these desiderata by virtue of a multi-player game with four agents. We extend the asymmetric curricula learning in PAIRED (Dennis et al., 2020) to a symmetrized game that carefully balances cooperation and competition between two off-policy student learners and two regret-maximizing teachers. CuSP additionally introduces entropic goal coverage and accounts for the non-stationary nature of the students, allowing us to automatically induce a curriculum that balances progressive exploration with anti-catastrophic exploitation. We demonstrate that our method succeeds at generating an effective curricula of goals for a range of control tasks, outperforming other methods at zero-shot test-time generalization to novel out-of-distribution goals.},
+  code={https://github.com/yuqingd/cusp},
+  abbr={ICLR}
+}
+
+@inproceedings{puny2022frame,
+  title={Frame averaging for invariant and equivariant network design},
+  author={Puny, Omri and Atzmon, Matan and Ben-Hamu, Heli and Smith, Edward J and Misra, Ishan and Grover, Aditya and Lipman, Yaron},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  pdf={https://arxiv.org/abs/2110.03336},
+  year={2022},
+  code={https://github.com/omri1348/Frame-Averaging},
+  abstract={Many machine learning tasks involve learning functions that are known to be invariant or equivariant to certain symmetries of the input data. However, it is often challenging to design neural network architectures that respect these symmetries while being expressive and computationally efficient. For example, Euclidean motion invariant/equivariant graph or point cloud neural networks. We introduce Frame Averaging (FA), a general purpose and systematic framework for adapting known (backbone) architectures to become invariant or equivariant to new symmetry types. Our framework builds on the well known group averaging operator that guarantees invariance or equivariance but is intractable. In contrast, we observe that for many important classes of symmetries, this operator can be replaced with an averaging operator over a small subset of the group elements, called a frame. We show that averaging over a frame guarantees exact invariance or equivariance while often being much simpler to compute than averaging over the entire group. Furthermore, we prove that FA-based models have maximal expressive power in a broad setting and in general preserve the expressive power of their backbone architectures. Using frame averaging, we propose a new class of universal Graph Neural Networks (GNNs), universal Euclidean motion invariant point cloud networks, and Euclidean motion invariant Message Passing (MP) GNNs. We demonstrate the practical effectiveness of FA on several applications including point cloud normal estimation, beyond 2-WL graph separation, and n-body dynamics prediction, achieving state-of-the-art results in all of these benchmarks.},
+  award={Oral Presentation [top 1.5%]},
+  abbr={ICLR}
+}
+
+
+@article{jiang2021bayesian,
+  title={Bayesian learning for rapid prediction of lithium-ion battery-cycling protocols},
+  author={Jiang, Benben and Gent, William E and Mohr, Fabian and Das, Supratim and Berliner, Marc D and Forsuelo, Michael and Zhao, Hongbo and Attia, Peter M and Grover, Aditya and Herring, Patrick K and others},
+  journal={Joule},
+  volume={5},
+  number={12},
+  pages={3187--3203},
+  year={2021},
+  publisher={Elsevier},
+  abstract={Advancing lithium-ion battery technology requires the optimization of cycling protocols. A new data-driven methodology is demonstrated for rapid, accurate prediction of the cycle life obtained by new cycling protocols using a single test lasting only 3 cycles, enabling rapid exploration of cycling protocol design spaces with orders of magnitude reduction in testing time. We achieve this by combining lifetime early prediction with a hierarchical Bayesian model (HBM) to rapidly predict performance distributions without the need for extensive repetitive testing. The methodology is applied to a comprehensive dataset of lithium-iron-phosphate/graphite comprising 29 different fast-charging protocols. HBM alone provides high protocol-lifetime prediction performance, with 6.5% of overall test average percent error, after cycling only one battery to failure. By combining HBM with a battery lifetime prediction model, we achieve a test error of 8.8% using a single 3-cycle test. In addition, the generalizability of the HBM approach is demonstrated for lithium-manganese-cobalt-oxide/graphite cells.},
+  pdf={https://www.cell.com/joule/pdf/S2542-4351(21)00454-2.pdf},
+  abbr={Joule}
+}
+@article{cundy2021bcd,
+  title={BCD nets: Scalable variational approaches for Bayesian causal discovery},
+  author={Cundy, Chris and Grover, Aditya and Ermon, Stefano},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  volume={34},
+  pages={7095--7110},
+  pdf={https://arxiv.org/abs/2112.02761},
+  abstract={A structural equation model (SEM) is an effective framework to reason over causal relationships represented via a directed acyclic graph (DAG). Recent advances have enabled effective maximum-likelihood point estimation of DAGs from observational data. However, a point estimate may not accurately capture the uncertainty in inferring the underlying graph in practical scenarios, wherein the true DAG is non-identifiable and/or the observed dataset is limited. We propose Bayesian Causal Discovery Nets (BCD Nets), a variational inference framework for estimating a distribution over DAGs characterizing a linear-Gaussian SEM. Developing a full Bayesian posterior over DAGs is challenging due to the the discrete and combinatorial nature of graphs. We analyse key design choices for scalable VI over DAGs, such as 1) the parametrization of DAGs via an expressive variational family, 2) a continuous relaxation that enables low-variance stochastic optimization, and 3) suitable priors over the latent variables. We provide a series of experiments on real and synthetic data showing that BCD Nets outperform maximum-likelihood methods on standard causal discovery metrics such as structural Hamming distance in low data regimes.},
+  year={2021},
+  abbr={NeurIPS}
+}
+
+@article{swezey2021pirank,
+  title={Pirank: Scalable learning to rank via differentiable sorting},
+  author={Swezey, Robin and Grover, Aditya and Charron, Bruno and Ermon, Stefano},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  volume={34},
+  pages={21644--21654},
+  pdf={https://arxiv.org/abs/2012.06731},
+  abstract={A key challenge with machine learning approaches for ranking is the gap between the performance metrics of interest and the surrogate loss functions that can be optimized with gradient-based methods. This gap arises because ranking metrics typically involve a sorting operation which is not differentiable w.r.t. the model parameters. Prior works have proposed surrogates that are loosely related to ranking metrics or simple smoothed versions thereof, and often fail to scale to real-world applications. We propose PiRank, a new class of differentiable surrogates for ranking, which employ a continuous, temperature-controlled relaxation to the sorting operator based on NeuralSort [1]. We show that PiRank exactly recovers the desired metrics in the limit of zero temperature and further propose a divide and-conquer extension that scales favorably to large list sizes, both in theory and practice. Empirically, we demonstrate the role of larger list sizes during training and show that PiRank significantly improves over comparable approaches on publicly available internet-scale learning-to-rank benchmarks.},
+  year={2021},
+  abbr={NeurIPS}
+}
+
+@article{chen2021decision,
+  title={Decision transformer: Reinforcement learning via sequence modeling},
+  author={Chen, Lili and Lu, Kevin and Rajeswaran, Aravind and Lee, Kimin and Grover, Aditya and Laskin, Misha and Abbeel, Pieter and Srinivas, Aravind and Mordatch, Igor},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  volume={34},
+  pages={15084--15097},
+  pdf={https://arxiv.org/abs/2106.01345},
+  abstract={We introduce a framework that abstracts Reinforcement Learning (RL) as a sequence modeling problem. This allows us to draw upon the simplicity and scalability of the Transformer architecture, and associated advances in language modeling such as GPT-x and BERT. In particular, we present Decision Transformer, an architecture that casts the problem of RL as conditional sequence modeling. Unlike prior approaches to RL that fit value functions or compute policy gradients, Decision Transformer simply outputs the optimal actions by leveraging a causally masked Transformer. By conditioning an autoregressive model on the desired return (reward), past states, and actions, our Decision Transformer model can generate future actions that achieve the desired return. Despite its simplicity, Decision Transformer matches or exceeds the performance of state-of-the-art model-free offline RL baselines on Atari, OpenAI Gym, and Key-to-Door tasks.},
+  year={2021},
+  abbr={NeurIPS}
+}
+
+@article{rozen2021moser,
+  title={Moser flow: Divergence-based generative modeling on manifolds},
+  author={Rozen, Noam and Grover, Aditya and Nickel, Maximilian and Lipman, Yaron},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  volume={34},
+  pages={17669--17680},
+  pdf={https://arxiv.org/abs/2108.08052},
+  year={2021},
+  abbr={NeurIPS},
+  abstract={We are interested in learning generative models for complex geometries described via manifolds, such as spheres, tori, and other implicit surfaces. Current extensions of existing (Euclidean) generative models are restricted to specific geometries and typically suffer from high computational costs. We introduce Moser Flow (MF), a new class of generative models within the family of continuous normalizing flows (CNF). MF also produces a CNF via a solution to the change-of-variable formula, however differently from other CNF methods, its model (learned) density is parameterized as the source (prior) density minus the divergence of a neural network (NN). The divergence is a local, linear differential operator, easy to approximate and calculate on manifolds. Therefore, unlike other CNFs, MF does not require invoking or backpropagating through an ODE solver during training. Furthermore, representing the model density explicitly as the divergence of a NN rather than as a solution of an ODE facilitates learning high fidelity densities. Theoretically, we prove that MF constitutes a universal density approximator under suitable assumptions. Empirically, we demonstrate for the first time the use of flow models for sampling from general curved surfaces and achieve significant improvements in density estimation, sample quality, and training complexity over existing CNFs on challenging synthetic geometries and real-world benchmarks from the earth and climate sciences},
+  award={Outstanding Paper Award}
+}
+
+@inproceedings{guo2021learning,
+  title={Learning from an Exploring Demonstrator: Optimal Reward Estimation for Bandits},
+  author={Guo, Wenshuo and Agrawal, Kumar Krishna and Grover, Aditya and Muthukumar, Vidya and Pananjady, Ashwin},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  pdf={https://arxiv.org/abs/2106.14866},
+  year={2021},
+  abstract={We introduce the "inverse bandit" problem of estimating the rewards of a multi-armed bandit instance from observing the learning process of a low-regret demonstrator. Existing approaches to the related problem of inverse reinforcement learning assume the execution of an optimal policy, and thereby suffer from an identifiability issue. In contrast, we propose to leverage the demonstrator's behavior en route to optimality, and in particular, the exploration phase, for reward estimation. We begin by establishing a general information-theoretic lower bound under this paradigm that applies to any demonstrator algorithm, which characterizes a fundamental tradeoff between reward estimation and the amount of exploration of the demonstrator. Then, we develop simple and efficient reward estimators for upper-confidence-based demonstrator algorithms that attain the optimal tradeoff, showing in particular that consistent reward estimation -- free of identifiability issues -- is possible under our paradigm. Extensive simulations on both synthetic and semi-synthetic data corroborate our theoretical results.},
+  abbr={AISTATS}
+}
+
+
+
+
+@inproceedings{xu2021anytime,
+  title={Anytime sampling for autoregressive models via ordered autoencoding},
+  author={Xu, Yilun and Song, Yang and Garg, Sahaj and Gong, Linyuan and Shu, Rui and Grover, Aditya and Ermon, Stefano},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  pdf={https://arxiv.org/abs/2102.11495},
+  year={2021},
+  abstract={Autoregressive models are widely used for tasks such as image and audio generation. The sampling process of these models, however, does not allow interruptions and cannot adapt to real-time computational resources. This challenge impedes the deployment of powerful autoregressive models, which involve a slow sampling process that is sequential in nature and typically scales linearly with respect to the data dimension. To address this difficulty, we propose a new family of autoregressive models that enables anytime sampling. Inspired by Principal Component Analysis, we learn a structured representation space where dimensions are ordered based on their importance with respect to reconstruction. Using an autoregressive model in this latent space, we trade off sample quality for computational efficiency by truncating the generation process before decoding into the original data space. Experimentally, we demonstrate in several image and audio generation tasks that sample quality degrades gracefully as we reduce the computational budget for sampling. The approach suffers almost no loss in sample quality (measured by FID) using only 60\% to 80\% of all latent dimensions for image data.},
+  abbr={ICLR}
+}
+
+@inproceedings{lu2021reset,
+  title={Reset-free lifelong learning with skill-space planning},
+  author={Lu, Kevin and Grover, Aditya and Abbeel, Pieter and Mordatch, Igor},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  pdf={https://arxiv.org/abs/2012.03548},
+  year={2021},
+  abstract={The objective of lifelong reinforcement learning (RL) is to optimize agents which can continuously adapt and interact in changing environments. However, current RL approaches fail drastically when environments are non-stationary and interactions are non-episodic. We propose Lifelong Skill Planning (LiSP), an algorithmic framework for non-episodic lifelong RL based on planning in an abstract space of higher-order skills. We learn the skills in an unsupervised manner using intrinsic rewards and plan over the learned skills using a learned dynamics model. Moreover, our framework permits skill discovery even from offline data, thereby reducing the need for excessive real-world interactions. We demonstrate empirically that LiSP successfully enables long-horizon planning and learns agents that can avoid catastrophic failures even in challenging non-stationary and non-episodic environments derived from gridworld and MuJoCo benchmarks.},
+  abbr={ICLR}
+}
+
+
+@inproceedings{grover2020fair,
+  title={Fair Generative Modeling via Weak Supervision},
+  author={Choi, Kristy and Grover, Aditya and Singh, Trisha and Shu, Rui and Ermon, Stefano},
+  booktitle={International Conference on Machine Learning (ICML)},
+  pdf={https://arxiv.org/abs/1910.12008},
+  abstract={Real-world datasets are often biased with respect to key demographic factors such as race and gender. Due to the latent nature of the underlying factors, detecting and mitigating bias is especially challenging for unsupervised machine learning. We present a weakly supervised algorithm for overcoming dataset bias for deep generative models. Our approach requires access to an additional small, unlabeled reference dataset as the supervision signal, thus sidestepping the need for explicit labels on the underlying bias factors. Using this supplementary dataset, we detect the bias in existing datasets via a density ratio technique and learn generative models which efficiently achieve the twin goals of: 1) data efficiency by using training examples from both biased and reference datasets for learning; and 2) data generation close in distribution to the reference dataset at test time. Empirically, we demonstrate the efficacy of our approach which reduces bias w.r.t. latent factors by an average of up to 34.6% over baselines for comparable image generation using generative adversarial networks.},
+  year={2020},
+  abbr={ICML}
+}
+
+@article{attia2019closed,
+  title={Closed-loop optimization of extreme fast charging for batteries using machine learning},
+  author={Attia, Peter and Grover, Aditya and Jin, Norman and Severson, Kristen and Cheong, Bryan and Liao, Jerry and Chen, Michael H and Perkins, Nicholas and Yang, Zi and Herring, Patrick and Aykol, Muratahan and Harris, Stephen and Braatz, Richard and
+Ermon,Stefano and Chueh, William},
+journal={Nature},
+pdf={https://www.nature.com/articles/s41586-020-1994-5},
+abstract={Simultaneously optimizing many design parameters in time-consuming experiments causes bottlenecks in a broad range of scientific and engineering disciplines1,2. One such example is process and control optimization for lithium-ion batteries during materials selection, cell manufacturing and operation. A typical objective is to maximize battery lifetime; however, conducting even a single experiment to evaluate lifetime can take months to years3,4,5. Furthermore, both large parameter spaces and high sampling variability3,6,7 necessitate a large number of experiments. Hence, the key challenge is to reduce both the number and the duration of the experiments required. Here we develop and demonstrate a machine learning methodology  to efficiently optimize a parameter space specifying the current and voltage profiles of six-step, ten-minute fast-charging protocols for maximizing battery cycle life, which can alleviate range anxiety for electric-vehicle users8,9. We combine two key elements to reduce the optimization cost: an early-prediction model5, which reduces the time per experiment by predicting the final cycle life using data from the first few cycles, and a Bayesian optimization algorithm10,11, which reduces the number of experiments by balancing exploration and exploitation to efficiently probe the parameter space of charging protocols. Using this methodology, we rapidly identify high-cycle-life charging protocols among 224 candidates in 16 days (compared with over 500 days using exhaustive search without early prediction), and subsequently validate the accuracy and efficiency of our optimization approach. Our closed-loop methodology automatically incorporates feedback from past experiments to inform future decisions and can be generalized to other applications in battery design and, more broadly, other scientific domains that involve time-intensive experiments and multi-dimensional design spaces.},
+  year={2020},
+  abbr={Nature}
+}
+
+@inproceedings{aaai20,
+  title={AlignFlow: Cycle Consistent Learning from Multiple Domains via Normalizing Flows},
+  author={Grover, Aditya and Chute, Christopher and Shu, Rui and Cao, Zhangjie and Ermon, Stefano},
+  booktitle={AAAI Conference on Artificial Intelligence},
+  pdf={https://arxiv.org/abs/1905.12892},
+  abstract={Given datasets from multiple domains, a key challenge is to efficiently exploit these data sources for modeling a target domain. Variants of this problem have been studied in many contexts, such as cross-domain translation and domain adaptation. We propose AlignFlow, a generative modeling framework that models each domain via a normalizing flow. The use of normalizing flows allows for a) flexibility in specifying learning objectives via adversarial training, maximum likelihood estimation, or a hybrid of the two methods; and b) learning and exact inference of a shared representation in the latent space of the generative model. We derive a uniform set of conditions under which AlignFlow is marginally-consistent for the different learning objectives. Furthermore, we show that AlignFlow guarantees exact cycle consistency in mapping datapoints from a source domain to target and back to the source domain. Empirically, AlignFlow outperforms relevant baselines on image-to-image translation and unsupervised domain adaptation and can be used to simultaneously interpolate across the various domains using the learned representation.},
+  year={2020},
+  abbr={AAAI}
+}
+
+
+@inproceedings{niu2019permutation,
+title={Permutation Invariant Graph Generation via Score-Based Generative Modeling},
+author={Niu, Chenhao and Song, Yang and Song, Jiaming and Zhao, Shengjia and Grover, Aditya and  and Ermon, Stefano},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  pdf={https://arxiv.org/abs/2003.00638},
+  abstract={Learning generative models for graph-structured data is challenging because graphs are discrete, combinatorial, and the underlying data distribution is invariant to the ordering of nodes. However, most of the existing generative models for graphs are not invariant to the chosen ordering, which might lead to an undesirable bias in the learned distribution. To address this difficulty, we propose a permutation invariant approach to modeling graphs, using the recent framework of score-based generative modeling. In particular, we design a permutation equivariant, multi-channel graph neural network to model the gradient of the data distribution at the input graph (a.k.a., the score function). This permutation equivariant model of gradients implicitly defines a permutation invariant distribution for graphs. We train this graph neural network with score matching and sample from it with annealed Langevin dynamics. In our experiments, we first demonstrate the capacity of this new architecture in learning discrete graph algorithms. For graph generation, we find that our learning approach achieves better or comparable results to existing models on benchmark datasets.},
+  year={2020},
+  abbr={AISTATS}
+}
+
+
+@inproceedings{neurips19,
+  title={Bias Correction of Learned Generative Models using Likelihood-Free Importance Weighting},
+  author={Grover, Aditya and Song, Jiaming and Agarwal, Alekh and Tran, Kenneth and Kapoor, Ashish and Horvitz, Eric and Ermon, Stefano},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2019},
+  abstract={A learned generative model often produces biased statistics relative to the underlying data distribution. A standard technique to correct this bias is importance sampling, where samples from the model are weighted by the likelihood ratio under model and true distributions. When the likelihood ratio is unknown, it can be estimated by training a probabilistic classifier to distinguish samples from the two distributions. We employ this likelihood-free importance weighting method to correct for the bias in generative models. We find that this technique consistently improves standard goodness-of-fit metrics for evaluating the sample quality of state-of-the-art deep generative models, suggesting reduced bias. Finally, we demonstrate its utility on representative applications in a) data augmentation for classification using generative adversarial networks, and b) model-based policy evaluation using off-policy data.},
+  pdf={https://arxiv.org/abs/1906.09531},
+  abbr={NeurIPS}
+}
+
+@inproceedings{icml19a,
+  title={Graphite: Iterative generative modeling of graphs},
+  author={Grover, Aditya and Zweig, Aaron and Ermon, Stefano},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2019},
+  abstract={Graphs are a fundamental abstraction for modeling relational data. However, graphs are discrete and combinatorial in nature, and learning representations suitable for machine learning tasks poses statistical and computational challenges. In this work, we propose Graphite, an algorithmic framework for unsupervised learning of representations over nodes in large graphs using deep latent variable generative models. Our model parameterizes variational autoencoders (VAE) with graph neural networks, and uses a novel iterative graph refinement strategy inspired by low-rank approximations for decoding. On a wide variety of synthetic and benchmark datasets, Graphite outperforms competing approaches for the tasks of density estimation, link prediction, and node classification. Finally, we derive a theoretical connection between message passing in graph neural networks and mean-field variational inference.},
+  pdf={https://arxiv.org/abs/1803.10459},
+  abbr={ICML}
+}
+
+
+@inproceedings{icml19b,
+  title={Neural Joint Source-Channel Coding},
+  author={Choi, Kristy and Tatwawadi, Kedar and Grover, Aditya and Weissman, Tsachy and Ermon, Stefano},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2019},
+  abstract={For reliable transmission across a noisy communication channel, classical results from information theory show that it is asymptotically optimal to separate out the source and channel coding processes. However, this decomposition can fall short in the finite bit-length regime, as it requires non-trivial tuning of hand-crafted codes and assumes infinite computational power for decoding. In this work, we propose to jointly learn the encoding and decoding processes using a new discrete variational autoencoder model. By adding noise into the latent codes to simulate the channel during training, we learn to both compress and error-correct given a fixed bit-length and computational budget. We obtain codes that are not only competitive against several separation schemes, but also learn useful robust representations of the data for downstream tasks such as classification. Finally, inference amortization yields an extremely fast neural decoder, almost an order of magnitude faster compared to standard decoding methods based on iterative belief propagation.},
+  pdf={https://arxiv.org/abs/1811.07557},
+  award={Long Oral Presentation},
+  abbr={ICML}
+}
+
+
+
+@inproceedings{iclr19,
+  title={Stochastic Optimization of Sorting Networks via Continuous Relaxations},
+  author={Grover, Aditya and Wang, Eric and Zweig, Aaron and Ermon, Stefano},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2019},
+  abstract={Sorting input objects is an important step in many machine learning pipelines. However, the sorting operator is non-differentiable with respect to its inputs, which prohibits end-to-end gradient-based optimization. In this work, we propose NeuralSort, a general-purpose continuous relaxation of the output of the sorting operator from permutation matrices to the set of unimodal row-stochastic matrices, where every row sums to one and has a distinct arg max. This relaxation permits straight-through optimization of any computational graph involve a sorting operation. Further, we use this relaxation to enable gradient-based stochastic optimization over the combinatorially large space of permutations by deriving a reparameterized gradient estimator for the Plackett-Luce family of distributions over permutations. We demonstrate the usefulness of our framework on three tasks that require learning semantic orderings of high-dimensional objects, including a fully differentiable, parameterized extension of the k-nearest neighbors algorithm.},
+  pdf={https://arxiv.org/abs/1903.08850},
+  abbr={ICLR}
+}
+
+
+
+@inproceedings{aistats19a,
+  title={Uncertainty Autoencoders: Learning Compressed Representations via Variational Information Maximization},
+  author={Grover, Aditya and Ermon, Stefano},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year={2019},
+  abstract={Compressed sensing techniques enable efficient acquisition and recovery of sparse, high-dimensional data signals via low-dimensional projections. In this work, we propose Uncertainty Autoencoders, a learning framework for unsupervised representation learning inspired by compressed sensing. We treat the low-dimensional projections as noisy latent representations of an autoencoder and directly learn both the acquisition (i.e., encoding) and amortized recovery (i.e., decoding) procedures. Our learning objective optimizes for a tractable variational lower bound to the mutual information between the datapoints and the latent representations. We show how our framework provides a unified treatment to several lines of research in dimensionality reduction, compressed sensing, and generative modeling. Empirically, we demonstrate a 32% improvement on average over competing approaches for the task of statistical compressed sensing of high-dimensional datasets.},
+  pdf={https://arxiv.org/abs/1812.10539},
+  abbr={AISTATS}
+}
+
+
+@inproceedings{aistats19b,
+  title={Learning Controllable Fair Representations},
+  author={Song, Jiaming and Kalluri, Pratyusha and Grover, Aditya and Zhao, Shengjia and Ermon, Stefano},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year={2019},
+  abstract={Learning data representations that are transferable and are fair with respect to certain protected attributes is crucial to reducing unfair decisions while preserving the utility of the data. We propose an information-theoretically motivated objective for learning maximally expressive representations subject to fairness constraints. We demonstrate that a range of existing approaches optimize approximations to the Lagrangian dual of our objective. In contrast to these existing approaches, our objective allows the user to control the fairness of the representations by specifying limits on unfairness. Exploiting duality, we introduce a method that optimizes the model parameters as well as the expressiveness-fairness trade-off. Empirical evidence suggests that our proposed method can balance the trade-off between multiple notions of fairness and achieves higher expressiveness at a lower computational cost.},
+  pdf={https://arxiv.org/abs/1812.04218},
+  abbr={AISTATS}
+}
+
+
+@inproceedings{neurips18,
+  title={Streamlining variational inference for constraint satisfaction problems},
+  author={Grover, Aditya and Achim, Tudor and Ermon, Stefano},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2018},
+  abstract={Several algorithms for solving constraint satisfaction problems are based on survey propagation, a variational inference scheme used to obtain approximate marginal probability estimates for variable assignments. These marginals correspond to how frequently each variable is set to true among satisfying assignments, and are used to inform branching decisions during search; however, marginal estimates obtained via survey propagation are approximate and can be self-contradictory. We introduce a more general branching strategy based on streamlining constraints, which sidestep hard assignments to variables. We show that streamlined solvers consistently outperform decimation-based solvers on random k-SAT instances for several problem sizes, shrinking the gap between empirical performance and theoretical limits of satisfiability by 16.3% on average for k=3,4,5,6.},
+  pdf={https://arxiv.org/abs/1811.09813},
+  abbr={NeurIPS}
+}
+
+
+@inproceedings{icml18a,
+  title={Learning Policy Representations in Multiagent Systems},
+  author={Grover, Aditya and Al-Shedivat, Maruan and Gupta, Jayesh K and Burda, Yura and Edwards, Harrison},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2018},
+  abstract={Modeling agent behavior is central to understanding the emergence of complex phenomena in multiagent systems. Prior work in agent modeling has largely been task-specific and driven by hand-engineering domain-specific prior knowledge. We propose a general learning framework for modeling agent behavior in any multiagent system using only a handful of interaction data. Our framework casts agent modeling as a representation learning problem. Consequently, we construct a novel objective inspired by imitation learning and agent identification and design an algorithm for unsupervised learning of representations of agent policies. We demonstrate empirically the utility of the proposed framework in (i) a challenging high-dimensional competitive environment for continuous control and (ii) a cooperative environment for communication, on supervised predictive tasks, unsupervised clustering, and policy optimization using deep reinforcement learning.},
+  pdf={https://arxiv.org/abs/1806.06464},
+  award={Long Oral Presentation [top 8.6%]},
+  abbr={ICML}
+}
+
+
+
+@inproceedings{icml18b,
+  title={Modeling sparse deviations for compressed sensing using generative models},
+  author={Dhar, Manik and Grover, Aditya and Ermon, Stefano},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2018},
+  abstract={In compressed sensing, a small number of linear measurements can be used to reconstruct an unknown signal. Existing approaches leverage assumptions on the structure of these signals, such as sparsity or the availability of a generative model. A domain-specific generative model can provide a stronger prior and thus allow for recovery with far fewer measurements. However, unlike sparsity-based approaches, existing methods based on generative models guarantee exact recovery only over their support, which is typically only a small subset of the space on which the signals are defined. We propose Sparse-Gen, a framework that allows for sparse deviations from the support set, thereby achieving the best of both worlds by using a domain specific prior and allowing reconstruction over the full space of signals. Theoretically, our framework provides a new class of signals that can be acquired using compressed sensing, reducing classic sparse vector recovery to a special case and avoiding the restrictive support due to a generative model prior. Empirically, we observe consistent improvements in reconstruction accuracy over competing approaches, especially in the more practical setting of transfer compressed sensing where a generative model for a data-rich, source domain aids sensing on a data-scarce, target domain.},
+  pdf={https://arxiv.org/abs/1807.01442},
+  award={Long Oral Presentation [top 8.6%]},
+  abbr={ICML}
+}
+
+
+@inproceedings{aistats18a,
+  title={Variational Rejection Sampling},
+  author={Grover, Aditya and Gummadi, Ramki and Lazaro-Gredilla, Miguel and Schuurmans, Dale and Ermon, Stefano},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year={2018},
+  abstract={Learning latent variable models with stochastic variational inference is challenging when the approximate posterior is far from the true posterior, due to high variance in the gradient estimates. We propose a novel rejection sampling step that discards samples from the variational posterior which are assigned low likelihoods by the model. Our approach provides an arbitrarily accurate approximation of the true posterior at the expense of extra computation. Using a new gradient estimator for the resulting unnormalized proposal distribution, we achieve average improvements of 3.71 nats and 0.21 nats over state-of-the-art single-sample and multi-sample alternatives respectively for estimating marginal log-likelihoods using sigmoid belief networks on the MNIST dataset.},
+  pdf={https://arxiv.org/abs/1804.01712},
+  abbr={AISTATS}
+}
+
+
+@inproceedings{aistats18b,
+  title={Best arm identification in multi-armed bandits with delayed feedback},
+  author={Grover, Aditya and Markov, Todor and Attia, Peter and Jin, Norman and Perkins, Nicholas and Cheong, Bryan and Chen, Michael and Yang, Zi and Harris, Stephen and Chueh, William and Ermon, Stefano},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year={2018},
+  abstract={We propose a generalization of the best arm identification problem in stochastic multi-armed bandits (MAB) to the setting where every pull of an arm is associated with delayed feedback. The delay in feedback increases the effective sample complexity of standard algorithms, but can be offset if we have access to partial feedback received before a pull is completed. We propose a general framework to model the relationship between partial and delayed feedback, and as a special case we introduce efficient algorithms for settings where the partial feedback are biased or unbiased estimators of the delayed feedback. Additionally, we propose a novel extension of the algorithms to the parallel MAB setting where an agent can control a batch of arms. Our experiments in real-world settings, involving policy search and hyperparameter optimization in computational sustainability domains for fast charging of batteries and wildlife corridor construction, demonstrate that exploiting the structure of partial feedback can lead to significant improvements over baselines in both sequential and parallel MAB.},
+  pdf={https://arxiv.org/abs/1803.10937},
+  abbr={AISTATS}
+}
+
+@inproceedings{aaai18b,
+  title={Boosted generative models},
+  author={Grover, Aditya and Ermon, Stefano},
+  booktitle={AAAI Conference on Artificial Intelligence},
+  year={2018},
+  abstract={We propose a novel approach for using unsupervised boosting to create an ensemble of generative models, where models are trained in sequence to correct earlier mistakes. Our meta-algorithmic framework can leverage any existing base learner that permits likelihood evaluation, including recent deep expressive models. Further, our approach allows the ensemble to include discriminative models trained to distinguish real data from model-generated data. We show theoretical conditions under which incorporating a new model in the ensemble will improve the fit and empirically demonstrate the effectiveness of our black-box boosting algorithms on density estimation, classification, and sample generation on benchmark datasets for a wide range of generative models.},
+  pdf={https://arxiv.org/abs/1702.08484},
+  abbr={AAAI}
+}
+
+@inproceedings{aaai18a,
+  title={Flow-GAN: Combining maximum likelihood and adversarial learning in generative models},
+  author={Grover, Aditya and Dhar, Manik and Ermon, Stefano},
+  booktitle={AAAI Conference on Artificial Intelligence},
+  year={2018},
+  abstract={Adversarial learning of probabilistic models has recently emerged as a promising alternative to maximum likelihood. Implicit models such as generative adversarial networks (GAN) often generate better samples compared to explicit models trained by maximum likelihood. Yet, GANs sidestep the characterization of an explicit density which makes quantitative evaluations challenging. To bridge this gap, we propose Flow-GANs, a generative adversarial network for which we can perform exact likelihood evaluation, thus supporting both adversarial and maximum likelihood training. When trained adversarially, Flow-GANs generate high-quality samples but attain extremely poor log-likelihood scores, inferior even to a mixture model memorizing the training data; the opposite is true when trained by maximum likelihood. Results on MNIST and CIFAR-10 demonstrate that hybrid training can attain high held-out likelihoods while retaining visual fidelity in the generated samples.},
+  pdf={https://arxiv.org/abs/1705.08868},
+  award={Oral Presentation [top 10%]},
+  abbr={AAAI}
+}
+
+
+
+@inproceedings{aamas18,
+  title={Evaluating Generalization in Multiagent Systems using Agent-Interaction Graphs},
+  author={Grover, Aditya and Al-Shedivat, Maruan and Gupta, Jayesh K and Burda, Yuri and Edwards, Harrison},
+  booktitle={International Conference on Autonomous Agents and Multiagent Systems (AAMAS)},
+  year={2018},
+  abstract={Learning from interactions between agents is a key component for
+inference in multiagent systems. Depending on the downstream
+task, there could be multiple criteria for evaluating the generalization performance of learning. In this work, we propose a novel
+framework for evaluating generalization in multiagent systems
+based on agent-interaction graphs. An agent-interaction graph models agents as nodes and interactions as hyper-edges between participating agents. Using this abstract data structure, we define three
+notions of generalization for principled evaluation of learning in
+multiagent systems.},
+  pdf={https://dl.acm.org/doi/10.5555/3237383.3238032},
+  abbr={AAMAS}
+}
+
+
+@inproceedings{nips16,
+  title={Variational {B}ayes on {M}onte {C}arlo Steroids},
+  author={Grover, Aditya and Ermon, Stefano},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2016},
+  abstract={Variational approaches are often used to approximate intractable posteriors or normalization constants in hierarchical latent variable models. While often effective in practice, it is known that the approximation error can be arbitrarily large. We propose a new class of bounds on the marginal log-likelihood of directed latent variable models. Our approach relies on random projections to simplify the posterior. In contrast to standard variational methods, our bounds are guaranteed to be tight with high probability. We provide a new approach for learning latent variable models based on optimizing our new bounds on the log-likelihood. We demonstrate empirical improvements on benchmark datasets in vision and language for sigmoid belief networks, where a neural network is used to approximate the posterior.},
+  pdf={https://papers.nips.cc/paper_files/paper/2016/hash/0c9ebb2ded806d7ffda75cd0b95eb70c-Abstract.html},
+  abbr={NeurIPS}
+}
+
+
+@inproceedings{kdd16,
+  title={node2vec: Scalable Feature Learning for Networks},
+  author={Grover, Aditya and Leskovec, Jure},
+  booktitle={International Conference on Knowledge Discovery and Data Mining (KDD)},
+  year={2016},
+  abstract={Prediction tasks over nodes and edges in networks require careful effort in engineering features used by learning algorithms. Recent research in the broader field of representation learning has led to significant progress in automating prediction by learning the features themselves. However, present feature learning approaches are not expressive enough to capture the diversity of connectivity patterns observed in networks. Here we propose node2vec, an algorithmic framework for learning continuous feature representations for nodes in networks. In node2vec, we learn a mapping of nodes to a low-dimensional space of features that maximizes the likelihood of preserving network neighborhoods of nodes. We define a flexible notion of a node's network neighborhood and design a biased random walk procedure, which efficiently explores diverse neighborhoods. Our algorithm generalizes prior work which is based on rigid notions of network neighborhoods, and we argue that the added flexibility in exploring neighborhoods is the key to learning richer representations. We demonstrate the efficacy of node2vec over existing state-of-the-art techniques on multi-label classification and link prediction in several real-world networks from diverse domains. Taken together, our work represents a new way for efficiently learning state-of-the-art task-independent representations in complex networks.},
+  pdf={https://arxiv.org/abs/1607.00653},
+  award={Oral Plenary Presentation [acceptance rate: 70/784 (8.9%)]},
+  abbr={KDD}
+}
+
+
+@inproceedings{ijcai16,
+  title={Contextual Symmetries in Probabilistic Graphical Models},
+  author={Anand, Ankit and Grover, Aditya and Mausam and Singla, Parag},
+  booktitle={International Joint Conference on Artificial Intelligence (IJCAI)},
+  year={2016},
+  abstract={An important approach for efficient inference in probabilistic graphical models exploits symmetries among objects in the domain. Symmetric variables (states) are collapsed into meta-variables (meta-states) and inference algorithms are run over the lifted graphical model instead of the flat one. Our paper extends existing definitions of symmetry by introducing the novel notion of contextual symmetry. Two states that are not globally symmetric, can be contextually symmetric under some specific assignment to a subset of variables, referred to as the context variables. Contextual symmetry subsumes previous symmetry definitions and can rep resent a large class of symmetries not representable earlier. We show how to compute contextual symmetries by reducing it to the problem of graph isomorphism. We extend previous work on exploiting symmetries in the MCMC framework to the case of contextual symmetries. Our experiments on several domains of interest demonstrate that exploiting contextual symmetries can result in significant computational gains.},
+  pdf={https://arxiv.org/abs/1606.09594},
+  award={Best Paper Award at the International Workshop on Statistical Relational AI (StarAI), 2016.},
+  abbr={IJCAI}
+}
+
+@inproceedings{kdd15,
+  title={A deep hybrid model for weather forecasting},
+  author={Grover, Aditya and Kapoor, Ashish and Horvitz, Eric},
+  booktitle={International Conference on Knowledge Discovery and Data Mining (KDD)},
+  year={2015},
+  abstract={Weather forecasting is a canonical predictive challenge that has depended primarily on model-based methods. We explore new directions with forecasting weather as a data-intensive challenge that involves inferences across space and time. We study specifically the power of making predictions via a hybrid approach that combines discriminatively trained predictive models with a deep neural network that models the joint statistics of a set of weather-related variables. We show how the base model can be enhanced with spatial interpolation that uses learned long-range spatial dependencies. We also derive an efficient learning and inference procedure that allows for large scale optimization of the model parameters. We evaluate the methods with experiments on real-world meteorological data that highlight the promise of the approach.},
+  pdf={https://dl.acm.org/doi/10.1145/2783258.2783275},
+  abbr={KDD}
+}
+
+@inproceedings{ijcai15,
+  title={ASAP-UCT: abstraction of state-action pairs in UCT},
+  author={Anand, Ankit and Grover, Aditya and Mausam and Singla, Parag},
+  booktitle={International Joint Conference on Artificial Intelligence (IJCAI)},
+  year={2015},
+  abstract={Monte-Carlo Tree Search (MCTS) algorithms such
+as UCT are an attractive online framework for solving planning under uncertainty problems modeled
+as a Markov Decision Process. However, MCTS
+search trees are constructed in flat state and action
+spaces, which can lead to poor policies for large
+problems. In a separate research thread, domain
+abstraction techniques compute symmetries to reduce the original MDP. This can lead to significant
+savings in computation, but these have been predominantly implemented for offline planning. This
+paper makes two contributions. First, we define the
+ASAP (Abstraction of State-Action Pairs) framework, which extends and unifies past work on domain abstractions by holistically aggregating both
+states and state-action pairs – ASAP uncovers a
+much larger number of symmetries in a given domain. Second, we propose ASAP-UCT, which implements ASAP-style abstractions within a UCT
+framework combining strengths of online planning
+with domain abstractions. Experimental evaluation
+on several benchmark domains shows up to 26%
+improvement in the quality of policies obtained
+over existing algorithms.},
+  pdf={https://www.ijcai.org/Proceedings/15/Papers/216.pdf},
+  abbr={IJCAI}
+}
+
+
+
