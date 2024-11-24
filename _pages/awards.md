@@ -32,7 +32,7 @@ nav_order: 4
 *Awarded annually to 1 dissertation worldwide in data science and machine learning.*
 * Walter J. Gores Award (2020) [press [1](https://news.stanford.edu/today/2021/03/30/stanford-announces-2020-cuthbertson-dinkelspiel-gores-awards/), [2](ttps://registrar.stanford.edu/everyone/university-awards/walter-j-gores-awards)]<br>
 *Stanford's highest university-wide award for teaching excellence. Awarded annually to 3-4 faculty and students.*
-* Google-Simons Research Fellowship (2020) [[press]](https://simons.berkeley.edu/people/fellows?program=14241)
+* Google-Simons Research Fellowship (2020) [[press]](https://simons.berkeley.edu/people/current-past-research-fellows)
 * Top Reviewer Award at ICML (2020) [[press]](https://icml.cc/Conferences/2020/Reviewers)
 * Centennial Award (2020) [[press]](https://ctl.stanford.edu/faculty-instructors-tas/find-teaching-grants/centennial-teaching-assistant-awards)
 * Lieberman Fellowship (2019-20) [[press]](https://vpge.stanford.edu/fellowships-funding/current-vpge-fellows/all-2019#Lieberman)
