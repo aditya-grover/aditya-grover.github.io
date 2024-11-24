@@ -40,16 +40,3 @@ During my PhD, I spent wonderful summers interning at Google Brain, Microsoft Re
 * Thank you [Washington Post](https://www.washingtonpost.com/weather/2023/09/21/hurricane-lee-artificial-intelligence-forecasting/), [MIT Tech Review](https://www.technologyreview.com/2023/11/14/1083366/google-deepminds-weather-ai-can-forecast-extreme-weather-quicker-and-more-accurately/) for covering our research on ClimaX. My comments on the field more broadly in [Nature](https://www.nature.com/articles/d41586-023-03552-y) and [Science](https://www.science.org/content/article/ai-churns-out-lightning-fast-forecasts-good-weather-agencies)
 * [ClimaX](https://arxiv.org/abs/2301.10343) wins the best paper award at ICML Workshop on ML and Scientific Modeling. Congrats Tung!
 * [CleanCLIP](https://arxiv.org/abs/2303.03323) wins the best paper award at ICLR Workshop on Trustworthy and Reliable Large-Scale ML. Also to be presented as oral presentation (acceptance rate: 1.8%) at ICCV. Congrats Hritik! 
-<!-- * Looking forward to serving as the General Co-Chair for the 3rd [Causal Learning and Reasoning Conference](https://www.cclear.cc/2024) (CLeaR) in 2024.
-* Honored to receive the [AI Researcher of the Year Award](https://www.sait.samsung.co.kr/saithome/event/saif2022.do) by Samsung. 
-* Upcoming talks: 
-  - May 2024: ICLR Workshop on AI 
-  - June 2024: Keynote at Adaptive Experimentation Workshop at Meta
-  - August 2024: Invited Talk at Monterey Data Conference
-  - September 2024: Invited Lecture at Croucher Advanced Study Institute, HKUST
-  - September 2024: Forbes Under 30 Summit
-* Recent talks: UC Berkeley - AI + Physical Sciences Symposium for Climate Innovation, NeurIPS Workshop on Robustness of Few-shot and Zero-shot Learning in Foundation Models (Keynote), SoCalNLP Symposium (Keynote) -->
-<!-- , Columbia LEAP Institute,  -->
-HydroML Symposium (Keynote), KDD Environment Day (Keynote)
-<!-- , UCSD Scientific ML Symposium (Keynote) -->
-<!-- Cornell AI for Science Seminar (April 2024) -->
