@@ -6,6 +6,20 @@
 
 **A simple, clean, and responsive [Jekyll](https://jekyllrb.com/) theme for academics.**
 
+
+New pipeline to run:
+
+- Open devcontainer in VSCode
+- Run bash bin/entry_point.sh on the VSCode terminal
+- VSCode will give an option to preview website in the browser itself -- works well
+- Once changes are made, git add/commit/push.
+
+
+(Alternate)
+docker compose pull
+docker compose up
+will give link to localhost website
+
 ---
 
 [![deploy](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml/badge.svg)](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml)

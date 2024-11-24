@@ -30,8 +30,9 @@ During my PhD, I spent wonderful summers interning at Google Brain, Microsoft Re
 
 # recent news
 
-* Honored to be selected for the [Forbes 30 Under 30](https://www.forbes.com/30-under-30/2024/science) List.
-* Honored to received the [GOLD Award](https://alumni.iitd.ac.in/distinguished-alum-awards-2024) for Distinguished Young Alumni from IIT Delhi.
+* Honored to be included in the [Forbes 30 Under 30](https://www.forbes.com/30-under-30/2024/science) List.
+* Honored to receive the [GOLD Award](https://alumni.iitd.ac.in/distinguished-alum-awards-2024) for Distinguished Young Alumni from IIT Delhi.
+* Honored to receive the [NSF Career Award](https://newsroom.ucla.edu/dept/faculty/aditya-grover-nsf-award-scientific-applications-generative-ai).
 * We released [Stormer](https://arxiv.org/abs/2312.03876), which beats Graphcast to set a new state-of-the-art for ML-driven weather forecasting. Stormer won the best paper award at the Climate Change in AI (CCAI) Workshop at ICLR 2024. Congrats Tung!
 * [VideoCon](https://arxiv.org/abs/2311.10111) won the best paper award at Data Problems for Foundation Models workshop at ICLR 2024. Congrats Hritik!
 * Honored to be awarded the [Schmidt AI2050 Early Career Fellowship](https://www.schmidtsciences.org/ai2050-early-career-fellows-2024/).
