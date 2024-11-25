@@ -339,7 +339,7 @@ scholar:
 
   # group_by: type, year
   sort_by: year, abbr
-  group_order: descending
+  order: descending
   type_order: [preprint, article, inproceedings]
   type_aliases: {inproceedings: article}
   type_names: {preprint: preprints, thesis: Ph.D. Thesis, 
