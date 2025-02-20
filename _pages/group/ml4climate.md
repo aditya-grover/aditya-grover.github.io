@@ -8,15 +8,15 @@ nav_order: 5
 ---
 
 
-Climate change is the defining challenge for the future of human civilization. For many decades, data-driven solutions have been a key component for understanding climate science, and efforts in mitigating and adapting to climate change. However, data science is undergoing a paradigm shift, driven in large by the development of modern generative AI systems that can play complex games, write stories, generate art, and much more.  What's in store for climate change research?
+<!-- Climate change is the defining challenge for the future of human civilization. For many decades, data-driven solutions have been a key component for understanding climate science, and efforts in mitigating and adapting to climate change. However, data science is undergoing a paradigm shift, driven in large by the development of modern generative AI systems that can play complex games, write stories, generate art, and much more.   -->
 
-In the ML4Climate initiative, the [MINT group](https://aditya-grover.github.io/group/members) works with a range of external collaborators to pioneer the next generation of machine learning algorithms and frameworks that will inform the science, technology, and policy in mitigating and adapting to the changing climate. Our work broadly centers on 3 pillars at the intersection of artificial intelligence and climate change.
+The [MINT group](https://aditya-grover.github.io/group/members) works with a range of external collaborators to pioneer the next generation of generative machine learning system that will inform the science, technology, and policy in mitigating and adapting to a changing climate. Our work broadly centers on three pillars at the intersection of artificial intelligence and climate change.
 
-* **Research:** We regularly publish papers at the frontiers of artificial intelligence and climate change. Our current focus areas are in climate science and sustainable energy. See representative works papers [here](https://arxiv.org/abs/2301.10343) and [here](https://www.nature.com/articles/s41586-020-1994-5).
+* **Research:** We regularly publish papers at the frontiers of artificial intelligence and climate change. Our current focus areas are in physical sciences. See representative works papers [here](https://arxiv.org/abs/2301.10343) and [here](https://www.nature.com/articles/s41586-020-1994-5).
 
-* **Software:** We believe in open and reproducible science. Not just doing it, but enabling it. We develop and maintain [dataset benchmarks and software](https://github.com/aditya-grover/climate-learn) for pushing data-driven climate science.
+* **Engineering:** We develop and maintain [dataset benchmarks](https://arxiv.org/abs/2402.00712) and [software](https://github.com/aditya-grover/climate-learn) for accelerating research and engineering efforts.
 
-* **Education and Outreach:** We develop accessible courses and [tutorials](https://www.climatechange.ai/papers/neurips2022/114) to onboard students, researchers, and practitioners with different backgrounds. We write [blog articles](/blog/) for broader audiences, and organize [events](https://ai4climatescience.github.io/) that engage diverse stakeholders.
+* **Education and Outreach:** We develop accessible courses, [tutorials](https://www.climatechange.ai/papers/neurips2022/114) and [seminar talks](https://www.youtube.com/watch?v=aCQa3EDAK_s) to onboard students, researchers, and practitioners with different backgrounds. We organize [events](https://ai4climatescience.github.io/) that engage diverse stakeholders.
 
 
 # news
@@ -32,7 +32,7 @@ In the ML4Climate initiative, the [MINT group](https://aditya-grover.github.io/g
 * Thank you [Washington Post](https://www.washingtonpost.com/weather/2023/09/21/hurricane-lee-artificial-intelligence-forecasting/), [MIT Tech Review](https://www.technologyreview.com/2023/11/14/1083366/google-deepminds-weather-ai-can-forecast-extreme-weather-quicker-and-more-accurately/) for covering our research on ClimaX. Aditya's comments on the field more broadly appeared in [Nature](https://www.nature.com/articles/d41586-023-03552-y) and [Science](https://www.science.org/content/article/ai-churns-out-lightning-fast-forecasts-good-weather-agencies).
 
 
-* Aditya gave keynote talks on  Stormer, ClimaX, and ClimateLearn at Hydro ML Conference, KDD Environment Day, and UCSD Scientific ML Symposium, seminar talks at Columbia, Cornell, Argonne National Lab, UT Austin, UC Berkeley, and University of Washington.
+* Aditya gave keynote talks on  Stormer, ClimaX, and ClimateLearn at Hydro ML Conference, KDD Environment Day, and UCSD Scientific ML Symposium, seminar talks at Columbia, Cornell, Argonne National Lab, UT Austin, UC Berkeley, University of Michigan, and University of Washington.
   
 * ClimateLearn [v1](https://github.com/aditya-grover/climate-learn) and [benchmark preprint](https://arxiv.org/abs/2307.01909) released!
 
