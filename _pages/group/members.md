@@ -20,19 +20,18 @@ We work on foundational topics relating to machine learning under limited superv
 
 ## Masters and Undergraduates
 
-- Devaansh Gupta
 - Arsh Koneru
-- Zichun Liao
 
 ## Alumni
 
-- [Harkanwar Singh](https://www.linkedin.com/in/harkanwar-singh) (Inception Labs)
+- [Harkanwar Singh](https://www.linkedin.com/in/harkanwar-singh) (Inception)
+- [Devaansh Gupta](http://devaansh100.github.io/) (Essential AI)
+- [Zichun Liao](https://www.linkedin.com/in/zichun-liao-7321ab239/) (Harvard)
 - [Advit Deepak](https://www.linkedin.com/in/advitdeepak) (Stanford)
 - [Prateik Sinha](https://www.linkedin.com/in/prateik11) (CMU)
 - [Seongbin Park](https://www.linkedin.com/in/seongbeanie) (UCLA)
 - [John Dang](https://www.johndang.me/) (Cohere)
 - [Sudhanshu Agarwal](https://www.linkedin.com/in/sudhanshu-agrawal) (Qualcomm AI Research)
-- [Meihua Dang](https://www.linkedin.com/in/meihuadang) [primary advisor: Guy Van den Broeck] (Stanford)
 - [Jason Jewik](https://jasonjewik.github.io/) (Box)
 - [Siddarth Krishnamoorthy](https://www.linkedin.com/in/siddarth-krishnamoorthy) (AlphaGrep)
 - [Satvik Mashkaria](https://www.linkedin.com/in/satvik-mashkaria-4214701a7) (Tower Research)

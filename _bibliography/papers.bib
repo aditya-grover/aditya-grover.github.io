@@ -1,5 +1,47 @@
 ---
 ---
+@inproceedings{li2025reflect,
+  title={Reflect-DiT: Inference-Time Scaling for Text-to-Image Diffusion Transformers via In-Context Reflection},
+  author={Li, Shufan and Kallidromitis, Konstantinos and Gokul, Akash and Koneru, Arsh and Kato, Yusuke and Kozuka, Kazuki and Grover, Aditya},
+  journal={arXiv preprint arXiv:2503.12271},
+  booktitle={International Conference on Computer Vision (ICCV)}, 
+  pdf={https://arxiv.org/abs/2503.12271},
+  abstract={The predominant approach to advancing text-to-image generation has been training-time scaling, where larger models are trained on more data using greater computational resources. While effective, this approach is computationally expensive, leading to growing interest in inference-time scaling to improve performance. Currently, inference-time scaling for text-to-image diffusion models is largely limited to best-of-N sampling, where multiple images are generated per prompt and a selection model chooses the best output. Inspired by the recent success of reasoning models like DeepSeek-R1 in the language domain, we introduce an alternative to naive best-of-N sampling by equipping text-to-image Diffusion Transformers with in-context reflection capabilities. We propose Reflect-DiT, a method that enables Diffusion Transformers to refine their generations using in-context examples of previously generated images alongside textual feedback describing necessary improvements. Instead of passively relying on random sampling and hoping for a better result in a future generation, Reflect-DiT explicitly tailors its generations to address specific aspects requiring enhancement. Experimental results demonstrate that Reflect-DiT improves performance on the GenEval benchmark (+0.19) using SANA-1.0-1.6B as a base model. Additionally, it achieves a new state-of-the-art score of 0.81 on GenEval while generating only 20 samples per prompt, surpassing the previous best score of 0.80, which was obtained using a significantly larger model (SANA-1.5-4.8B) with 2048 samples under the best-of-N approach.},
+  year={2025},
+  abbr={ICCV}
+}
+
+@inproceedings{singhi2025solve,
+  title={When to solve, when to verify: Compute-optimal problem solving and generative verification for {LLM} reasoning},
+  author={Singhi, Nishad and Bansal, Hritik and Hosseini, Arian and Grover, Aditya and Chang, Kai-Wei and Rohrbach, Marcus and Rohrbach, Anna},
+  journal={arXiv preprint arXiv:2504.01005},
+  booktitle={Conference on Language Modeling (COLM)}, 
+  pdf={https://arxiv.org/abs/2504.01005},
+  abstract={Scaling test-time compute has emerged as a key strategy for enhancing the reasoning capabilities of large language models (LLMs), particularly in tasks like mathematical problem-solving. A traditional approach, Self-Consistency (SC), generates multiple solutions to a problem and selects the most common answer via majority voting. Another common method involves scoring each solution with a reward model (verifier) and choosing the best one. Recent advancements in Generative Reward Models (GenRM) reframe verification as a next-token prediction task, enabling inference-time scaling along a new axis. Specifically, GenRM generates multiple verification chains-of-thought to score each solution. Under a limited inference budget, this introduces a fundamental trade-off: should you spend the budget on scaling solutions via SC or generate fewer solutions and allocate compute to verification via GenRM? To address this, we evaluate GenRM against SC under a fixed inference budget. Interestingly, we find that SC is more compute-efficient than GenRM for most practical inference budgets across diverse models and datasets. For instance, GenRM first matches SC after consuming up to 8x the inference compute and requires significantly more compute to outperform it. Furthermore, we derive inference scaling laws for the GenRM paradigm, revealing that compute-optimal inference favors scaling solution generation more aggressively than scaling the number of verifications. Our work provides practical guidance on optimizing test-time scaling by balancing solution generation and verification.},
+  year={2025},
+  abbr={COLM}
+}
+
+@inproceedings{li2025predgen,
+  title={PredGen: Accelerated Inference of Large Language Models through Input-Time Speculation for Real-Time Speech Interaction},
+  author={Li, Shufan and Grover, Aditya},
+  journal={arXiv preprint arXiv:2506.15556},
+  booktitle={Conference on Language Modeling (COLM)}, 
+  pdf={https://arxiv.org/abs/2506.15556},
+  abstract={Large Language Models (LLMs) are widely used in real-time voice chat applications, typically in combination with text-to-speech (TTS) systems to generate audio responses. However, their large size often leads to noticeable latency between the end of user input and the start of audio output, resulting in suboptimal user experiences. This latency is particularly evident when LLMs are deployed as single-user voice assistants on consumer-grade hardware with limited computing capacity. We discovered that this latency is primarily dominated by the time it takes for the LLMs to generate the first sentence, which is required as input by the TTS systems that synthesize audio responses on a sentence-by-sentence basis. To address this bottleneck, we propose Predictive Generation (PredGen), a novel framework that mitigates-or even eliminates-this delay through speculative decoding at input time. PredGen generates candidate responses while the user is still speaking, enabling the system to begin TTS processing with minimal delay. Simulated experiments on the Lmsys and MT-Bench datasets show that the proposed method can effectively reduce the latency by around 2x across a wide range of use cases, while incurring only minimal additional computation cost at input time-computation that would otherwise go unused.},
+  year={2025},
+  abbr={COLM}
+}
+
+@inproceedings{zheng2024online,
+  title={Online intrinsic rewards for decision making agents from large language model feedback},
+  author={Zheng, Qinqing and Henaff, Mikael and Zhang, Amy and Grover, Aditya and Amos, Brandon},
+  journal={arXiv preprint arXiv:2410.23022},
+  booktitle={Reinforcement Learning Conference (RLC)}, 
+  abstract={Automatically synthesizing dense rewards from natural language descriptions is a promising paradigm in reinforcement learning (RL), with applications to sparse reward problems, open-ended exploration, and hierarchical skill design. Recent works have made promising steps by exploiting the prior knowledge of large language models (LLMs). However, these approaches suffer from important limitations: they are either not scalable to problems requiring billions of environment samples, due to requiring LLM annotations for each observation, or they require a diverse offline dataset, which may not exist or be impossible to collect. In this work, we address these limitations through a combination of algorithmic and systems-level contributions. We propose \oni, a distributed architecture that simultaneously learns an RL policy and an intrinsic reward function using LLM feedback. Our approach annotates the agent's collected experience via an asynchronous LLM server, which is then distilled into an intrinsic reward model. We explore a range of algorithmic choices for reward modeling with varying complexity, including hashing, classification, and ranking models. By studying their relative tradeoffs, we shed light on questions regarding intrinsic reward design for sparse reward problems. Our approach achieves state-of-the-art performance across a range of challenging, sparse reward tasks from the NetHack Learning Environment in a simple unified process, solely using the agent's gathered experience, without requiring external datasets.},
+  year={2025},
+  abbr={RLC}
+}
 
 @inproceedings{li2024omniflow,
   title={OmniFlow: Any-to-Any Generation with Multi-Modal Rectified Flows},
