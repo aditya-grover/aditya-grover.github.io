@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Assistant Professor of Computer Science, UCLA | Co-founder, Inception Labs
+subtitle: Assistant Professor of Computer Science, UCLA | Co-founder, Inception
 
 profile:
   align: left
@@ -17,12 +17,14 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an assistant professor of computer science at UCLA. I lead the [Machine Intelligence (MINT) group](/group/members), where we develop AI systems that can interact and reason with limited supervision. My [current research](/publications) is at the intersection of generative models and sequential decision making. On the applied side, I actively ground this research for developing systems for scientific discovery, particularly in climate and sustainability domains via the [ML4Climate](/group/ml4climate) initiative.
+I am an assistant professor of computer science at UCLA. I lead the [Machine Intelligence (MINT) group](/group/members), where we develop AI systems that can interact and reason with limited supervision. My [current research](/publications) is at the intersection of generative models, reinforcement learning, and applications to scientific discovery.
+
+Recently, I co-founded [Inception](https://www.inceptionlabs.ai/) to develop a new generation of parallelizable LLMs that redefine the Pareto frontier for quality, speed, and cost.
+
+<!-- On the applied side, I actively ground this research for developing systems for scientific discovery, particularly in climate and sustainability domains via the [ML4Climate](/group/ml4climate) initiative. -->
 
 Previously, I spent a gap year as a research scientist at the Fundamental AI Research (FAIR) Group at Meta. I completed my postdoctoral training at UC Berkeley, PhD at Stanford University, and bachelors at IIT Delhi, all in computer science.
 During my PhD, I spent wonderful summers interning at Google Brain, Microsoft Research, and OpenAI.
-
-Recently, I co-founded [Inception](https://www.inceptionlabs.ai/) to develop a new generation of parallelizable LLMs that redefine the Pareto frontier for quality, speed, and cost.
 
 <br>
 
@@ -30,7 +32,7 @@ Recently, I co-founded [Inception](https://www.inceptionlabs.ai/) to develop a n
 
 - Our team at [Inception](https://www.inceptionlabs.ai/) launched [Mercury](https://arxiv.org/abs/2506.17298), the world's first commercial-scale diffusion large language models.
 - Honored to receive the [IJCAI Computers and Thought Award](https://www.ijcai.org/awards).
-- [VideoPhy-2] won the best paper award at the [ICML Workshop on Building Physically Plausible World Models](https://physical-world-modeling.github.io/). Congrats Hritik!
+- [VideoPhy-2](https://arxiv.org/abs/2503.06800) won the best paper award at the [ICML Workshop on Building Physically Plausible World Models](https://physical-world-modeling.github.io/). Congrats Hritik!
 - Honored to be included in the [Forbes 30 Under 30](https://www.forbes.com/30-under-30/2024/science) List.
 - Honored to receive the [GOLD Award](https://alumni.iitd.ac.in/distinguished-alum-awards-2024) for Distinguished Young Alumni from IIT Delhi.
 - Honored to receive the [NSF Career Award](https://newsroom.ucla.edu/dept/faculty/aditya-grover-nsf-award-scientific-applications-generative-ai).
