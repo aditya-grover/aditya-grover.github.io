@@ -6,15 +6,12 @@
 
 **A simple, clean, and responsive [Jekyll](https://jekyllrb.com/) theme for academics.**
 
-
-
 New pipeline to run:
 
-- Open devcontainer in VSCode
-- Run bash bin/entry_point.sh on the VSCode terminal
-- VSCode will give an option to preview website in the browser itself -- works well
-- Once changes are made, git add/commit/push.
-
+- Open devcontainer in VSCode (ie, just open regular project on VSCode, it will prompt at the bottom to open devcontainer)
+- Run bash bin/entry_point.sh on the VSCode terminal (this step is not necessary as of July 2025)
+- VSCode will give an option to preview website in the browser itself -- works well (or you can go to Ports tab of Terminal to find link)
+- Once changes are made, git add/commit/push. if vscode workspace gives error with git push (eg, permission denied (publickey)), do the git commits on regular Terminal
 
 (Alternate)
 docker compose pull
