@@ -1,5 +1,58 @@
 ---
 ---
+
+@inproceedings{zhao2025d1,
+  title={d1: Scaling reasoning in diffusion large language models via reinforcement learning},
+  author={Zhao, Siyan and Gupta, Devaansh and Zheng, Qinqing and Grover, Aditya},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  abstract={Recent large language models (LLMs) have demonstrated strong reasoning capabilities that benefits from online reinforcement learning (RL). These capabilities have primarily been demonstrated within the left-to-right autoregressive (AR) generation paradigm. In contrast, non-autoregressive paradigms based on diffusion generate text in a coarse-to-fine manner. Although recent diffusion-based large language models (dLLMs) have achieved competitive language modeling performance compared to their AR counterparts, it remains unclear if dLLMs can also leverage recent advances in LLM reasoning. To this end, we propose d1, a framework to adapt pre-trained masked dLLMs into reasoning models via a combination of supervised finetuning (SFT) and RL. Specifically, we develop and extend techniques to improve reasoning in pretrained dLLMs: (a) we utilize a masked SFT technique to distill knowledge and instill self-improvement behavior directly from existing datasets, and (b) we introduce a novel critic-free, policy-gradient based RL algorithm called diffu-GRPO, the first integration of policy gradient methods to masked dLLMs. Through empirical studies, we investigate the performance of different post-training recipes on multiple mathematical and planning benchmarks. We find that d1 yields the best performance and significantly improves performance of a state-of-the-art dLLM. },
+  pdf={https://arxiv.org/abs/2504.12216},
+  award={Spotlight Presentation [top 3%].},
+  abbr={NeurIPS},
+  year={2025}
+}
+
+@inproceedings{li2025lavida,
+  title={Lavida: A large diffusion language model for multimodal understanding},
+  author={Li, Shufan and Kallidromitis, Konstantinos and Bansal, Hritik and Gokul, Akash and Kato, Yusuke and Kozuka, Kazuki and Kuen, Jason and Lin, Zhe and Chang, Kai-Wei and Grover, Aditya},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  abstract={Modern Vision-Language Models (VLMs) can solve a wide range of tasks requiring visual reasoning. In real-world scenarios, desirable properties for VLMs include fast inference and controllable generation (e.g., constraining outputs to adhere to a desired format). However, existing autoregressive (AR) VLMs like LLaVA struggle in these aspects. Discrete diffusion models (DMs) offer a promising alternative, enabling parallel decoding for faster inference and bidirectional context for controllable generation through text-infilling. While effective in language-only settings, DMs' potential for multimodal tasks is underexplored. We introduce LaViDa, a family of VLMs built on DMs. We build LaViDa by equipping DMs with a vision encoder and jointly fine-tune the combined parts for multimodal instruction following. To address challenges encountered, LaViDa incorporates novel techniques such as complementary masking for effective training, prefix KV cache for efficient inference, and timestep shifting for high-quality sampling. Experiments show that LaViDa achieves competitive or superior performance to AR VLMs on multi-modal benchmarks such as MMMU, while offering unique advantages of DMs, including flexible speed-quality tradeoff, controllability, and bidirectional reasoning. On COCO captioning, LaViDa surpasses Open-LLaVa-Next-8B by +4.1 CIDEr with 1.92x speedup. On bidirectional tasks, it achieves +59% improvement on Constrained Poem Completion. These results demonstrate LaViDa as a strong alternative to AR VLMs.},
+  pdf={https://arxiv.org/abs/2505.16839},
+  award={Spotlight Presentation [top 3%].},
+  abbr={NeurIPS},
+  year={2025}
+}
+
+@inproceedings{israel2025accelerating,
+  title={Accelerating Diffusion LLMs via Adaptive Parallel Decoding},
+  author={Israel, Daniel and Broeck, Guy Van den and Grover, Aditya},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  abstract={https://arxiv.org/abs/2506.00413},
+  pdf={The generation speed of LLMs are bottlenecked by autoregressive decoding, where tokens are predicted sequentially one by one. Alternatively, diffusion large language models (dLLMs) theoretically allow for parallel token generation, but in practice struggle to achieve the speed of autoregressive models without significantly sacrificing quality. We therefore introduce adaptive parallel decoding (APD), a novel method that dynamically adjusts the number of tokens sampled in parallel. We achieve this by defining a multiplicative mixture between the dLLM marginal probabilities and the joint probability of sequences under a small auxiliary autoregressive model. This inverts the standard setup of speculative decoding, where the goal is to sample from a large autoregressive verifier by drafting from a smaller model. We further optimize APD by enabling KV caching and limiting the size of the masked input. Altogether, our method puts forward three tunable parameters to flexibly tradeoff throughput and quality. We show that APD provides markedly higher throughput with minimal quality degradations on downstream benchmarks.},
+  award={Spotlight Presentation [top 3%].},
+  abbr={NeurIPS},
+  year={2025}
+}
+
+@inproceedings{nguyen2025seasoncast,
+  author = {Nguyen, Tung and Pham, Tuan and Arcomano, Troy and Kotamarthi, Rao and Foster, Ian and Madireddy, Sandeep and Grover, Aditya},
+  title  = {SeasonCast: A Masked Latent Diffusion Model for Skillful and Scalable Subseasonal-to-Seasonal Prediction},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  abstract={Accurate weather prediction on the subseasonal-to-seasonal (S2S) scale is critical for anticipating and mitigating the impacts of climate change. However, existing data-driven methods struggle beyond the medium-range timescale due to error accumulation in their autoregressive approach. In this work, we propose SeasonCast, a scalable and skillful probabilistic model for S2S prediction. SeasonCast consists of two components, a VAE model that encodes raw weather data into a continuous, lower-dimensional latent space, and a diffusion-based transformer model that generates a sequence of future latent tokens given the initial conditioning tokens. During training, we mask random future tokens and train the transformer to estimate their distribution given conditioning and visible tokens using a per-token diffusion head. During inference, the transformer generates the full sequence of future tokens by iteratively unmasking random subsets of tokens. This joint sampling across space and time mitigates compounding errors from autoregressive approaches. The low-dimensional latent space enables modeling long sequences of future latent states, allowing the transformer to learn weather dynamics beyond initial conditions. SeasonCast performs competitively with leading probabilistic methods at the medium-range timescale while being 10-20x faster, and achieves state-of-the-art performance at the subseasonal-to-seasonal scale across accuracy, physics-based, and probabilistic metrics.},
+  abbr={NeurIPS},
+  year={2025}
+}
+
+@inproceedings{bansal2024medmax,
+  title={MedMax: Mixed-Modal Instruction Tuning for Training Biomedical Assistants},
+  author={Bansal, Hritik and Israel, Daniel and Zhao, Siyan and Li, Shufan and Nguyen, Tung and Grover, Aditya},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  abstract={Recent advancements in mixed-modal generative have opened new avenues for developing unified biomedical assistants capable of analyzing biomedical images, answering complex questions about them, and generating multimodal patient reports. However, existing datasets face challenges such as small sizes, limited coverage of biomedical tasks and domains, and a reliance on narrow sources. To address these gaps, we present MedMax, a large-scale multimodal biomedical instruction-tuning dataset for mixed-modal foundation models. With 1.47 million instances, MedMax encompasses a diverse range of tasks, including interleaved image-text generation, biomedical image captioning and generation, visual chat, and report understanding. These tasks span knowledge across diverse biomedical domains, including radiology and histopathology, grounded in medical papers and YouTube videos. Subsequently, we fine-tune a mixed-modal foundation model on the MedMax dataset, achieving significant performance improvements: a 26% gain over the Chameleon model and an 18.3% improvement over GPT-4o across 12 downstream biomedical visual question-answering tasks. Finally, we introduce a unified evaluation suite for biomedical tasks to guide the development of mixed-modal biomedical AI assistants.},
+  pdf={https://arxiv.org/abs/2412.12661},
+  abbr={NeurIPS},
+  year={2025}
+}
+
 @inproceedings{li2025reflect,
   title={Reflect-DiT: Inference-Time Scaling for Text-to-Image Diffusion Transformers via In-Context Reflection},
   author={Li, Shufan and Kallidromitis, Konstantinos and Gokul, Akash and Koneru, Arsh and Kato, Yusuke and Kozuka, Kazuki and Grover, Aditya},
@@ -36,7 +89,7 @@
 @inproceedings{zheng2024online,
   title={Online intrinsic rewards for decision making agents from large language model feedback},
   author={Zheng, Qinqing and Henaff, Mikael and Zhang, Amy and Grover, Aditya and Amos, Brandon},
-  journal={arXiv preprint arXiv:2410.23022},
+  pdf={https://arxiv.org/abs/2410.23022},
   booktitle={Reinforcement Learning Conference (RLC)}, 
   abstract={Automatically synthesizing dense rewards from natural language descriptions is a promising paradigm in reinforcement learning (RL), with applications to sparse reward problems, open-ended exploration, and hierarchical skill design. Recent works have made promising steps by exploiting the prior knowledge of large language models (LLMs). However, these approaches suffer from important limitations: they are either not scalable to problems requiring billions of environment samples, due to requiring LLM annotations for each observation, or they require a diverse offline dataset, which may not exist or be impossible to collect. In this work, we address these limitations through a combination of algorithmic and systems-level contributions. We propose \oni, a distributed architecture that simultaneously learns an RL policy and an intrinsic reward function using LLM feedback. Our approach annotates the agent's collected experience via an asynchronous LLM server, which is then distilled into an intrinsic reward model. We explore a range of algorithmic choices for reward modeling with varying complexity, including hashing, classification, and ranking models. By studying their relative tradeoffs, we shed light on questions regarding intrinsic reward design for sparse reward problems. Our approach achieves state-of-the-art performance across a range of challenging, sparse reward tasks from the NetHack Learning Environment in a simple unified process, solely using the agent's gathered experience, without requiring external datasets.},
   year={2025},

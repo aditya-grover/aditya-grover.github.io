@@ -24,12 +24,13 @@ Recently, I co-founded [Inception](https://www.inceptionlabs.ai/) to develop a n
 <!-- On the applied side, I actively ground this research for developing systems for scientific discovery, particularly in climate and sustainability domains via the [ML4Climate](/group/ml4climate) initiative. -->
 
 Previously, I spent a gap year as a research scientist at the Fundamental AI Research (FAIR) Group at Meta. I completed my postdoctoral training at UC Berkeley, PhD at Stanford University, and bachelors at IIT Delhi, all in computer science.
-During my PhD, I spent wonderful summers interning at Google Brain, Microsoft Research, and OpenAI.
+During my PhD, I have also spent time working at Google Deepmind, Microsoft Research, and OpenAI.
 
 <br>
 
 # recent news
 
+- Honored to be included in the [MIT Tech Review - Innovators Under 35](https://www.technologyreview.com/supertopic/innovators-under-35-2025/) list this year.
 - Our team at [Inception](https://www.inceptionlabs.ai/) launched [Mercury](https://arxiv.org/abs/2506.17298), the world's first commercial-scale diffusion large language models.
 - Honored to receive the [IJCAI Computers and Thought Award](https://www.ijcai.org/awards).
 - [VideoPhy-2](https://arxiv.org/abs/2503.06800) won the best paper award at the [ICML Workshop on Building Physically Plausible World Models](https://physical-world-modeling.github.io/). Congrats Hritik!

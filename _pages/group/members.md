@@ -15,12 +15,13 @@ We work on foundational topics relating to machine learning under limited superv
 - [Tung Nguyen](https://tung-nd.github.io/)
 - [Hritik Bansal](https://sites.google.com/view/hbansal) (co-advised with [Kai-Wei Chang](http://web.cs.ucla.edu/~kwchang/))
 - [Siyan Zhao](https://siyan-zhao.github.io/)
-- [Daniel Israel](https://www.linkedin.com/in/daniel-israel-248757160) (co-advised with [Guy Van den Broeck](https://web.cs.ucla.edu/~guyvdb/))
+- [Daniel Israel](https://danielmisrael.github.io/) (co-advised with [Guy Van den Broeck](https://web.cs.ucla.edu/~guyvdb/))
 - [Shufan Li](https://homepage.jackli.org/)
+- [Ravisri Valluri](https://ravi-vk.github.io/)
 
 ## Masters and Undergraduates
 
-- Arsh Koneru
+- [Arsh Koneru](https://www.linkedin.com/in/arshka)
 
 ## Alumni
 
