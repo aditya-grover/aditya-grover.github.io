@@ -30,7 +30,7 @@ During my PhD, I have also spent time working at Google Deepmind, Microsoft Rese
 
 # recent news
 
-- Honored to be included in the [MIT Tech Review - Innovators Under 35](https://www.technologyreview.com/supertopic/innovators-under-35-2025/) list this year.
+- Honored to be included in the [MIT Tech Review - Innovators Under 35](https://www.technologyreview.com/innovators-under-35/2025/) list this year.
 - Our team at [Inception](https://www.inceptionlabs.ai/) launched [Mercury](https://arxiv.org/abs/2506.17298), the world's first commercial-scale diffusion large language models.
 - Honored to receive the [IJCAI Computers and Thought Award](https://www.ijcai.org/awards).
 - [VideoPhy-2](https://arxiv.org/abs/2503.06800) won the best paper award at the [ICML Workshop on Building Physically Plausible World Models](https://physical-world-modeling.github.io/). Congrats Hritik!

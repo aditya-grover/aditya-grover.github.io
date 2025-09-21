@@ -9,7 +9,7 @@ nav_order: 4
 
 ## Honors
 
-- **MIT Tech Review - Innovators Under 35** (2025) [[press]](https://www.technologyreview.com/supertopic/innovators-under-35-2025/)
+- **MIT Tech Review - Innovators Under 35** (2025) [[press]](https://www.technologyreview.com/innovators-under-35/2025/)
 - **IJCAI Computers and Thought Award**(2025) [[press]](https://www.ijcai.org/awards)
 - Okawa Foundation Research Award (2025) [[press]](http://www.okawa-foundation.or.jp/en/activities/research_grant/list.html)
 - **Forbes 30 Under 30 - Science** (2024) [[press]](https://www.forbes.com/30-under-30/2024/science)
