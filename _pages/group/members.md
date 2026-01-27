@@ -22,6 +22,7 @@ We work on foundational topics relating to machine learning under limited superv
 ## Masters and Undergraduates
 
 - [Arsh Koneru](https://www.linkedin.com/in/arshka)
+- [Pranav Subbaraman](https://www.linkedin.com/in/pranav-subbaraman/)
 
 ## Alumni
 

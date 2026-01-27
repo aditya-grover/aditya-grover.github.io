@@ -1,6 +1,56 @@
 ---
 ---
 
+@inproceedings{bansal2025videophy,
+  title={Videophy-2: A challenging action-centric physical commonsense evaluation in video generation},
+  author={Bansal, Hritik and Peng, Clark and Bitton, Yonatan and Goldenberg, Roman and Grover, Aditya and Chang, Kai-Wei},
+  booktitle={International Conference on Learning Representations (ICLR)},  
+  abstract={Large-scale video generative models, capable of creating realistic videos of diverse visual concepts, are strong candidates for general-purpose physical world simulators. However, their adherence to physical commonsense across real-world actions remains unclear (e.g., playing tennis, backflip). Existing benchmarks suffer from limitations such as limited size, lack of human evaluation, sim-to-real gaps, and absence of fine-grained physical rule analysis. To address this, we introduce VideoPhy-2, an action-centric dataset for evaluating physical commonsense in generated videos. We curate 200 diverse actions and detailed prompts for video synthesis from modern generative models. We perform human evaluation that assesses semantic adherence, physical commonsense, and grounding of physical rules in the generated videos. Our findings reveal major shortcomings, with even the best model achieving only 22% joint performance (i.e., high semantic and physical commonsense adherence) on the hard subset of VideoPhy-2. We find that the models particularly struggle with conservation laws like mass and momentum. Finally, we also train VideoPhy-AutoEval, an automatic evaluator for fast, reliable assessment on our dataset. Overall, VideoPhy-2 serves as a rigorous benchmark, exposing critical gaps in video generative models and guiding future research in physically-grounded video generation.},
+  pdf={https://arxiv.org/abs/2503.06800},
+  abbr={ICLR},
+  year={2026}
+}
+
+@inproceedings{li2025lavida,
+  title={Lavida-O: Elastic Large Masked Diffusion Models for Unified Multimodal Understanding and Generation},
+  author={Li, Shufan and Gu, Jiuxiang and Liu, Kangning and Lin, Zhe and Wei, Zijun and Grover, Aditya and Kuen, Jason},
+  booktitle={International Conference on Learning Representations (ICLR)}, 
+  abstract={We propose Lavida-O, a unified Masked Diffusion Model (MDM) for multimodal understanding and generation. Unlike existing multimodal MDMs such as MMaDa and Muddit which only support simple image-level understanding tasks and low-resolution image generation, Lavida-O presents a single framework that enables image-level understanding, object grounding, image editing, and high-resolution (1024px) text-to-image synthesis. Lavida-O incorporates a novel Elastic Mixture-of-Transformers (Elastic-MoT) architecture that couples a lightweight generation branch with a larger understanding branch, supported by token compression, universal text conditioning and stratified sampling for efficient and high-quality generation. Lavida-O further incorporates planning and iterative self-reflection in image generation and editing tasks, seamlessly boosting generation quality with its understanding capabilities. Lavida-O achieves state-of-the-art performance on a wide range of benchmarks including RefCOCO object grounding, GenEval text-to-image generation, and ImgEdit image editing, outperforming existing autoregressive models and continuous diffusion models such as Qwen2.5-VL and FluxKontext-dev, while offering considerable speedup at inference. These advances establish Lavida-O as a new paradigm for scalable multimodal reasoning and generation.},
+  pdf={https://arxiv.org/abs/2509.19244},
+  abbr={ICLR},
+  year={2026}
+}
+
+@inproceedings{israel2025planned,
+  title={Planned Diffusion},
+  author={Israel, Daniel and Jin, Tian and Cheng, Ellie and Broeck, Guy Van den and Grover, Aditya and Subramanian, Suvinay and Carbin, Michael},
+  booktitle={International Conference on Learning Representations (ICLR)},  
+  abstract={A central challenge in large language model inference is the trade-off between generation speed and output quality. Autoregressive models produce high-quality text but generate tokens sequentially. Diffusion models can generate tokens in parallel but often need many iterations to match the same quality. We propose planned diffusion, a hybrid method that combines the strengths of both paradigms. Planned diffusion works in two stages: first, the model creates a short autoregressive plan that breaks the output into smaller, independent spans. Second, the model generates these spans simultaneously using diffusion. This approach expands the speed-quality Pareto frontier and provides a practical path to faster, high-quality text generation. On AlpacaEval, a suite of 805 instruction-following prompts, planned diffusion achieves Pareto-optimal trade-off between quality and latency, achieving 1.27x to 1.81x speedup over autoregressive generation with only 0.87\% to 5.4\% drop in win rate, respectively. Our sensitivity analysis shows that the planning mechanism of planned diffusion is minimal and reliable, and simple runtime knobs exist to provide flexible control of the quality-latency trade-off.},
+  pdf={https://arxiv.org/abs/2510.18087},
+  abbr={ICLR},
+  year={2026}
+}
+
+@inproceedings{zhao2025inpainting,
+  title={Inpainting-Guided Policy Optimization for Diffusion Large Language Models},
+  author={Zhao, Siyan and Liu, Mengchen and Huang, Jing and Liu, Miao and Wang, Chenyu and Liu, Bo and Tian, Yuandong and Pang, Guan and Bell, Sean and Grover, Aditya and Chen, Feiyu},
+  booktitle={International Conference on Learning Representations (ICLR)},  
+  abstract={Masked diffusion large language models (dLLMs) are emerging as promising alternatives to autoregressive LLMs, offering competitive performance while supporting unique generation capabilities such as inpainting. We explore how inpainting can inform RL algorithm design for dLLMs. Aligning LLMs with reinforcement learning faces an exploration challenge: sparse reward signals and sample waste when models fail to discover correct solutions. While this inefficiency affects LLMs broadly, dLLMs offer a distinctive opportunity--their inpainting ability can guide exploration. We introduce IGPO (Inpainting Guided Policy Optimization), an RL framework that strategically inserts partial ground-truth reasoning traces during online sampling. Unlike providing full solutions, inpainting steers exploration toward promising trajectory spaces while preserving self-generated reasoning, bridging supervised fine-tuning and reinforcement learning. We apply IGPO to group-based optimization methods such as GRPO, where exploration failures cause zero advantages and gradients. IGPO restores meaningful gradients while improving sample efficiency. We also propose supervised fine-tuning on synthetically rewritten concise traces that better align with dLLM generation patterns. With additional techniques including entropy-based filtering, our training recipe yields substantial gains across three mathematical benchmarks--GSM8K, Math500, and AMC--achieving new state-of-the-art results for full-attention masked dLLMs.},
+  pdf={https://arxiv.org/abs/2509.10396},
+  abbr={ICLR},
+  year={2026}
+}
+
+@inproceedings{guha2025openthoughts,
+  title={OpenThoughts: Data Recipes for Reasoning Models},
+  author={Guha, Etash and Marten, Ryan and Keh, Sedrick and Raoof, Negin and Smyrnis, Georgios and Bansal, Hritik and Nezhurina, Marianna and Mercat, Jean and Vu, Trung and Sprague, Zayne and Suvarna, Ashima and Feuer, Benjamin and Chen, Liangyu and Khan, Zaid and Frankel, Eric and Grover, Sachin and Choi, Caroline and Muennighoff, Niklas and Su, Shiye and Zhao, Wanjia and Yang, John and Pimpalgaonkar, Shreyas and Sharma, Kartik and Ji, Charlie Cheng-Jie and Deng, Yichuan and Pratt, Sarah and Ramanujan, Vivek and Saad-Falcon, Jon and Li, Jeffrey and Dave, Achal and Albalak, Alon and Arora, Kushal and Wulfe, Blake and Hegde, Chinmay and Durrett, Greg and Oh, Sewoong and Bansal, Mohit and Gabriel, Saadia and Grover, Aditya and Chang, Kai-Wei and Shankar, Vaishaal and Gokaslan, Aaron and Merrill, Mike A. and Hashimoto, Tatsunori and Choi, Yejin and Jitsev, Jenia and Heckel, Reinhard and Sathiamoorthy, Maheswaran and Dimakis, Alexandros G. and Schmidt, Ludwig},
+  booktitle={International Conference on Learning Representations (ICLR)},  
+  abstract={Reasoning models have made rapid progress on many benchmarks involving math, code, and science. Yet, there are still many open questions about the best training recipes for reasoning since state-of-the-art models often rely on proprietary datasets with little to no public information available. To address this, the goal of the OpenThoughts project is to create open-source datasets for training reasoning models. After initial explorations, our OpenThoughts2-1M dataset led to OpenThinker2-32B, the first model trained on public reasoning data to match DeepSeek-R1-Distill-32B on standard reasoning benchmarks such as AIME and LiveCodeBench. We then improve our dataset further by systematically investigating each step of our data generation pipeline with 1,000+ controlled experiments, which led to OpenThoughts3. Scaling the pipeline to 1.2M examples and using QwQ-32B as teacher yields our OpenThoughts3-7B model, which achieves state-of-the-art results: 53% on AIME 2025, 51% on LiveCodeBench 06/24-01/25, and 54% on GPQA Diamond - improvements of 15.3, 17.2, and 20.5 percentage points compared to the DeepSeek-R1-Distill-Qwen-7B.},
+  pdf={https://arxiv.org/abs/2506.04178},
+  abbr={ICLR},
+  year={2026}
+}
+
 @inproceedings{zhao2025d1,
   title={d1: Scaling reasoning in diffusion large language models via reinforcement learning},
   author={Zhao, Siyan and Gupta, Devaansh and Zheng, Qinqing and Grover, Aditya},
@@ -34,11 +84,11 @@
   year={2025}
 }
 
-@inproceedings{nguyen2025seasoncast,
+@inproceedings{nguyen2025omnicast,
   author = {Nguyen, Tung and Pham, Tuan and Arcomano, Troy and Kotamarthi, Rao and Foster, Ian and Madireddy, Sandeep and Grover, Aditya},
-  title  = {SeasonCast: A Masked Latent Diffusion Model for Skillful and Scalable Subseasonal-to-Seasonal Prediction},
+  title  = {OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales},
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-  abstract={Accurate weather prediction on the subseasonal-to-seasonal (S2S) scale is critical for anticipating and mitigating the impacts of climate change. However, existing data-driven methods struggle beyond the medium-range timescale due to error accumulation in their autoregressive approach. In this work, we propose SeasonCast, a scalable and skillful probabilistic model for S2S prediction. SeasonCast consists of two components, a VAE model that encodes raw weather data into a continuous, lower-dimensional latent space, and a diffusion-based transformer model that generates a sequence of future latent tokens given the initial conditioning tokens. During training, we mask random future tokens and train the transformer to estimate their distribution given conditioning and visible tokens using a per-token diffusion head. During inference, the transformer generates the full sequence of future tokens by iteratively unmasking random subsets of tokens. This joint sampling across space and time mitigates compounding errors from autoregressive approaches. The low-dimensional latent space enables modeling long sequences of future latent states, allowing the transformer to learn weather dynamics beyond initial conditions. SeasonCast performs competitively with leading probabilistic methods at the medium-range timescale while being 10-20x faster, and achieves state-of-the-art performance at the subseasonal-to-seasonal scale across accuracy, physics-based, and probabilistic metrics.},
+  abstract={Accurate weather forecasting across time scales is critical for anticipating and mitigating the impacts of climate change. Recent data-driven methods based on deep learning have achieved significant success in the medium range, but struggle at longer subseasonal-to-seasonal (S2S) horizons due to error accumulation in their autoregressive approach. In this work, we propose OmniCast, a scalable and skillful probabilistic model that unifies weather forecasting across timescales. OmniCast consists of two components: a VAE model that encodes raw weather data into a continuous, lower-dimensional latent space, and a diffusion-based transformer model that generates a sequence of future latent tokens given the initial conditioning tokens. During training, we mask random future tokens and train the transformer to estimate their distribution given conditioning and visible tokens using a per-token diffusion head. During inference, the transformer generates the full sequence of future tokens by iteratively unmasking random subsets of tokens. This joint sampling across space and time mitigates compounding errors from autoregressive approaches. The low-dimensional latent space enables modeling long sequences of future latent states, allowing the transformer to learn weather dynamics beyond initial conditions. OmniCast performs competitively with leading probabilistic methods at the medium-range timescale while being 10x to 20x faster, and achieves state-of-the-art performance at the subseasonal-to-seasonal scale across accuracy, physics-based, and probabilistic metrics. Furthermore, we demonstrate that OmniCast can generate stable rollouts up to 100 years ahead.},
   abbr={NeurIPS},
   year={2025}
 }
