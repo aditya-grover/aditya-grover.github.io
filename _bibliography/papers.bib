@@ -1,6 +1,38 @@
 ---
 ---
 
+@inproceedings{li2025sparse,
+  title={Sparse-LaViDa: Sparse Multimodal Discrete Diffusion Language Models},
+  author={Li, Shufan and Gu, Jiuxiang and Liu, Kangning and Lin, Zhe and Wei, Zijun and Grover, Aditya and Kuen, Jason},
+  journal={arXiv preprint arXiv:2512.14008},
+  booktitle={IEEE / CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pdf={https://arxiv.org/abs/2512.14008},
+  abstract={Masked Discrete Diffusion Models (MDMs) have achieved strong performance across a wide range of multimodal tasks, including image understanding, generation, and editing. However, their inference speed remains suboptimal due to the need to repeatedly process redundant masked tokens at every sampling step. In this work, we propose Sparse-LaViDa, a novel modeling framework that dynamically truncates unnecessary masked tokens at each inference step to accelerate MDM sampling. To preserve generation quality, we introduce specialized register tokens that serve as compact representations for the truncated tokens. Furthermore, to ensure consistency between training and inference, we design a specialized attention mask that faithfully matches the truncated sampling procedure during training. Built upon the state-of-the-art unified MDM LaViDa-O, Sparse-LaViDa achieves up to a 2x speedup across diverse tasks including text-to-image generation, image editing, and mathematical reasoning, while maintaining generation quality.},
+  year={2026},
+  abbr={CVPR}
+}
+
+@inproceedings{bansal2025honeybee,
+  title={Honeybee: Data recipes for vision-language reasoners},
+  author={Bansal, Hritik and Sachan, Devandra Singh and Chang, Kai-Wei and Grover, Aditya and Ghosh, Gargi and Yih, Wen-tau and Pasunuru, Ramakanth},
+  journal={arXiv preprint arXiv:2510.12225},
+  booktitle={IEEE / CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pdf={https://arxiv.org/abs/2510.12225},
+  abstract={Recent advances in vision-language models (VLMs) have made them highly effective at reasoning tasks. However, the principles underlying the construction of performant VL reasoning training datasets remain poorly understood. In this work, we introduce several data curation approaches and study their impacts on VL reasoning capabilities by carefully controlling training and evaluation setups. We analyze the effects of context (image and question pair) sources, implement targeted data interventions, and explore scaling up images, questions, and chain-of-thought (CoT) solutions. Our findings reveal that (a) context source strategies significantly affect VLM performance, (b) interventions such as auxiliary signals from image captions and the inclusion of text-only reasoning yield substantial gains, and (c) scaling all data dimensions (e.g., unique questions per image and unique CoTs per image-question pair) consistently improves reasoning capability. Motivated by these insights, we introduce HoneyBee, a large-scale, high-quality CoT reasoning dataset with 2.5M examples consisting 350K image-question pairs. VLMs trained with HoneyBee outperform state-of-the-art models across model sizes. For instance, a HoneyBee-trained VLM with 3B parameters outperforms the SOTA model and the base model by 7.8% and 24.8%, respectively, on MathVerse. Furthermore, we propose a test-time scaling strategy that reduces decoding cost by 73% without sacrificing accuracy. Overall, this work presents improved strategies for VL reasoning dataset curation research.},
+  year={2026},
+  abbr={CVPR}
+}
+
+@inproceedings{bansal2025videophy,
+  title={Videophy-2: A challenging action-centric physical commonsense evaluation in video generation},
+  author={Bansal, Hritik and Peng, Clark and Bitton, Yonatan and Goldenberg, Roman and Grover, Aditya and Chang, Kai-Wei},
+  booktitle={International Conference on Learning Representations (ICLR)},  
+  abstract={Large-scale video generative models, capable of creating realistic videos of diverse visual concepts, are strong candidates for general-purpose physical world simulators. However, their adherence to physical commonsense across real-world actions remains unclear (e.g., playing tennis, backflip). Existing benchmarks suffer from limitations such as limited size, lack of human evaluation, sim-to-real gaps, and absence of fine-grained physical rule analysis. To address this, we introduce VideoPhy-2, an action-centric dataset for evaluating physical commonsense in generated videos. We curate 200 diverse actions and detailed prompts for video synthesis from modern generative models. We perform human evaluation that assesses semantic adherence, physical commonsense, and grounding of physical rules in the generated videos. Our findings reveal major shortcomings, with even the best model achieving only 22% joint performance (i.e., high semantic and physical commonsense adherence) on the hard subset of VideoPhy-2. We find that the models particularly struggle with conservation laws like mass and momentum. Finally, we also train VideoPhy-AutoEval, an automatic evaluator for fast, reliable assessment on our dataset. Overall, VideoPhy-2 serves as a rigorous benchmark, exposing critical gaps in video generative models and guiding future research in physically-grounded video generation.},
+  pdf={https://arxiv.org/abs/2503.06800},
+  abbr={ICLR},
+  year={2026}
+}
+
 @inproceedings{bansal2025videophy,
   title={Videophy-2: A challenging action-centric physical commonsense evaluation in video generation},
   author={Bansal, Hritik and Peng, Clark and Bitton, Yonatan and Goldenberg, Roman and Grover, Aditya and Chang, Kai-Wei},
@@ -90,6 +122,7 @@
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
   abstract={Accurate weather forecasting across time scales is critical for anticipating and mitigating the impacts of climate change. Recent data-driven methods based on deep learning have achieved significant success in the medium range, but struggle at longer subseasonal-to-seasonal (S2S) horizons due to error accumulation in their autoregressive approach. In this work, we propose OmniCast, a scalable and skillful probabilistic model that unifies weather forecasting across timescales. OmniCast consists of two components: a VAE model that encodes raw weather data into a continuous, lower-dimensional latent space, and a diffusion-based transformer model that generates a sequence of future latent tokens given the initial conditioning tokens. During training, we mask random future tokens and train the transformer to estimate their distribution given conditioning and visible tokens using a per-token diffusion head. During inference, the transformer generates the full sequence of future tokens by iteratively unmasking random subsets of tokens. This joint sampling across space and time mitigates compounding errors from autoregressive approaches. The low-dimensional latent space enables modeling long sequences of future latent states, allowing the transformer to learn weather dynamics beyond initial conditions. OmniCast performs competitively with leading probabilistic methods at the medium-range timescale while being 10x to 20x faster, and achieves state-of-the-art performance at the subseasonal-to-seasonal scale across accuracy, physics-based, and probabilistic metrics. Furthermore, we demonstrate that OmniCast can generate stable rollouts up to 100 years ahead.},
   abbr={NeurIPS},
+  pdf={https://arxiv.org/abs/2510.18707},
   year={2025}
 }
 

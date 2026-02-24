@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Assistant Professor of Computer Science, UCLA | Co-founder, Inception
+subtitle: CTO & Co-Founder, Inception | Assistant Professor of Computer Science, UCLA
 
 profile:
   align: left
@@ -19,7 +19,7 @@ social: true # includes social icons at the bottom of the page
 
 I am an assistant professor of computer science at UCLA. I lead the [Machine Intelligence (MINT) group](/group/members), where we develop AI systems that can interact and reason with limited supervision. My [current research](/publications) is at the intersection of generative models, reinforcement learning, and applications to scientific discovery.
 
-Recently, I co-founded [Inception](https://www.inceptionlabs.ai/) to develop a new generation of parallelizable LLMs that redefine the Pareto frontier for quality, speed, and cost.
+I am also the co-founder and CTO of [Inception](https://www.inceptionlabs.ai/), a generative AI startup developing a new generation of ultra-fast, parallel LLMs based on diffusion.
 
 <!-- On the applied side, I actively ground this research for developing systems for scientific discovery, particularly in climate and sustainability domains via the [ML4Climate](/group/ml4climate) initiative. -->
 
@@ -41,6 +41,3 @@ During my PhD, I have also spent time working at Google Deepmind, Microsoft Rese
 - [VideoCon](https://arxiv.org/abs/2311.10111) won the best paper award at Data Problems for Foundation Models workshop at ICLR 2024. Congrats Hritik!
 - Honored to receive the [Schmidt AI2050 Early Career Fellowship](https://www.schmidtsciences.org/ai2050-early-career-fellows-2024/).
 - Honored to be selected as a [Kavli Fellow](https://www.nasonline.org/programs/kavli-frontiers-of-science/news/2023-kavli-fellows.html) by the US National Academy of Sciences.
-- Thank you [Washington Post](https://www.washingtonpost.com/weather/2023/09/21/hurricane-lee-artificial-intelligence-forecasting/), [MIT Tech Review](https://www.technologyreview.com/2023/11/14/1083366/google-deepminds-weather-ai-can-forecast-extreme-weather-quicker-and-more-accurately/) for covering our research on ClimaX. My comments on the field more broadly in [Nature](https://www.nature.com/articles/d41586-023-03552-y) and [Science](https://www.science.org/content/article/ai-churns-out-lightning-fast-forecasts-good-weather-agencies)
-- [ClimaX](https://arxiv.org/abs/2301.10343) wins the best paper award at ICML Workshop on ML and Scientific Modeling. Congrats Tung!
-- [CleanCLIP](https://arxiv.org/abs/2303.03323) wins the best paper award at ICLR Workshop on Trustworthy and Reliable Large-Scale ML. Also to be presented as oral presentation (acceptance rate: 1.8%) at ICCV. Congrats Hritik!
